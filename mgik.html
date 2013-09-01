@@ -1,0 +1,6864 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>районы</title>
+<meta charset=UTF-8>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<style>
+
+table {
+	table-layout: fixed; 
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+
+td {text-align: right}
+
+.minus {
+	color: #dc322f;
+	}
+.plus {
+	color: #859900;
+	}
+.less {
+	color: white;
+	background-color: #dc322f;
+	font-weight: bold;
+	}
+.more {
+	color: white;
+	background-color: #859900;
+	font-weight: bold;
+	}
+
+.datasource a {
+	background-color: #268bd2;
+	padding: 0 3px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	}
+.datasource:hover a {
+	color:#268bd2;
+	background-color: white;
+	}
+
+td, th {height: 1.4em;} 
+
+
+.empty td,
+.empty th,
+.sum td.empty {
+	border: 1px white;
+	background-color: white;
+	}
+
+.sum th, .sum td {background-color: #eee8d5;}
+.sum .minus, .sum .plus {font-weight: bold;}
+.sum td.more {
+	background-color: #859900;
+	}
+.sum td.less {
+	background-color: #dc322f;	
+	}
+th {
+  position:absolute;
+  width: 26em;
+}
+
+.outer {position:relative}
+.inner {
+  overflow-x:scroll;
+  overflow-y:visible;
+}
+
+
+th {	font-weight: normal;
+	padding:0 3px;
+	overflow:hidden;
+	white-space:normal;
+	letter-spacing:0;
+	word-spacing:0;
+	background-color:#fff;
+	z-index:1;
+	border:1px #93a1a1 solid;
+	}
+body {
+	font-family: 'PT Sans', sans-serif;
+	margin:0
+	}
+table {
+	font-size:0.8em;
+	}
+td {
+	padding:0 3px;
+	overflow:hidden;
+	white-space:normal;
+	letter-spacing:0;
+	word-spacing:0;
+	z-index:1;
+	border:1px #93a1a1 solid;
+	}
+.rShim { height: 0px; border: 0}
+
+td, th {vertical-align: center;}
+
+th {margin-top: -1px;}
+.empty.all th {border-top: 1px #93a1a1 solid !important;}
+
+#↔ {color: white; font-weight: bold; background-color: #93a1a1}
+
+#arrow {float: right}
+</style>
+</head>
+
+<body>
+<div class="outer">
+<div class="inner">
+<table id="myTable"> 
+<tbody>
+<tr class="rShim">
+<td class="rShim" style="width:26.5em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+<td class="rShim" style="width:4.5em;"></td>
+<td class="rShim" style="width:4em;"></td>
+<td class="rShim" style="width:5em;"></td>
+</tr>
+
+<tr class="empty all">
+<th id="↔">Данные справа можно «прокрутить»<span id="arrow">→</span></th>
+<td class="datasource">
+<a target="_blank" href="http://web.archive.org/web/20071209045647/http://www.moscow_city.izbirkom.ru/etc/77f4_1ri_07_1.htm">01.07.2007</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://web.archive.org/web/20080215003025/http://www.moscow_city.izbirkom.ru/etc/77F4_1riur_01012008_1.htm">01.01.2008</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://web.archive.org/web/20081002012748/http://vestnik.mgik.mos.ru/doc-WholePage.aspx?RgmFolderID=6b7d4065-17fe-4a05-a4a7-4b6751eef127&RgmDocID=b253c51f-06ff-453b-9112-1a7ff8f6877e">01.07.2008</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://www.moscow_city.izbirkom.ru/etc/77F4_1riur_01012009_1.htm">01.01.2009</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://www.moscow_city.izbirkom.ru/etc/77f4_1riur_01072009.htm">01.07.2009</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://moscow-city.izbirkom.ru/etc/77f4_1riur_01012010.xls">01.01.2010</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://moscow-city.izbirkom.ru/etc/77f4_1riur_01072010_3_version.xls">01.07.2010</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://moscow-city.izbirkom.ru/etc/77f4_1riur_01012011.xls">01.01.2011</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://moscow-city.izbirkom.ru/etc/77f4_1riur_01072011.xls">01.07.2011</a></td>
+<td></td>
+<td></td>
+<td class="datasource"><a target="_blank" href="http://mosgorizbirkom.ru/web/guest/main?&p_p_id=101&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_101_urlTitle=%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE-%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B8%D0%B7%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B8-%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D0%B4%D1%83%D0%BC%D0%B0-%D0%B7%D0%B0%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BD%D0%B0-%D1%82%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D1%8B-%D0%BF%D0%BE-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8E-%D0%BD%D0%B0-01-%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F-2012-%D0%B3%D0%BE%D0%B4%D0%B0&_101_struts_action=%2Fasset_publisher%2Fview_content&_101_type=content&_101_assetEntryId=18208">01.01.2012</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://moscow-city.izbirkom.ru/etc/77f4_1riur_01072012.1.xls">01.07.2012</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://moscow-city.izbirkom.ru/etc/77f4_1riur_01012013_4_version.xls">01.01.2013</a></td>
+<td></td>
+<td></td>
+<td class="datasource">
+<a target="_blank" href="http://moscow-city.izbirkom.ru/etc/77f4_1ri_07_2013_2_version.pdf">01.07.2013</a></td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="empty">
+<th>Центральный административный округ</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>район Арбат</th>
+<td>14&thinsp;122</td>
+<td class="plus">2&thinsp;570</td>
+<td class="more">18,20%</td>
+<td>16&thinsp;692</td>
+<td class="plus">10</td>
+<td class="plus">0,06%</td>
+<td>16&thinsp;702</td>
+<td class="minus">−99</td>
+<td class="minus">−0,59%</td>
+<td>16&thinsp;603</td>
+<td class="minus">−2&thinsp;841</td>
+<td class="less">−17,11%</td>
+<td>13&thinsp;762</td>
+<td class="plus">1&thinsp;334</td>
+<td class="more">9,69%</td>
+<td>15&thinsp;096</td>
+<td class="plus">1&thinsp;542</td>
+<td class="more">10,21%</td>
+<td>16&thinsp;638</td>
+<td class="minus">−468</td>
+<td class="less">−2,81%</td>
+<td>16&thinsp;170</td>
+<td class="minus">−46</td>
+<td class="minus">−0,28%</td>
+<td>16&thinsp;124</td>
+<td class="minus">−255</td>
+<td class="less">−1,58%</td>
+<td>15&thinsp;869</td>
+<td class="plus">237</td>
+<td class="more">1,49%</td>
+<td>16&thinsp;106</td>
+<td class="minus">−128</td>
+<td class="minus">−0,79%</td>
+<td>15&thinsp;978</td>
+<td class="minus">−1&thinsp;381</td>
+<td class="less">−8,64%</td>
+<td>14&thinsp;597</td>
+</tr>
+
+<tr>
+<th>Басманный район</th>
+<td>61&thinsp;782</td>
+<td class="minus">−984</td>
+<td class="less">−1,59%</td>
+<td>60&thinsp;798</td>
+<td class="plus">973</td>
+<td class="more">1,60%</td>
+<td>61&thinsp;771</td>
+<td class="minus">−218</td>
+<td class="minus">−0,35%</td>
+<td>61&thinsp;553</td>
+<td class="minus">−205</td>
+<td class="minus">−0,33%</td>
+<td>61&thinsp;348</td>
+<td class="minus">−49</td>
+<td class="minus">−0,08%</td>
+<td>61&thinsp;299</td>
+<td class="minus">−268</td>
+<td class="minus">−0,44%</td>
+<td>61&thinsp;031</td>
+<td class="minus">−393</td>
+<td class="minus">−0,64%</td>
+<td>60&thinsp;638</td>
+<td class="minus">−886</td>
+<td class="less">−1,46%</td>
+<td>59&thinsp;752</td>
+<td class="minus">−263</td>
+<td class="minus">−0,44%</td>
+<td>59&thinsp;489</td>
+<td class="plus">1&thinsp;201</td>
+<td class="more">2,02%</td>
+<td>60&thinsp;690</td>
+<td class="minus">−1&thinsp;150</td>
+<td class="less">−1,89%</td>
+<td>59&thinsp;540</td>
+<td class="minus">−479</td>
+<td class="minus">−0,80%</td>
+<td>59&thinsp;061</td>
+</tr>
+
+<tr>
+<th>район Замоскворечье</th>
+<td>29&thinsp;776</td>
+<td class="minus">−970</td>
+<td class="less">−3,26%</td>
+<td>28&thinsp;806</td>
+<td class="plus">214</td>
+<td class="plus">0,74%</td>
+<td>29&thinsp;020</td>
+<td class="plus">125</td>
+<td class="plus">0,43%</td>
+<td>29&thinsp;145</td>
+<td class="minus">−441</td>
+<td class="less">−1,51%</td>
+<td>28&thinsp;704</td>
+<td class="plus">216</td>
+<td class="plus">0,75%</td>
+<td>28&thinsp;920</td>
+<td class="minus">−166</td>
+<td class="minus">−0,57%</td>
+<td>28&thinsp;754</td>
+<td class="minus">−680</td>
+<td class="less">−2,36%</td>
+<td>28&thinsp;074</td>
+<td class="minus">−8</td>
+<td class="minus">−0,03%</td>
+<td>28&thinsp;066</td>
+<td class="minus">−232</td>
+<td class="minus">−0,83%</td>
+<td>27&thinsp;834</td>
+<td class="plus">206</td>
+<td class="plus">0,74%</td>
+<td>28&thinsp;040</td>
+<td class="minus">−226</td>
+<td class="minus">−0,81%</td>
+<td>27&thinsp;814</td>
+<td class="minus">−670</td>
+<td class="less">−2,41%</td>
+<td>27&thinsp;144</td>
+</tr>
+
+<tr>
+<th>Красносельский район</th>
+<td>23&thinsp;995</td>
+<td class="plus">765</td>
+<td class="more">3,19%</td>
+<td>24&thinsp;760</td>
+<td class="plus">115</td>
+<td class="plus">0,46%</td>
+<td>24&thinsp;875</td>
+<td class="plus">50</td>
+<td class="plus">0,20%</td>
+<td>24&thinsp;925</td>
+<td class="minus">−795</td>
+<td class="less">−3,19%</td>
+<td>24&thinsp;130</td>
+<td class="plus">1&thinsp;059</td>
+<td class="more">4,39%</td>
+<td>25&thinsp;189</td>
+<td class="minus">−35</td>
+<td class="minus">−0,14%</td>
+<td>25&thinsp;154</td>
+<td class="minus">−121</td>
+<td class="minus">−0,48%</td>
+<td>25&thinsp;033</td>
+<td class="minus">−110</td>
+<td class="minus">−0,44%</td>
+<td>24&thinsp;923</td>
+<td class="minus">−1&thinsp;327</td>
+<td class="less">−5,32%</td>
+<td>23&thinsp;596</td>
+<td class="plus">30</td>
+<td class="plus">0,13%</td>
+<td>23&thinsp;626</td>
+<td class="minus">−80</td>
+<td class="minus">−0,34%</td>
+<td>23&thinsp;546</td>
+<td class="minus">−470</td>
+<td class="less">−2,00%</td>
+<td>23&thinsp;076</td>
+</tr>
+
+<tr>
+<th>Мещанский район</th>
+<td>34&thinsp;435</td>
+<td class="minus">−120</td>
+<td class="minus">−0,35%</td>
+<td>34&thinsp;315</td>
+<td class="plus">39</td>
+<td class="plus">0,11%</td>
+<td>34&thinsp;354</td>
+<td class="plus">90</td>
+<td class="plus">0,26%</td>
+<td>34&thinsp;444</td>
+<td class="plus">3</td>
+<td class="plus">0,01%</td>
+<td>34&thinsp;447</td>
+<td class="minus">−126</td>
+<td class="minus">−0,37%</td>
+<td>34&thinsp;321</td>
+<td class="minus">−14</td>
+<td class="minus">−0,04%</td>
+<td>34&thinsp;307</td>
+<td class="minus">−130</td>
+<td class="minus">−0,38%</td>
+<td>34&thinsp;177</td>
+<td class="minus">−92</td>
+<td class="minus">−0,27%</td>
+<td>34&thinsp;085</td>
+<td class="minus">−95</td>
+<td class="minus">−0,28%</td>
+<td>33&thinsp;990</td>
+<td class="minus">−80</td>
+<td class="minus">−0,24%</td>
+<td>33&thinsp;910</td>
+<td class="plus">2</td>
+<td class="plus">0,01%</td>
+<td>33&thinsp;912</td>
+<td class="minus">−850</td>
+<td class="less">−2,51%</td>
+<td>33&thinsp;062</td>
+</tr>
+
+<tr>
+<th>Пресненский район</th>
+<td>79&thinsp;098</td>
+<td class="plus">268</td>
+<td class="plus">0,34%</td>
+<td>79&thinsp;366</td>
+<td class="plus">761</td>
+<td class="plus">0,96%</td>
+<td>80&thinsp;127</td>
+<td class="plus">109</td>
+<td class="plus">0,14%</td>
+<td>80&thinsp;236</td>
+<td class="minus">−109</td>
+<td class="minus">−0,14%</td>
+<td>80&thinsp;127</td>
+<td class="minus">−770</td>
+<td class="minus">−0,96%</td>
+<td>79&thinsp;357</td>
+<td class="minus">−1&thinsp;920</td>
+<td class="less">−2,42%</td>
+<td>77&thinsp;437</td>
+<td class="minus">−545</td>
+<td class="minus">−0,70%</td>
+<td>76&thinsp;892</td>
+<td class="plus">104</td>
+<td class="plus">0,14%</td>
+<td>76&thinsp;996</td>
+<td class="plus">451</td>
+<td class="plus">0,59%</td>
+<td>77&thinsp;447</td>
+<td class="minus">−552</td>
+<td class="minus">−0,71%</td>
+<td>76&thinsp;895</td>
+<td class="plus">1&thinsp;311</td>
+<td class="more">1,70%</td>
+<td>78&thinsp;206</td>
+<td class="minus">−1&thinsp;318</td>
+<td class="less">−1,69%</td>
+<td>76&thinsp;888</td>
+</tr>
+
+<tr>
+<th>Таганский район</th>
+<td>75&thinsp;055</td>
+<td class="minus">−562</td>
+<td class="minus">−0,75%</td>
+<td>74&thinsp;493</td>
+<td class="plus">275</td>
+<td class="plus">0,37%</td>
+<td>74&thinsp;768</td>
+<td class="minus">−160</td>
+<td class="minus">−0,21%</td>
+<td>74&thinsp;608</td>
+<td class="minus">−968</td>
+<td class="less">−1,30%</td>
+<td>73&thinsp;640</td>
+<td class="plus">1&thinsp;266</td>
+<td class="more">1,72%</td>
+<td>74&thinsp;906</td>
+<td class="minus">−583</td>
+<td class="minus">−0,78%</td>
+<td>74&thinsp;323</td>
+<td class="minus">−1&thinsp;080</td>
+<td class="less">−1,45%</td>
+<td>73&thinsp;243</td>
+<td class="minus">−1&thinsp;805</td>
+<td class="less">−2,46%</td>
+<td>71&thinsp;438</td>
+<td class="plus">2&thinsp;022</td>
+<td class="more">2,83%</td>
+<td>73&thinsp;460</td>
+<td class="minus">−5</td>
+<td class="minus">−0,01%</td>
+<td>73&thinsp;455</td>
+<td class="minus">−271</td>
+<td class="minus">−0,37%</td>
+<td>73&thinsp;184</td>
+<td class="minus">−1&thinsp;587</td>
+<td class="less">−2,17%</td>
+<td>71&thinsp;597</td>
+</tr>
+
+<tr>
+<th>Тверской район</th>
+<td>48&thinsp;306</td>
+<td class="minus">−168</td>
+<td class="minus">−0,35%</td>
+<td>48&thinsp;138</td>
+<td class="plus">298</td>
+<td class="plus">0,62%</td>
+<td>48&thinsp;436</td>
+<td class="plus">188</td>
+<td class="plus">0,39%</td>
+<td>48&thinsp;624</td>
+<td class="plus">123</td>
+<td class="plus">0,25%</td>
+<td>48&thinsp;747</td>
+<td class="minus">−398</td>
+<td class="minus">−0,82%</td>
+<td>48&thinsp;349</td>
+<td class="minus">−316</td>
+<td class="minus">−0,65%</td>
+<td>48&thinsp;033</td>
+<td class="minus">−228</td>
+<td class="minus">−0,47%</td>
+<td>47&thinsp;805</td>
+<td class="minus">−511</td>
+<td class="less">−1,07%</td>
+<td>47&thinsp;294</td>
+<td class="minus">−223</td>
+<td class="minus">−0,47%</td>
+<td>47&thinsp;071</td>
+<td class="plus">12</td>
+<td class="plus">0,03%</td>
+<td>47&thinsp;083</td>
+<td class="minus">−202</td>
+<td class="minus">−0,43%</td>
+<td>46&thinsp;881</td>
+<td class="minus">−1&thinsp;069</td>
+<td class="less">−2,28%</td>
+<td>45&thinsp;812</td>
+</tr>
+
+<tr>
+<th>район Хамовники</th>
+<td>54&thinsp;162</td>
+<td class="plus">1&thinsp;133</td>
+<td class="more">2,09%</td>
+<td>55&thinsp;295</td>
+<td class="plus">1&thinsp;225</td>
+<td class="more">2,22%</td>
+<td>56&thinsp;520</td>
+<td class="plus">369</td>
+<td class="plus">0,65%</td>
+<td>56&thinsp;889</td>
+<td class="minus">−648</td>
+<td class="less">−1,14%</td>
+<td>56&thinsp;241</td>
+<td class="minus">−291</td>
+<td class="minus">−0,52%</td>
+<td>55&thinsp;950</td>
+<td class="plus">120</td>
+<td class="plus">0,21%</td>
+<td>56&thinsp;070</td>
+<td class="minus">−805</td>
+<td class="less">−1,44%</td>
+<td>55&thinsp;265</td>
+<td class="plus">1&thinsp;646</td>
+<td class="more">2,98%</td>
+<td>56&thinsp;911</td>
+<td class="plus">245</td>
+<td class="plus">0,43%</td>
+<td>57&thinsp;156</td>
+<td class="minus">−449</td>
+<td class="minus">−0,79%</td>
+<td>56&thinsp;707</td>
+<td class="minus">−847</td>
+<td class="less">−1,49%</td>
+<td>55&thinsp;860</td>
+<td class="minus">−1&thinsp;112</td>
+<td class="less">−1,99%</td>
+<td>54&thinsp;748</td>
+</tr>
+
+<tr>
+<th>район Якиманка</th>
+<td>13&thinsp;329</td>
+<td class="plus">149</td>
+<td class="more">1,12%</td>
+<td>13&thinsp;478</td>
+<td class="plus">28</td>
+<td class="plus">0,21%</td>
+<td>13&thinsp;506</td>
+<td class="minus">−8</td>
+<td class="minus">−0,06%</td>
+<td>13&thinsp;498</td>
+<td class="plus">9</td>
+<td class="plus">0,07%</td>
+<td>13&thinsp;507</td>
+<td class="plus">8</td>
+<td class="plus">0,06%</td>
+<td>13&thinsp;515</td>
+<td class="minus">−96</td>
+<td class="minus">−0,71%</td>
+<td>13&thinsp;419</td>
+<td class="minus">−15</td>
+<td class="minus">−0,11%</td>
+<td>13&thinsp;404</td>
+<td class="plus">425</td>
+<td class="more">3,17%</td>
+<td>13&thinsp;829</td>
+<td class="plus">133</td>
+<td class="plus">0,96%</td>
+<td>13&thinsp;962</td>
+<td class="minus">−72</td>
+<td class="minus">−0,52%</td>
+<td>13&thinsp;890</td>
+<td class="minus">−8</td>
+<td class="minus">−0,06%</td>
+<td>13&thinsp;882</td>
+<td class="minus">−279</td>
+<td class="less">−2,01%</td>
+<td>13&thinsp;603</td>
+</tr>
+
+<tr class="sum">
+<th>Итого по Центральному административному округу</th>
+<td>434&thinsp;060</td>
+<td class="plus">2&thinsp;081</td>
+<td class="plus">0,48%</td>
+<td>436&thinsp;141</td>
+<td class="plus">3&thinsp;938</td>
+<td class="plus">0,90%</td>
+<td>440&thinsp;079</td>
+<td class="plus">446</td>
+<td class="plus">0,10%</td>
+<td>440&thinsp;525</td>
+<td class="minus">−5&thinsp;872</td>
+<td class="less">−1,33%</td>
+<td>434&thinsp;653</td>
+<td class="plus">2&thinsp;249</td>
+<td class="plus">0,52%</td>
+<td>436&thinsp;902</td>
+<td class="minus">−1&thinsp;736</td>
+<td class="minus">−0,40%</td>
+<td>435&thinsp;166</td>
+<td class="minus">−4&thinsp;465</td>
+<td class="less">−1,03%</td>
+<td>430&thinsp;701</td>
+<td class="minus">−1&thinsp;283</td>
+<td class="minus">−0,30%</td>
+<td>429&thinsp;418</td>
+<td class="plus">456</td>
+<td class="plus">0,11%</td>
+<td>429&thinsp;874</td>
+<td class="plus">528</td>
+<td class="plus">0,12%</td>
+<td>430&thinsp;402</td>
+<td class="minus">−1&thinsp;599</td>
+<td class="minus">−0,37%</td>
+<td>428&thinsp;803</td>
+<td class="minus">−9&thinsp;215</td>
+<td class="less">−2,15%</td>
+<td>419&thinsp;588</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="empty">
+<th>Северный административный округ</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>район Аэропорт</th>
+<td>43&thinsp;810</td>
+<td class="plus">2&thinsp;193</td>
+<td class="more">5,01%</td>
+<td>46&thinsp;003</td>
+<td class="minus">−292</td>
+<td class="minus">−0,63%</td>
+<td>45&thinsp;711</td>
+<td class="minus">−513</td>
+<td class="less">−1,12%</td>
+<td>45&thinsp;198</td>
+<td class="minus">−1&thinsp;319</td>
+<td class="less">−2,92%</td>
+<td>43&thinsp;879</td>
+<td class="minus">−729</td>
+<td class="less">−1,66%</td>
+<td>43&thinsp;150</td>
+<td class="minus">−283</td>
+<td class="minus">−0,66%</td>
+<td>42&thinsp;867</td>
+<td class="minus">−559</td>
+<td class="less">−1,30%</td>
+<td>42&thinsp;308</td>
+<td class="plus">508</td>
+<td class="more">1,20%</td>
+<td>42&thinsp;816</td>
+<td class="minus">−107</td>
+<td class="minus">−0,25%</td>
+<td>42&thinsp;709</td>
+<td class="minus">−298</td>
+<td class="minus">−0,70%</td>
+<td>42&thinsp;411</td>
+<td class="minus">−104</td>
+<td class="minus">−0,25%</td>
+<td>42&thinsp;307</td>
+<td class="minus">−592</td>
+<td class="less">−1,40%</td>
+<td>41&thinsp;715</td>
+</tr>
+
+<tr>
+<th>район Беговой</th>
+<td>25&thinsp;461</td>
+<td class="minus">−386</td>
+<td class="less">−1,52%</td>
+<td>25&thinsp;075</td>
+<td class="minus">−109</td>
+<td class="minus">−0,43%</td>
+<td>24&thinsp;966</td>
+<td class="minus">−125</td>
+<td class="minus">−0,50%</td>
+<td>24&thinsp;841</td>
+<td class="minus">−1&thinsp;389</td>
+<td class="less">−5,59%</td>
+<td>23&thinsp;452</td>
+<td class="plus">445</td>
+<td class="more">1,90%</td>
+<td>23&thinsp;897</td>
+<td class="plus">329</td>
+<td class="more">1,38%</td>
+<td>24&thinsp;226</td>
+<td class="plus">59</td>
+<td class="plus">0,24%</td>
+<td>24&thinsp;285</td>
+<td class="minus">−105</td>
+<td class="minus">−0,43%</td>
+<td>24&thinsp;180</td>
+<td class="minus">−160</td>
+<td class="minus">−0,66%</td>
+<td>24&thinsp;020</td>
+<td class="plus">75</td>
+<td class="plus">0,31%</td>
+<td>24&thinsp;095</td>
+<td class="minus">−78</td>
+<td class="minus">−0,32%</td>
+<td>24&thinsp;017</td>
+<td class="minus">−432</td>
+<td class="less">−1,80%</td>
+<td>23&thinsp;585</td>
+</tr>
+
+<tr>
+<th>Бескудниковский район</th>
+<td>50&thinsp;497</td>
+<td class="minus">−84</td>
+<td class="minus">−0,17%</td>
+<td>50&thinsp;413</td>
+<td class="minus">−40</td>
+<td class="minus">−0,08%</td>
+<td>50&thinsp;373</td>
+<td class="plus">118</td>
+<td class="plus">0,23%</td>
+<td>50&thinsp;491</td>
+<td class="minus">−3&thinsp;197</td>
+<td class="less">−6,33%</td>
+<td>47&thinsp;294</td>
+<td class="plus">2&thinsp;109</td>
+<td class="more">4,46%</td>
+<td>49&thinsp;403</td>
+<td class="plus">890</td>
+<td class="more">1,80%</td>
+<td>50&thinsp;293</td>
+<td class="minus">−63</td>
+<td class="minus">−0,13%</td>
+<td>50&thinsp;230</td>
+<td class="minus">−13</td>
+<td class="minus">−0,03%</td>
+<td>50&thinsp;217</td>
+<td class="minus">−25</td>
+<td class="minus">−0,05%</td>
+<td>50&thinsp;192</td>
+<td class="plus">193</td>
+<td class="plus">0,38%</td>
+<td>50&thinsp;385</td>
+<td class="plus">37</td>
+<td class="plus">0,07%</td>
+<td>50&thinsp;422</td>
+<td class="minus">−908</td>
+<td class="less">−1,80%</td>
+<td>49&thinsp;514</td>
+</tr>
+
+<tr>
+<th>Войковский район</th>
+<td>43&thinsp;752</td>
+<td class="minus">−133</td>
+<td class="minus">−0,30%</td>
+<td>43&thinsp;619</td>
+<td class="plus">84</td>
+<td class="plus">0,19%</td>
+<td>43&thinsp;703</td>
+<td class="minus">−112</td>
+<td class="minus">−0,26%</td>
+<td>43&thinsp;591</td>
+<td class="minus">−1&thinsp;613</td>
+<td class="less">−3,70%</td>
+<td>41&thinsp;978</td>
+<td class="plus">1&thinsp;405</td>
+<td class="more">3,35%</td>
+<td>43&thinsp;383</td>
+<td class="minus">−147</td>
+<td class="minus">−0,34%</td>
+<td>43&thinsp;236</td>
+<td class="minus">−243</td>
+<td class="minus">−0,56%</td>
+<td>42&thinsp;993</td>
+<td class="minus">−40</td>
+<td class="minus">−0,09%</td>
+<td>42&thinsp;953</td>
+<td class="minus">−131</td>
+<td class="minus">−0,30%</td>
+<td>42&thinsp;822</td>
+<td class="minus">−76</td>
+<td class="minus">−0,18%</td>
+<td>42&thinsp;746</td>
+<td class="plus">3</td>
+<td class="plus">0,01%</td>
+<td>42&thinsp;749</td>
+<td class="minus">−598</td>
+<td class="less">−1,40%</td>
+<td>42&thinsp;151</td>
+</tr>
+
+<tr>
+<th>район Восточное Дегунино</th>
+<td>60&thinsp;459</td>
+<td class="plus">240</td>
+<td class="plus">0,40%</td>
+<td>60&thinsp;699</td>
+<td class="minus">−17</td>
+<td class="minus">−0,03%</td>
+<td>60&thinsp;682</td>
+<td class="minus">−236</td>
+<td class="minus">−0,39%</td>
+<td>60&thinsp;446</td>
+<td class="minus">−971</td>
+<td class="less">−1,61%</td>
+<td>59&thinsp;475</td>
+<td class="plus">1&thinsp;114</td>
+<td class="more">1,87%</td>
+<td>60&thinsp;589</td>
+<td class="minus">−132</td>
+<td class="minus">−0,22%</td>
+<td>60&thinsp;457</td>
+<td class="minus">−481</td>
+<td class="minus">−0,80%</td>
+<td>59&thinsp;976</td>
+<td class="plus">352</td>
+<td class="plus">0,59%</td>
+<td>60&thinsp;328</td>
+<td class="minus">−121</td>
+<td class="minus">−0,20%</td>
+<td>60&thinsp;207</td>
+<td class="plus">238</td>
+<td class="plus">0,40%</td>
+<td>60&thinsp;445</td>
+<td class="plus">12</td>
+<td class="plus">0,02%</td>
+<td>60&thinsp;457</td>
+<td class="minus">−1&thinsp;088</td>
+<td class="less">−1,80%</td>
+<td>59&thinsp;369</td>
+</tr>
+
+<tr>
+<th>Головинский район</th>
+<td>67&thinsp;288</td>
+<td class="minus">−285</td>
+<td class="minus">−0,42%</td>
+<td>67&thinsp;003</td>
+<td class="minus">−277</td>
+<td class="minus">−0,41%</td>
+<td>66&thinsp;726</td>
+<td class="minus">−306</td>
+<td class="minus">−0,46%</td>
+<td>66&thinsp;420</td>
+<td class="minus">−111</td>
+<td class="minus">−0,17%</td>
+<td>66&thinsp;309</td>
+<td class="plus">56</td>
+<td class="plus">0,08%</td>
+<td>66&thinsp;365</td>
+<td class="minus">−492</td>
+<td class="minus">−0,74%</td>
+<td>65&thinsp;873</td>
+<td class="minus">−170</td>
+<td class="minus">−0,26%</td>
+<td>65&thinsp;703</td>
+<td class="minus">−387</td>
+<td class="minus">−0,59%</td>
+<td>65&thinsp;316</td>
+<td class="minus">−385</td>
+<td class="minus">−0,59%</td>
+<td>64&thinsp;931</td>
+<td class="minus">−105</td>
+<td class="minus">−0,16%</td>
+<td>64&thinsp;826</td>
+<td class="plus">148</td>
+<td class="plus">0,23%</td>
+<td>64&thinsp;974</td>
+<td class="minus">−1&thinsp;170</td>
+<td class="less">−1,80%</td>
+<td>63&thinsp;804</td>
+</tr>
+
+<tr>
+<th>Дмитровский район</th>
+<td>55&thinsp;136</td>
+<td class="plus">339</td>
+<td class="plus">0,61%</td>
+<td>55&thinsp;475</td>
+<td class="minus">−613</td>
+<td class="less">−1,11%</td>
+<td>54&thinsp;862</td>
+<td class="plus">331</td>
+<td class="plus">0,60%</td>
+<td>55&thinsp;193</td>
+<td class="minus">−1&thinsp;461</td>
+<td class="less">−2,65%</td>
+<td>53&thinsp;732</td>
+<td class="minus">−84</td>
+<td class="minus">−0,16%</td>
+<td>53&thinsp;648</td>
+<td class="plus">75</td>
+<td class="plus">0,14%</td>
+<td>53&thinsp;723</td>
+<td class="minus">−116</td>
+<td class="minus">−0,22%</td>
+<td>53&thinsp;607</td>
+<td class="minus">−99</td>
+<td class="minus">−0,18%</td>
+<td>53&thinsp;508</td>
+<td class="minus">−78</td>
+<td class="minus">−0,15%</td>
+<td>53&thinsp;430</td>
+<td class="plus">839</td>
+<td class="more">1,57%</td>
+<td>54&thinsp;269</td>
+<td class="minus">−31</td>
+<td class="minus">−0,06%</td>
+<td>54&thinsp;238</td>
+<td class="minus">−976</td>
+<td class="less">−1,80%</td>
+<td>53&thinsp;262</td>
+</tr>
+
+<tr>
+<th>район Западное Дегунино</th>
+<td>51&thinsp;973</td>
+<td class="plus">343</td>
+<td class="plus">0,66%</td>
+<td>52&thinsp;316</td>
+<td class="minus">−21</td>
+<td class="minus">−0,04%</td>
+<td>52&thinsp;295</td>
+<td class="plus">251</td>
+<td class="plus">0,48%</td>
+<td>52&thinsp;546</td>
+<td class="minus">−617</td>
+<td class="less">−1,17%</td>
+<td>51&thinsp;929</td>
+<td class="plus">391</td>
+<td class="plus">0,75%</td>
+<td>52&thinsp;320</td>
+<td class="plus">728</td>
+<td class="more">1,39%</td>
+<td>53&thinsp;048</td>
+<td class="plus">129</td>
+<td class="plus">0,24%</td>
+<td>53&thinsp;177</td>
+<td class="plus">38</td>
+<td class="plus">0,07%</td>
+<td>53&thinsp;215</td>
+<td class="plus">35</td>
+<td class="plus">0,07%</td>
+<td>53&thinsp;250</td>
+<td class="plus">75</td>
+<td class="plus">0,14%</td>
+<td>53&thinsp;325</td>
+<td class="minus">−8</td>
+<td class="minus">−0,02%</td>
+<td>53&thinsp;317</td>
+<td class="minus">−746</td>
+<td class="less">−1,40%</td>
+<td>52&thinsp;571</td>
+</tr>
+
+<tr>
+<th>район Коптево</th>
+<td>60&thinsp;660</td>
+<td class="minus">−116</td>
+<td class="minus">−0,19%</td>
+<td>60&thinsp;544</td>
+<td class="plus">191</td>
+<td class="plus">0,32%</td>
+<td>60&thinsp;735</td>
+<td class="plus">45</td>
+<td class="plus">0,07%</td>
+<td>60&thinsp;780</td>
+<td class="minus">−2&thinsp;516</td>
+<td class="less">−4,14%</td>
+<td>58&thinsp;264</td>
+<td class="plus">2&thinsp;289</td>
+<td class="more">3,93%</td>
+<td>60&thinsp;553</td>
+<td class="plus">96</td>
+<td class="plus">0,16%</td>
+<td>60&thinsp;649</td>
+<td class="plus">200</td>
+<td class="plus">0,33%</td>
+<td>60&thinsp;849</td>
+<td class="minus">−25</td>
+<td class="minus">−0,04%</td>
+<td>60&thinsp;824</td>
+<td class="plus">116</td>
+<td class="plus">0,19%</td>
+<td>60&thinsp;940</td>
+<td class="plus">238</td>
+<td class="plus">0,39%</td>
+<td>61&thinsp;178</td>
+<td class="plus">90</td>
+<td class="plus">0,15%</td>
+<td>61&thinsp;268</td>
+<td class="minus">−1&thinsp;103</td>
+<td class="less">−1,80%</td>
+<td>60&thinsp;165</td>
+</tr>
+
+<tr>
+<th>район Левобережный</th>
+<td>30&thinsp;630</td>
+<td class="plus">512</td>
+<td class="more">1,67%</td>
+<td>31&thinsp;142</td>
+<td class="minus">−831</td>
+<td class="less">−2,67%</td>
+<td>30&thinsp;311</td>
+<td class="plus">357</td>
+<td class="more">1,18%</td>
+<td>30&thinsp;668</td>
+<td class="minus">−2&thinsp;544</td>
+<td class="less">−8,30%</td>
+<td>28&thinsp;124</td>
+<td class="plus">2&thinsp;724</td>
+<td class="more">9,69%</td>
+<td>30&thinsp;848</td>
+<td class="plus">158</td>
+<td class="plus">0,51%</td>
+<td>31&thinsp;006</td>
+<td class="minus">−140</td>
+<td class="minus">−0,45%</td>
+<td>30&thinsp;866</td>
+<td class="plus">61</td>
+<td class="plus">0,20%</td>
+<td>30&thinsp;927</td>
+<td class="plus">66</td>
+<td class="plus">0,21%</td>
+<td>30&thinsp;993</td>
+<td class="plus">87</td>
+<td class="plus">0,28%</td>
+<td>31&thinsp;080</td>
+<td class="plus">723</td>
+<td class="more">2,33%</td>
+<td>31&thinsp;803</td>
+<td class="minus">−572</td>
+<td class="less">−1,80%</td>
+<td>31&thinsp;231</td>
+</tr>
+
+<tr>
+<th>Молжаниновский район</th>
+<td>1&thinsp;992</td>
+<td class="plus">21</td>
+<td class="more">1,1%</td>
+<td>2&thinsp;013</td>
+<td class="minus">−12</td>
+<td class="minus">−0,6%</td>
+<td>2&thinsp;001</td>
+<td class="plus">20</td>
+<td class="plus">1,0%</td>
+<td>2&thinsp;021</td>
+<td class="plus">22</td>
+<td class="more">1,1%</td>
+<td>2&thinsp;043</td>
+<td class="plus">31</td>
+<td class="more">1,5%</td>
+<td>2&thinsp;074</td>
+<td class="plus">7</td>
+<td class="plus">0,3%</td>
+<td>2&thinsp;081</td>
+<td class="plus">58</td>
+<td class="more">2,8%</td>
+<td>2&thinsp;139</td>
+<td class="plus">55</td>
+<td class="more">2,6%</td>
+<td>2&thinsp;194</td>
+<td class="minus">−42</td>
+<td class="less">−1,9%</td>
+<td>2&thinsp;152</td>
+<td class="minus">−135</td>
+<td class="less">−6,3%</td>
+<td>2&thinsp;017</td>
+<td class="minus">−7</td>
+<td class="minus">−0,3%</td>
+<td>2&thinsp;010</td>
+<td class="minus">−36</td>
+<td class="less">−1,8%</td>
+<td>1&thinsp;974</td>
+</tr>
+
+<tr>
+<th>Савеловский район</th>
+<td>38&thinsp;104</td>
+<td class="plus">45</td>
+<td class="plus">0,12%</td>
+<td>38&thinsp;149</td>
+<td class="plus">95</td>
+<td class="plus">0,25%</td>
+<td>38&thinsp;244</td>
+<td class="minus">−313</td>
+<td class="minus">−0,82%</td>
+<td>37&thinsp;931</td>
+<td class="minus">−235</td>
+<td class="minus">−0,62%</td>
+<td>37&thinsp;696</td>
+<td class="plus">21</td>
+<td class="plus">0,06%</td>
+<td>37&thinsp;717</td>
+<td class="minus">−202</td>
+<td class="minus">−0,54%</td>
+<td>37&thinsp;515</td>
+<td class="minus">−114</td>
+<td class="minus">−0,30%</td>
+<td>37&thinsp;401</td>
+<td class="minus">−245</td>
+<td class="minus">−0,66%</td>
+<td>37&thinsp;156</td>
+<td class="plus">328</td>
+<td class="plus">0,88%</td>
+<td>37&thinsp;484</td>
+<td class="plus">715</td>
+<td class="more">1,91%</td>
+<td>38&thinsp;199</td>
+<td class="minus">−121</td>
+<td class="minus">−0,32%</td>
+<td>38&thinsp;078</td>
+<td class="minus">−685</td>
+<td class="less">−1,80%</td>
+<td>37&thinsp;393</td>
+</tr>
+
+<tr>
+<th>район Сокол</th>
+<td>31&thinsp;986</td>
+<td class="plus">48</td>
+<td class="plus">0,15%</td>
+<td>32&thinsp;034</td>
+<td class="minus">−58</td>
+<td class="minus">−0,18%</td>
+<td>31&thinsp;976</td>
+<td class="minus">−129</td>
+<td class="minus">−0,40%</td>
+<td>31&thinsp;847</td>
+<td class="minus">−263</td>
+<td class="minus">−0,83%</td>
+<td>31&thinsp;584</td>
+<td class="plus">196</td>
+<td class="plus">0,62%</td>
+<td>31&thinsp;780</td>
+<td class="minus">−47</td>
+<td class="minus">−0,15%</td>
+<td>31&thinsp;733</td>
+<td class="minus">−176</td>
+<td class="minus">−0,55%</td>
+<td>31&thinsp;557</td>
+<td class="minus">−125</td>
+<td class="minus">−0,40%</td>
+<td>31&thinsp;432</td>
+<td class="plus">121</td>
+<td class="plus">0,38%</td>
+<td>31&thinsp;553</td>
+<td class="minus">−90</td>
+<td class="minus">−0,29%</td>
+<td>31&thinsp;463</td>
+<td class="minus">−14</td>
+<td class="minus">−0,04%</td>
+<td>31&thinsp;449</td>
+<td class="minus">−566</td>
+<td class="less">−1,80%</td>
+<td>30&thinsp;883</td>
+</tr>
+
+<tr>
+<th>Тимирязевский район</th>
+<td>51&thinsp;128</td>
+<td class="plus">280</td>
+<td class="plus">0,55%</td>
+<td>51&thinsp;408</td>
+<td class="minus">−28</td>
+<td class="minus">−0,05%</td>
+<td>51&thinsp;380</td>
+<td class="minus">−51</td>
+<td class="minus">−0,10%</td>
+<td>51&thinsp;329</td>
+<td class="minus">−725</td>
+<td class="less">−1,41%</td>
+<td>50&thinsp;604</td>
+<td class="plus">454</td>
+<td class="plus">0,90%</td>
+<td>51&thinsp;058</td>
+<td class="minus">−103</td>
+<td class="minus">−0,20%</td>
+<td>50&thinsp;955</td>
+<td class="minus">−52</td>
+<td class="minus">−0,10%</td>
+<td>50&thinsp;903</td>
+<td class="minus">−393</td>
+<td class="minus">−0,77%</td>
+<td>50&thinsp;510</td>
+<td class="minus">−301</td>
+<td class="minus">−0,60%</td>
+<td>50&thinsp;209</td>
+<td class="plus">33</td>
+<td class="plus">0,07%</td>
+<td>50&thinsp;242</td>
+<td class="plus">57</td>
+<td class="plus">0,11%</td>
+<td>50&thinsp;299</td>
+<td class="minus">−905</td>
+<td class="less">−1,80%</td>
+<td>49&thinsp;394</td>
+</tr>
+
+<tr>
+<th>район Ховрино</th>
+<td>56&thinsp;304</td>
+<td class="plus">378</td>
+<td class="plus">0,67%</td>
+<td>56&thinsp;682</td>
+<td class="plus">254</td>
+<td class="plus">0,45%</td>
+<td>56&thinsp;936</td>
+<td class="plus">55</td>
+<td class="plus">0,10%</td>
+<td>56&thinsp;991</td>
+<td class="minus">−7</td>
+<td class="minus">−0,01%</td>
+<td>56&thinsp;984</td>
+<td class="minus">−531</td>
+<td class="minus">−0,93%</td>
+<td>56&thinsp;453</td>
+<td class="minus">−311</td>
+<td class="minus">−0,55%</td>
+<td>56&thinsp;142</td>
+<td class="minus">−140</td>
+<td class="minus">−0,25%</td>
+<td>56&thinsp;002</td>
+<td class="minus">−1&thinsp;030</td>
+<td class="less">−1,84%</td>
+<td>54&thinsp;972</td>
+<td class="plus">18</td>
+<td class="plus">0,03%</td>
+<td>54&thinsp;990</td>
+<td class="plus">489</td>
+<td class="plus">0,89%</td>
+<td>55&thinsp;479</td>
+<td class="plus">751</td>
+<td class="more">1,35%</td>
+<td>56&thinsp;230</td>
+<td class="minus">−787</td>
+<td class="less">−1,40%</td>
+<td>55&thinsp;443</td>
+</tr>
+
+<tr>
+<th>Хорошевский район</th>
+<td>39&thinsp;077</td>
+<td class="plus">230</td>
+<td class="plus">0,59%</td>
+<td>39&thinsp;307</td>
+<td class="minus">−66</td>
+<td class="minus">−0,17%</td>
+<td>39&thinsp;241</td>
+<td class="plus">1&thinsp;220</td>
+<td class="more">3,11%</td>
+<td>40&thinsp;461</td>
+<td class="plus">747</td>
+<td class="more">1,85%</td>
+<td>41&thinsp;208</td>
+<td class="minus">−139</td>
+<td class="minus">−0,34%</td>
+<td>41&thinsp;069</td>
+<td class="plus">527</td>
+<td class="more">1,28%</td>
+<td>41&thinsp;596</td>
+<td class="plus">280</td>
+<td class="plus">0,67%</td>
+<td>41&thinsp;876</td>
+<td class="minus">−1&thinsp;953</td>
+<td class="less">−4,66%</td>
+<td>39&thinsp;923</td>
+<td class="plus">2&thinsp;273</td>
+<td class="more">5,69%</td>
+<td>42&thinsp;196</td>
+<td class="plus">552</td>
+<td class="more">1,31%</td>
+<td>42&thinsp;748</td>
+<td class="plus">199</td>
+<td class="plus">0,47%</td>
+<td>42&thinsp;947</td>
+<td class="minus">−2&thinsp;454</td>
+<td class="less">−5,71%</td>
+<td>40&thinsp;493</td>
+</tr>
+
+<tr class="sum">
+<th>Итого по Северному административному округу</th>
+<td>708&thinsp;257</td>
+<td class="plus">3&thinsp;625</td>
+<td class="plus">0,51%</td>
+<td>711&thinsp;882</td>
+<td class="minus">−1&thinsp;740</td>
+<td class="minus">−0,24%</td>
+<td>710&thinsp;142</td>
+<td class="plus">612</td>
+<td class="plus">0,09%</td>
+<td>710&thinsp;754</td>
+<td class="minus">−16&thinsp;199</td>
+<td class="less">−2,28%</td>
+<td>694&thinsp;555</td>
+<td class="plus">9&thinsp;752</td>
+<td class="more">1,40%</td>
+<td>704&thinsp;307</td>
+<td class="plus">1&thinsp;093</td>
+<td class="plus">0,16%</td>
+<td>705&thinsp;400</td>
+<td class="minus">−1&thinsp;528</td>
+<td class="minus">−0,22%</td>
+<td>703&thinsp;872</td>
+<td class="minus">−3&thinsp;401</td>
+<td class="minus">−0,48%</td>
+<td>700&thinsp;471</td>
+<td class="plus">1&thinsp;607</td>
+<td class="plus">0,23%</td>
+<td>702&thinsp;078</td>
+<td class="plus">2&thinsp;830</td>
+<td class="plus">0,40%</td>
+<td>704&thinsp;908</td>
+<td class="plus">1&thinsp;657</td>
+<td class="plus">0,24%</td>
+<td>706&thinsp;565</td>
+<td class="minus">−13&thinsp;618</td>
+<td class="less">−1,93%</td>
+<td>692&thinsp;947</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="empty">
+<th>Северо-Восточный административный округ</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>Алексеевский район</th>
+<td>42&thinsp;357</td>
+<td class="minus">−196</td>
+<td class="minus">−0,46%</td>
+<td>42&thinsp;161</td>
+<td class="minus">−130</td>
+<td class="minus">−0,31%</td>
+<td>42&thinsp;031</td>
+<td class="minus">−147</td>
+<td class="minus">−0,35%</td>
+<td>41&thinsp;884</td>
+<td class="minus">−247</td>
+<td class="minus">−0,59%</td>
+<td>41&thinsp;637</td>
+<td class="plus">19</td>
+<td class="plus">0,05%</td>
+<td>41&thinsp;656</td>
+<td class="minus">−564</td>
+<td class="less">−1,35%</td>
+<td>41&thinsp;092</td>
+<td class="plus">85</td>
+<td class="plus">0,21%</td>
+<td>41&thinsp;177</td>
+<td class="minus">−466</td>
+<td class="less">−1,13%</td>
+<td>40&thinsp;711</td>
+<td class="minus">−202</td>
+<td class="minus">−0,50%</td>
+<td>40&thinsp;509</td>
+<td class="plus">205</td>
+<td class="plus">0,51%</td>
+<td>40&thinsp;714</td>
+<td class="minus">−140</td>
+<td class="minus">−0,34%</td>
+<td>40&thinsp;574</td>
+<td class="minus">−904</td>
+<td class="less">−2,23%</td>
+<td>39&thinsp;670</td>
+</tr>
+
+<tr>
+<th>Алтуфьевский район</th>
+<td>34&thinsp;614</td>
+<td class="minus">−147</td>
+<td class="minus">−0,42%</td>
+<td>34&thinsp;467</td>
+<td class="plus">180</td>
+<td class="plus">0,52%</td>
+<td>34&thinsp;647</td>
+<td class="plus">11</td>
+<td class="plus">0,03%</td>
+<td>34&thinsp;658</td>
+<td class="minus">−150</td>
+<td class="minus">−0,43%</td>
+<td>34&thinsp;508</td>
+<td class="minus">−56</td>
+<td class="minus">−0,16%</td>
+<td>34&thinsp;452</td>
+<td class="minus">−160</td>
+<td class="minus">−0,46%</td>
+<td>34&thinsp;292</td>
+<td class="minus">−296</td>
+<td class="minus">−0,86%</td>
+<td>33&thinsp;996</td>
+<td class="minus">−167</td>
+<td class="minus">−0,49%</td>
+<td>33&thinsp;829</td>
+<td class="plus">49</td>
+<td class="plus">0,14%</td>
+<td>33&thinsp;878</td>
+<td class="plus">132</td>
+<td class="plus">0,39%</td>
+<td>34&thinsp;010</td>
+<td class="plus">45</td>
+<td class="plus">0,13%</td>
+<td>34&thinsp;055</td>
+<td class="minus">−643</td>
+<td class="less">−1,89%</td>
+<td>33&thinsp;412</td>
+</tr>
+
+<tr>
+<th>Бабушкинский район</th>
+<td>60&thinsp;690</td>
+<td class="minus">−133</td>
+<td class="minus">−0,22%</td>
+<td>60&thinsp;557</td>
+<td class="minus">−151</td>
+<td class="minus">−0,25%</td>
+<td>60&thinsp;406</td>
+<td class="plus">46</td>
+<td class="plus">0,08%</td>
+<td>60&thinsp;452</td>
+<td class="minus">−691</td>
+<td class="less">−1,14%</td>
+<td>59&thinsp;761</td>
+<td class="minus">−669</td>
+<td class="less">−1,12%</td>
+<td>59&thinsp;092</td>
+<td class="plus">58</td>
+<td class="plus">0,10%</td>
+<td>59&thinsp;150</td>
+<td class="plus">179</td>
+<td class="plus">0,30%</td>
+<td>59&thinsp;329</td>
+<td class="minus">−710</td>
+<td class="less">−1,20%</td>
+<td>58&thinsp;619</td>
+<td class="minus">−209</td>
+<td class="minus">−0,36%</td>
+<td>58&thinsp;410</td>
+<td class="plus">220</td>
+<td class="plus">0,38%</td>
+<td>58&thinsp;630</td>
+<td class="plus">8</td>
+<td class="plus">0,01%</td>
+<td>58&thinsp;638</td>
+<td class="minus">−1&thinsp;485</td>
+<td class="less">−2,53%</td>
+<td>57&thinsp;153</td>
+</tr>
+
+<tr>
+<th>район Бибирево</th>
+<td>105&thinsp;974</td>
+<td class="minus">−229</td>
+<td class="minus">−0,22%</td>
+<td>105&thinsp;745</td>
+<td class="plus">110</td>
+<td class="plus">0,10%</td>
+<td>105&thinsp;855</td>
+<td class="minus">−27</td>
+<td class="minus">−0,03%</td>
+<td>105&thinsp;828</td>
+<td class="minus">−969</td>
+<td class="minus">−0,92%</td>
+<td>104&thinsp;859</td>
+<td class="minus">−149</td>
+<td class="minus">−0,14%</td>
+<td>104&thinsp;710</td>
+<td class="minus">−672</td>
+<td class="minus">−0,64%</td>
+<td>104&thinsp;038</td>
+<td class="plus">25</td>
+<td class="plus">0,02%</td>
+<td>104&thinsp;063</td>
+<td class="minus">−703</td>
+<td class="minus">−0,68%</td>
+<td>103&thinsp;360</td>
+<td class="minus">−754</td>
+<td class="minus">−0,73%</td>
+<td>102&thinsp;606</td>
+<td class="plus">497</td>
+<td class="plus">0,48%</td>
+<td>103&thinsp;103</td>
+<td class="minus">−102</td>
+<td class="minus">−0,10%</td>
+<td>103&thinsp;001</td>
+<td class="minus">−439</td>
+<td class="minus">−0,43%</td>
+<td>102&thinsp;562</td>
+</tr>
+
+<tr>
+<th>Бутырский район</th>
+<td>40&thinsp;335</td>
+<td class="minus">−169</td>
+<td class="minus">−0,42%</td>
+<td>40&thinsp;166</td>
+<td class="plus">165</td>
+<td class="plus">0,41%</td>
+<td>40&thinsp;331</td>
+<td class="plus">12</td>
+<td class="plus">0,03%</td>
+<td>40&thinsp;343</td>
+<td class="minus">−260</td>
+<td class="minus">−0,64%</td>
+<td>40&thinsp;083</td>
+<td class="minus">−412</td>
+<td class="less">−1,03%</td>
+<td>39&thinsp;671</td>
+<td class="minus">−234</td>
+<td class="minus">−0,59%</td>
+<td>39&thinsp;437</td>
+<td class="minus">−245</td>
+<td class="minus">−0,62%</td>
+<td>39&thinsp;192</td>
+<td class="plus">23</td>
+<td class="plus">0,06%</td>
+<td>39&thinsp;215</td>
+<td class="minus">−69</td>
+<td class="minus">−0,18%</td>
+<td>39&thinsp;146</td>
+<td class="minus">−6</td>
+<td class="minus">−0,02%</td>
+<td>39&thinsp;140</td>
+<td class="plus">33</td>
+<td class="plus">0,08%</td>
+<td>39&thinsp;173</td>
+<td class="minus">−827</td>
+<td class="less">−2,11%</td>
+<td>38&thinsp;346</td>
+</tr>
+
+<tr>
+<th>район Лианозово</th>
+<td>54&thinsp;673</td>
+<td class="minus">−151</td>
+<td class="minus">−0,28%</td>
+<td>54&thinsp;522</td>
+<td class="plus">323</td>
+<td class="plus">0,59%</td>
+<td>54&thinsp;845</td>
+<td class="plus">328</td>
+<td class="plus">0,60%</td>
+<td>55&thinsp;173</td>
+<td class="plus">391</td>
+<td class="plus">0,71%</td>
+<td>55&thinsp;564</td>
+<td class="minus">−169</td>
+<td class="minus">−0,30%</td>
+<td>55&thinsp;395</td>
+<td class="minus">−225</td>
+<td class="minus">−0,41%</td>
+<td>55&thinsp;170</td>
+<td class="plus">114</td>
+<td class="plus">0,21%</td>
+<td>55&thinsp;284</td>
+<td class="plus">192</td>
+<td class="plus">0,35%</td>
+<td>55&thinsp;476</td>
+<td class="plus">143</td>
+<td class="plus">0,26%</td>
+<td>55&thinsp;619</td>
+<td class="plus">253</td>
+<td class="plus">0,45%</td>
+<td>55&thinsp;872</td>
+<td class="plus">140</td>
+<td class="plus">0,25%</td>
+<td>56&thinsp;012</td>
+<td class="minus">−1&thinsp;175</td>
+<td class="less">−2,10%</td>
+<td>54&thinsp;837</td>
+</tr>
+
+<tr>
+<th>Лосиноостровский район</th>
+<td>57&thinsp;037</td>
+<td class="plus">17</td>
+<td class="plus">0,03%</td>
+<td>57&thinsp;054</td>
+<td class="minus">−60</td>
+<td class="minus">−0,11%</td>
+<td>56&thinsp;994</td>
+<td class="plus">58</td>
+<td class="plus">0,10%</td>
+<td>57&thinsp;052</td>
+<td class="minus">−335</td>
+<td class="minus">−0,59%</td>
+<td>56&thinsp;717</td>
+<td class="minus">−330</td>
+<td class="minus">−0,58%</td>
+<td>56&thinsp;387</td>
+<td class="minus">−285</td>
+<td class="minus">−0,51%</td>
+<td>56&thinsp;102</td>
+<td class="minus">−94</td>
+<td class="minus">−0,17%</td>
+<td>56&thinsp;008</td>
+<td class="minus">−62</td>
+<td class="minus">−0,11%</td>
+<td>55&thinsp;946</td>
+<td class="minus">−99</td>
+<td class="minus">−0,18%</td>
+<td>55&thinsp;847</td>
+<td class="plus">104</td>
+<td class="plus">0,19%</td>
+<td>55&thinsp;951</td>
+<td class="plus">25</td>
+<td class="plus">0,04%</td>
+<td>55&thinsp;976</td>
+<td class="minus">−1&thinsp;114</td>
+<td class="less">−1,99%</td>
+<td>54&thinsp;862</td>
+</tr>
+
+<tr>
+<th>район Марфино</th>
+<td>16&thinsp;172</td>
+<td class="minus">−255</td>
+<td class="less">−1,58%</td>
+<td>15&thinsp;917</td>
+<td class="plus">311</td>
+<td class="more">1,95%</td>
+<td>16&thinsp;228</td>
+<td class="minus">−20</td>
+<td class="minus">−0,12%</td>
+<td>16&thinsp;208</td>
+<td class="plus">11</td>
+<td class="plus">0,07%</td>
+<td>16&thinsp;219</td>
+<td class="plus">1&thinsp;000</td>
+<td class="more">6,17%</td>
+<td>17&thinsp;219</td>
+<td class="plus">255</td>
+<td class="more">1,48%</td>
+<td>17&thinsp;474</td>
+<td class="plus">540</td>
+<td class="more">3,09%</td>
+<td>18&thinsp;014</td>
+<td class="plus">618</td>
+<td class="more">3,43%</td>
+<td>18&thinsp;632</td>
+<td class="minus">−146</td>
+<td class="minus">−0,78%</td>
+<td>18&thinsp;486</td>
+<td class="plus">659</td>
+<td class="more">3,56%</td>
+<td>19&thinsp;145</td>
+<td class="plus">227</td>
+<td class="more">1,19%</td>
+<td>19&thinsp;372</td>
+<td class="minus">−112</td>
+<td class="minus">−0,58%</td>
+<td>19&thinsp;260</td>
+</tr>
+
+<tr>
+<th>район Марьина роща</th>
+<td>37&thinsp;730</td>
+<td class="plus">7</td>
+<td class="plus">0,02%</td>
+<td>37&thinsp;737</td>
+<td class="plus">41</td>
+<td class="plus">0,11%</td>
+<td>37&thinsp;778</td>
+<td class="minus">−8</td>
+<td class="minus">−0,02%</td>
+<td>37&thinsp;770</td>
+<td class="minus">−231</td>
+<td class="minus">−0,61%</td>
+<td>37&thinsp;539</td>
+<td class="minus">−503</td>
+<td class="less">−1,34%</td>
+<td>37&thinsp;036</td>
+<td class="minus">−76</td>
+<td class="minus">−0,21%</td>
+<td>36&thinsp;960</td>
+<td class="minus">−216</td>
+<td class="minus">−0,58%</td>
+<td>36&thinsp;744</td>
+<td class="minus">−77</td>
+<td class="minus">−0,21%</td>
+<td>36&thinsp;667</td>
+<td class="minus">−285</td>
+<td class="minus">−0,78%</td>
+<td>36&thinsp;382</td>
+<td class="plus">94</td>
+<td class="plus">0,26%</td>
+<td>36&thinsp;476</td>
+<td class="plus">16</td>
+<td class="plus">0,04%</td>
+<td>36&thinsp;492</td>
+<td class="minus">−813</td>
+<td class="less">−2,23%</td>
+<td>35&thinsp;679</td>
+</tr>
+
+<tr>
+<th>Останкинский район</th>
+<td>37&thinsp;174</td>
+<td class="minus">−151</td>
+<td class="minus">−0,41%</td>
+<td>37&thinsp;023</td>
+<td class="plus">151</td>
+<td class="plus">0,41%</td>
+<td>37&thinsp;174</td>
+<td class="minus">−46</td>
+<td class="minus">−0,12%</td>
+<td>37&thinsp;128</td>
+<td class="minus">−312</td>
+<td class="minus">−0,84%</td>
+<td>36&thinsp;816</td>
+<td class="minus">−73</td>
+<td class="minus">−0,20%</td>
+<td>36&thinsp;743</td>
+<td class="minus">−166</td>
+<td class="minus">−0,45%</td>
+<td>36&thinsp;577</td>
+<td class="minus">−184</td>
+<td class="minus">−0,50%</td>
+<td>36&thinsp;393</td>
+<td class="minus">−299</td>
+<td class="minus">−0,82%</td>
+<td>36&thinsp;094</td>
+<td class="minus">−214</td>
+<td class="minus">−0,59%</td>
+<td>35&thinsp;880</td>
+<td class="plus">260</td>
+<td class="plus">0,72%</td>
+<td>36&thinsp;140</td>
+<td class="minus">−368</td>
+<td class="less">−1,02%</td>
+<td>35&thinsp;772</td>
+<td class="minus">−756</td>
+<td class="less">−2,11%</td>
+<td>35&thinsp;016</td>
+</tr>
+
+<tr>
+<th>район Отрадное</th>
+<td>124&thinsp;088</td>
+<td class="minus">−212</td>
+<td class="minus">−0,17%</td>
+<td>123&thinsp;876</td>
+<td class="plus">138</td>
+<td class="plus">0,11%</td>
+<td>124&thinsp;014</td>
+<td class="minus">−494</td>
+<td class="minus">−0,40%</td>
+<td>123&thinsp;520</td>
+<td class="minus">−634</td>
+<td class="minus">−0,51%</td>
+<td>122&thinsp;886</td>
+<td class="minus">−2&thinsp;245</td>
+<td class="less">−1,83%</td>
+<td>120&thinsp;641</td>
+<td class="plus">1&thinsp;336</td>
+<td class="more">1,11%</td>
+<td>121&thinsp;977</td>
+<td class="plus">124</td>
+<td class="plus">0,10%</td>
+<td>122&thinsp;101</td>
+<td class="minus">−784</td>
+<td class="minus">−0,64%</td>
+<td>121&thinsp;317</td>
+<td class="minus">−370</td>
+<td class="minus">−0,30%</td>
+<td>120&thinsp;947</td>
+<td class="plus">413</td>
+<td class="plus">0,34%</td>
+<td>121&thinsp;360</td>
+<td class="plus">115</td>
+<td class="plus">0,09%</td>
+<td>121&thinsp;475</td>
+<td class="minus">−2&thinsp;022</td>
+<td class="less">−1,66%</td>
+<td>119&thinsp;453</td>
+</tr>
+
+<tr>
+<th>район Ростокино</th>
+<td>22&thinsp;642</td>
+<td class="minus">−63</td>
+<td class="minus">−0,28%</td>
+<td>22&thinsp;579</td>
+<td class="minus">−47</td>
+<td class="minus">−0,21%</td>
+<td>22&thinsp;532</td>
+<td class="plus">37</td>
+<td class="plus">0,16%</td>
+<td>22&thinsp;569</td>
+<td class="minus">−55</td>
+<td class="minus">−0,24%</td>
+<td>22&thinsp;514</td>
+<td class="minus">−40</td>
+<td class="minus">−0,18%</td>
+<td>22&thinsp;474</td>
+<td class="plus">82</td>
+<td class="plus">0,36%</td>
+<td>22&thinsp;556</td>
+<td class="plus">77</td>
+<td class="plus">0,34%</td>
+<td>22&thinsp;633</td>
+<td class="minus">−98</td>
+<td class="minus">−0,43%</td>
+<td>22&thinsp;535</td>
+<td class="minus">−71</td>
+<td class="minus">−0,32%</td>
+<td>22&thinsp;464</td>
+<td class="plus">67</td>
+<td class="plus">0,30%</td>
+<td>22&thinsp;531</td>
+<td class="minus">−74</td>
+<td class="minus">−0,33%</td>
+<td>22&thinsp;457</td>
+<td class="minus">−466</td>
+<td class="less">−2,08%</td>
+<td>21&thinsp;991</td>
+</tr>
+
+<tr>
+<th>район Свиблово</th>
+<td>34&thinsp;227</td>
+<td class="plus">166</td>
+<td class="plus">0,48%</td>
+<td>34&thinsp;393</td>
+<td class="plus">151</td>
+<td class="plus">0,44%</td>
+<td>34&thinsp;544</td>
+<td class="plus">14</td>
+<td class="plus">0,04%</td>
+<td>34&thinsp;558</td>
+<td class="minus">−563</td>
+<td class="less">−1,63%</td>
+<td>33&thinsp;995</td>
+<td class="minus">−321</td>
+<td class="minus">−0,94%</td>
+<td>33&thinsp;674</td>
+<td class="plus">79</td>
+<td class="plus">0,23%</td>
+<td>33&thinsp;753</td>
+<td class="plus">143</td>
+<td class="plus">0,42%</td>
+<td>33&thinsp;896</td>
+<td class="minus">−107</td>
+<td class="minus">−0,32%</td>
+<td>33&thinsp;789</td>
+<td class="minus">−108</td>
+<td class="minus">−0,32%</td>
+<td>33&thinsp;681</td>
+<td class="plus">216</td>
+<td class="plus">0,64%</td>
+<td>33&thinsp;897</td>
+<td class="plus">45</td>
+<td class="plus">0,13%</td>
+<td>33&thinsp;942</td>
+<td class="minus">−744</td>
+<td class="less">−2,19%</td>
+<td>33&thinsp;198</td>
+</tr>
+
+<tr>
+<th>район Северное Медведково</th>
+<td>73&thinsp;245</td>
+<td class="plus">180</td>
+<td class="plus">0,25%</td>
+<td>73&thinsp;425</td>
+<td class="plus">154</td>
+<td class="plus">0,21%</td>
+<td>73&thinsp;579</td>
+<td class="plus">53</td>
+<td class="plus">0,07%</td>
+<td>73&thinsp;632</td>
+<td class="minus">−1&thinsp;525</td>
+<td class="less">−2,07%</td>
+<td>72&thinsp;107</td>
+<td class="plus">992</td>
+<td class="more">1,38%</td>
+<td>73&thinsp;099</td>
+<td class="plus">192</td>
+<td class="plus">0,26%</td>
+<td>73&thinsp;291</td>
+<td class="minus">−231</td>
+<td class="minus">−0,32%</td>
+<td>73&thinsp;060</td>
+<td class="minus">−258</td>
+<td class="minus">−0,35%</td>
+<td>72&thinsp;802</td>
+<td class="minus">−472</td>
+<td class="minus">−0,65%</td>
+<td>72&thinsp;330</td>
+<td class="plus">579</td>
+<td class="plus">0,80%</td>
+<td>72&thinsp;909</td>
+<td class="minus">−100</td>
+<td class="minus">−0,14%</td>
+<td>72&thinsp;809</td>
+<td class="minus">−1&thinsp;446</td>
+<td class="less">−1,99%</td>
+<td>71&thinsp;363</td>
+</tr>
+
+<tr>
+<th>район Северный</th>
+<td>6&thinsp;649</td>
+<td class="plus">606</td>
+<td class="more">9,1%</td>
+<td>7&thinsp;255</td>
+<td class="plus">1&thinsp;085</td>
+<td class="more">15,0%</td>
+<td>8&thinsp;340</td>
+<td class="plus">965</td>
+<td class="more">11,6%</td>
+<td>9&thinsp;305</td>
+<td class="plus">4&thinsp;241</td>
+<td class="more">45,6%</td>
+<td>13&thinsp;546</td>
+<td class="plus">885</td>
+<td class="more">6,53%</td>
+<td>14&thinsp;431</td>
+<td class="plus">387</td>
+<td class="more">2,68%</td>
+<td>14&thinsp;818</td>
+<td class="plus">685</td>
+<td class="more">4,62%</td>
+<td>15&thinsp;503</td>
+<td class="plus">571</td>
+<td class="more">3,68%</td>
+<td>16&thinsp;074</td>
+<td class="minus">−52</td>
+<td class="minus">−0,32%</td>
+<td>16&thinsp;022</td>
+<td class="plus">915</td>
+<td class="more">5,71%</td>
+<td>16&thinsp;937</td>
+<td class="plus">340</td>
+<td class="more">2,01%</td>
+<td>17&thinsp;277</td>
+<td class="minus">−49</td>
+<td class="minus">−0,28%</td>
+<td>17&thinsp;228</td>
+</tr>
+
+<tr>
+<th>район Южное Медведково</th>
+<td>50&thinsp;546</td>
+<td class="plus">143</td>
+<td class="plus">0,28%</td>
+<td>50&thinsp;689</td>
+<td class="plus">41</td>
+<td class="plus">0,08%</td>
+<td>50&thinsp;730</td>
+<td class="plus">193</td>
+<td class="plus">0,38%</td>
+<td>50&thinsp;923</td>
+<td class="plus">135</td>
+<td class="plus">0,27%</td>
+<td>51&thinsp;058</td>
+<td class="minus">−283</td>
+<td class="minus">−0,55%</td>
+<td>50&thinsp;775</td>
+<td class="minus">−356</td>
+<td class="minus">−0,70%</td>
+<td>50&thinsp;419</td>
+<td class="minus">−115</td>
+<td class="minus">−0,23%</td>
+<td>50&thinsp;304</td>
+<td class="plus">193</td>
+<td class="plus">0,38%</td>
+<td>50&thinsp;497</td>
+<td class="plus">389</td>
+<td class="plus">0,77%</td>
+<td>50&thinsp;886</td>
+<td class="minus">−158</td>
+<td class="minus">−0,31%</td>
+<td>50&thinsp;728</td>
+<td class="minus">−160</td>
+<td class="minus">−0,32%</td>
+<td>50&thinsp;568</td>
+<td class="minus">−451</td>
+<td class="minus">−0,89%</td>
+<td>50&thinsp;117</td>
+</tr>
+
+<tr>
+<th>Ярославский район</th>
+<td>55&thinsp;210</td>
+<td class="minus">−159</td>
+<td class="minus">−0,29%</td>
+<td>55&thinsp;051</td>
+<td class="minus">−713</td>
+<td class="less">−1,30%</td>
+<td>54&thinsp;338</td>
+<td class="plus">178</td>
+<td class="plus">0,33%</td>
+<td>54&thinsp;516</td>
+<td class="minus">−410</td>
+<td class="minus">−0,75%</td>
+<td>54&thinsp;106</td>
+<td class="minus">−2&thinsp;855</td>
+<td class="less">−5,28%</td>
+<td>51&thinsp;251</td>
+<td class="plus">293</td>
+<td class="plus">0,57%</td>
+<td>51&thinsp;544</td>
+<td class="plus">45</td>
+<td class="plus">0,09%</td>
+<td>51&thinsp;589</td>
+<td class="plus">38</td>
+<td class="plus">0,07%</td>
+<td>51&thinsp;627</td>
+<td class="plus">693</td>
+<td class="more">1,34%</td>
+<td>52&thinsp;320</td>
+<td class="plus">1&thinsp;600</td>
+<td class="more">3,06%</td>
+<td>53&thinsp;920</td>
+<td class="plus">318</td>
+<td class="plus">0,59%</td>
+<td>54&thinsp;238</td>
+<td class="minus">−1&thinsp;040</td>
+<td class="less">−1,92%</td>
+<td>53&thinsp;198</td>
+</tr>
+
+<tr class="sum">
+<th>Итого по Северо-Восточному административному округу</th>
+<td>853&thinsp;363</td>
+<td class="minus">−746</td>
+<td class="minus">−0,09%</td>
+<td>852&thinsp;617</td>
+<td class="plus">1&thinsp;749</td>
+<td class="plus">0,21%</td>
+<td>854&thinsp;366</td>
+<td class="plus">1&thinsp;153</td>
+<td class="plus">0,13%</td>
+<td>855&thinsp;519</td>
+<td class="minus">−1&thinsp;604</td>
+<td class="minus">−0,19%</td>
+<td>853&thinsp;915</td>
+<td class="minus">−5&thinsp;209</td>
+<td class="minus">−0,61%</td>
+<td>848&thinsp;706</td>
+<td class="minus">−56</td>
+<td class="minus">−0,01%</td>
+<td>848&thinsp;650</td>
+<td class="plus">636</td>
+<td class="plus">0,07%</td>
+<td>849&thinsp;286</td>
+<td class="minus">−2&thinsp;096</td>
+<td class="minus">−0,25%</td>
+<td>847&thinsp;190</td>
+<td class="minus">−1&thinsp;777</td>
+<td class="minus">−0,21%</td>
+<td>845&thinsp;413</td>
+<td class="plus">6&thinsp;050</td>
+<td class="plus">0,72%</td>
+<td>851&thinsp;463</td>
+<td class="plus">368</td>
+<td class="plus">0,04%</td>
+<td>851&thinsp;831</td>
+<td class="minus">−14&thinsp;486</td>
+<td class="less">−1,70%</td>
+<td>837&thinsp;345</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="empty">
+<th>Восточный административный округ</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>район Богородское</th>
+<td>59&thinsp;029</td>
+<td class="minus">−1&thinsp;635</td>
+<td class="less">−2,77%</td>
+<td>57&thinsp;394</td>
+<td class="plus">884</td>
+<td class="more">1,54%</td>
+<td>58&thinsp;278</td>
+<td class="plus">3&thinsp;395</td>
+<td class="more">5,83%</td>
+<td>61&thinsp;673</td>
+<td class="plus">85</td>
+<td class="plus">0,14%</td>
+<td>61&thinsp;758</td>
+<td class="plus">39</td>
+<td class="plus">0,06%</td>
+<td>61&thinsp;797</td>
+<td class="minus">−370</td>
+<td class="minus">−0,60%</td>
+<td>61&thinsp;427</td>
+<td class="plus">295</td>
+<td class="plus">0,48%</td>
+<td>61&thinsp;722</td>
+<td class="minus">−739</td>
+<td class="less">−1,20%</td>
+<td>60&thinsp;983</td>
+<td class="minus">−182</td>
+<td class="minus">−0,30%</td>
+<td>60&thinsp;801</td>
+<td class="plus">1&thinsp;353</td>
+<td class="more">2,23%</td>
+<td>62&thinsp;154</td>
+<td class="minus">−610</td>
+<td class="minus">−0,98%</td>
+<td>61&thinsp;544</td>
+<td class="minus">−1&thinsp;231</td>
+<td class="less">−2,00%</td>
+<td>60&thinsp;313</td>
+</tr>
+
+<tr>
+<th>район Вешняки</th>
+<td>80&thinsp;697</td>
+<td class="minus">−468</td>
+<td class="minus">−0,58%</td>
+<td>80&thinsp;229</td>
+<td class="minus">−629</td>
+<td class="minus">−0,78%</td>
+<td>79&thinsp;600</td>
+<td class="minus">−624</td>
+<td class="minus">−0,78%</td>
+<td>78&thinsp;976</td>
+<td class="minus">−6&thinsp;270</td>
+<td class="less">−7,94%</td>
+<td>72&thinsp;706</td>
+<td class="minus">−302</td>
+<td class="minus">−0,42%</td>
+<td>72&thinsp;404</td>
+<td class="minus">−90</td>
+<td class="minus">−0,12%</td>
+<td>72&thinsp;314</td>
+<td class="minus">−133</td>
+<td class="minus">−0,18%</td>
+<td>72&thinsp;181</td>
+<td class="plus">379</td>
+<td class="plus">0,53%</td>
+<td>72&thinsp;560</td>
+<td class="plus">958</td>
+<td class="more">1,32%</td>
+<td>73&thinsp;518</td>
+<td class="plus">867</td>
+<td class="more">1,18%</td>
+<td>74&thinsp;385</td>
+<td class="minus">−32</td>
+<td class="minus">−0,04%</td>
+<td>74&thinsp;353</td>
+<td class="minus">−1&thinsp;487</td>
+<td class="less">−2,00%</td>
+<td>72&thinsp;866</td>
+</tr>
+
+<tr>
+<th>район Восточное Измайлово</th>
+<td>43&thinsp;826</td>
+<td class="minus">−757</td>
+<td class="less">−1,73%</td>
+<td>43&thinsp;069</td>
+<td class="minus">−722</td>
+<td class="less">−1,68%</td>
+<td>42&thinsp;347</td>
+<td class="plus">482</td>
+<td class="more">1,14%</td>
+<td>42&thinsp;829</td>
+<td class="minus">−57</td>
+<td class="minus">−0,13%</td>
+<td>42&thinsp;772</td>
+<td class="plus">339</td>
+<td class="plus">0,79%</td>
+<td>43&thinsp;111</td>
+<td class="minus">−177</td>
+<td class="minus">−0,41%</td>
+<td>42&thinsp;934</td>
+<td class="minus">−98</td>
+<td class="minus">−0,23%</td>
+<td>42&thinsp;836</td>
+<td class="plus">118</td>
+<td class="plus">0,28%</td>
+<td>42&thinsp;954</td>
+<td class="minus">−263</td>
+<td class="minus">−0,61%</td>
+<td>42&thinsp;691</td>
+<td class="plus">282</td>
+<td class="plus">0,66%</td>
+<td>42&thinsp;973</td>
+<td class="minus">−91</td>
+<td class="minus">−0,21%</td>
+<td>42&thinsp;882</td>
+<td class="minus">−858</td>
+<td class="less">−2,00%</td>
+<td>42&thinsp;024</td>
+</tr>
+
+<tr>
+<th>район Восточный</th>
+<td>7&thinsp;672</td>
+<td class="plus">3</td>
+<td class="plus">0,0%</td>
+<td>7&thinsp;675</td>
+<td class="plus">5</td>
+<td class="plus">0,1%</td>
+<td>7&thinsp;680</td>
+<td>0</td>
+<td class="plus">0,0%</td>
+<td>7&thinsp;680</td>
+<td class="minus">−51</td>
+<td class="minus">−0,7%</td>
+<td>7&thinsp;629</td>
+<td>0</td>
+<td class="plus">0,0%</td>
+<td>7&thinsp;629</td>
+<td class="minus">−10</td>
+<td class="minus">−0,1%</td>
+<td>7&thinsp;619</td>
+<td class="plus">32</td>
+<td class="plus">0,4%</td>
+<td>7&thinsp;651</td>
+<td class="plus">24</td>
+<td class="plus">0,3%</td>
+<td>7&thinsp;675</td>
+<td class="minus">−12</td>
+<td class="minus">−0,2%</td>
+<td>7&thinsp;663</td>
+<td class="plus">39</td>
+<td class="plus">0,5%</td>
+<td>7&thinsp;702</td>
+<td class="minus">−22</td>
+<td class="minus">−0,3%</td>
+<td>7&thinsp;680</td>
+<td class="minus">−154</td>
+<td class="less">−2,0%</td>
+<td>7&thinsp;526</td>
+</tr>
+
+<tr>
+<th>район Гольяново</th>
+<td>108&thinsp;413</td>
+<td class="minus">−366</td>
+<td class="minus">−0,34%</td>
+<td>108&thinsp;047</td>
+<td class="minus">−1&thinsp;547</td>
+<td class="less">−1,43%</td>
+<td>106&thinsp;500</td>
+<td class="plus">566</td>
+<td class="plus">0,53%</td>
+<td>107&thinsp;066</td>
+<td class="minus">−385</td>
+<td class="minus">−0,36%</td>
+<td>106&thinsp;681</td>
+<td class="minus">−93</td>
+<td class="minus">−0,09%</td>
+<td>106&thinsp;588</td>
+<td class="minus">−257</td>
+<td class="minus">−0,24%</td>
+<td>106&thinsp;331</td>
+<td class="minus">−243</td>
+<td class="minus">−0,23%</td>
+<td>106&thinsp;088</td>
+<td class="minus">−108</td>
+<td class="minus">−0,10%</td>
+<td>105&thinsp;980</td>
+<td class="minus">−158</td>
+<td class="minus">−0,15%</td>
+<td>105&thinsp;822</td>
+<td class="plus">1&thinsp;555</td>
+<td class="more">1,47%</td>
+<td>107&thinsp;377</td>
+<td class="plus">281</td>
+<td class="plus">0,26%</td>
+<td>107&thinsp;658</td>
+<td class="minus">−2&thinsp;153</td>
+<td class="less">−2,00%</td>
+<td>105&thinsp;505</td>
+</tr>
+
+<tr>
+<th>район Ивановское</th>
+<td>82&thinsp;114</td>
+<td class="minus">−481</td>
+<td class="minus">−0,59%</td>
+<td>81&thinsp;633</td>
+<td class="minus">−881</td>
+<td class="less">−1,08%</td>
+<td>80&thinsp;752</td>
+<td class="minus">−621</td>
+<td class="minus">−0,77%</td>
+<td>80&thinsp;131</td>
+<td class="minus">−329</td>
+<td class="minus">−0,41%</td>
+<td>79&thinsp;802</td>
+<td class="minus">−15</td>
+<td class="minus">−0,02%</td>
+<td>79&thinsp;787</td>
+<td class="minus">−122</td>
+<td class="minus">−0,15%</td>
+<td>79&thinsp;665</td>
+<td class="minus">−433</td>
+<td class="minus">−0,54%</td>
+<td>79&thinsp;232</td>
+<td class="minus">−334</td>
+<td class="minus">−0,42%</td>
+<td>78&thinsp;898</td>
+<td class="plus">782</td>
+<td class="plus">0,99%</td>
+<td>79&thinsp;680</td>
+<td class="minus">−61</td>
+<td class="minus">−0,08%</td>
+<td>79&thinsp;619</td>
+<td class="minus">−199</td>
+<td class="minus">−0,25%</td>
+<td>79&thinsp;420</td>
+<td class="minus">−1&thinsp;588</td>
+<td class="less">−2,00%</td>
+<td>77&thinsp;832</td>
+</tr>
+
+<tr>
+<th>район Измайлово</th>
+<td>63&thinsp;626</td>
+<td class="minus">−340</td>
+<td class="minus">−0,53%</td>
+<td>63&thinsp;286</td>
+<td class="minus">−109</td>
+<td class="minus">−0,17%</td>
+<td>63&thinsp;177</td>
+<td class="minus">−77</td>
+<td class="minus">−0,12%</td>
+<td>63&thinsp;100</td>
+<td class="minus">−361</td>
+<td class="minus">−0,57%</td>
+<td>62&thinsp;739</td>
+<td class="minus">−511</td>
+<td class="minus">−0,81%</td>
+<td>62&thinsp;228</td>
+<td class="minus">−1&thinsp;005</td>
+<td class="less">−1,62%</td>
+<td>61&thinsp;223</td>
+<td class="minus">−222</td>
+<td class="minus">−0,36%</td>
+<td>61&thinsp;001</td>
+<td class="minus">−190</td>
+<td class="minus">−0,31%</td>
+<td>60&thinsp;811</td>
+<td class="minus">−167</td>
+<td class="minus">−0,27%</td>
+<td>60&thinsp;644</td>
+<td class="plus">43</td>
+<td class="plus">0,07%</td>
+<td>60&thinsp;687</td>
+<td class="minus">−275</td>
+<td class="minus">−0,45%</td>
+<td>60&thinsp;412</td>
+<td class="minus">−1&thinsp;297</td>
+<td class="less">−2,15%</td>
+<td>59&thinsp;115</td>
+</tr>
+
+<tr>
+<th>район Косино-Ухтомский</th>
+<td>17&thinsp;243</td>
+<td class="plus">5&thinsp;254</td>
+<td class="more">30,47%</td>
+<td>22&thinsp;497</td>
+<td class="plus">2&thinsp;583</td>
+<td class="more">11,48%</td>
+<td>25&thinsp;080</td>
+<td class="plus">3&thinsp;333</td>
+<td class="more">13,29%</td>
+<td>28&thinsp;413</td>
+<td class="plus">1&thinsp;016</td>
+<td class="more">3,58%</td>
+<td>29&thinsp;429</td>
+<td class="plus">2&thinsp;820</td>
+<td class="more">9,58%</td>
+<td>32&thinsp;249</td>
+<td class="plus">1&thinsp;570</td>
+<td class="more">4,87%</td>
+<td>33&thinsp;819</td>
+<td class="plus">1&thinsp;149</td>
+<td class="more">3,40%</td>
+<td>34&thinsp;968</td>
+<td class="plus">915</td>
+<td class="more">2,62%</td>
+<td>35&thinsp;883</td>
+<td class="plus">370</td>
+<td class="more">1,03%</td>
+<td>36&thinsp;253</td>
+<td class="plus">1&thinsp;689</td>
+<td class="more">4,66%</td>
+<td>37&thinsp;942</td>
+<td class="plus">792</td>
+<td class="more">2,09%</td>
+<td>38&thinsp;734</td>
+<td class="minus">−775</td>
+<td class="less">−2,00%</td>
+<td>37&thinsp;959</td>
+</tr>
+
+<tr>
+<th>район Метрогородок</th>
+<td>22&thinsp;651</td>
+<td class="plus">35</td>
+<td class="plus">0,15%</td>
+<td>22&thinsp;686</td>
+<td class="plus">8</td>
+<td class="plus">0,04%</td>
+<td>22&thinsp;694</td>
+<td class="minus">−23</td>
+<td class="minus">−0,10%</td>
+<td>22&thinsp;671</td>
+<td class="minus">−121</td>
+<td class="minus">−0,53%</td>
+<td>22&thinsp;550</td>
+<td class="minus">−61</td>
+<td class="minus">−0,27%</td>
+<td>22&thinsp;489</td>
+<td class="minus">−102</td>
+<td class="minus">−0,45%</td>
+<td>22&thinsp;387</td>
+<td class="minus">−113</td>
+<td class="minus">−0,50%</td>
+<td>22&thinsp;274</td>
+<td class="minus">−28</td>
+<td class="minus">−0,13%</td>
+<td>22&thinsp;246</td>
+<td class="minus">−149</td>
+<td class="minus">−0,67%</td>
+<td>22&thinsp;097</td>
+<td class="plus">78</td>
+<td class="plus">0,35%</td>
+<td>22&thinsp;175</td>
+<td class="minus">−123</td>
+<td class="minus">−0,55%</td>
+<td>22&thinsp;052</td>
+<td class="minus">−441</td>
+<td class="less">−2,00%</td>
+<td>21&thinsp;611</td>
+</tr>
+
+<tr>
+<th>район Новогиреево</th>
+<td>58&thinsp;390</td>
+<td class="minus">−1&thinsp;965</td>
+<td class="less">−3,37%</td>
+<td>56&thinsp;425</td>
+<td class="minus">−2&thinsp;115</td>
+<td class="less">−3,75%</td>
+<td>54&thinsp;310</td>
+<td class="plus">167</td>
+<td class="plus">0,31%</td>
+<td>54&thinsp;477</td>
+<td class="plus">97</td>
+<td class="plus">0,18%</td>
+<td>54&thinsp;574</td>
+<td class="minus">−120</td>
+<td class="minus">−0,22%</td>
+<td>54&thinsp;454</td>
+<td class="plus">149</td>
+<td class="plus">0,27%</td>
+<td>54&thinsp;603</td>
+<td class="minus">−94</td>
+<td class="minus">−0,17%</td>
+<td>54&thinsp;509</td>
+<td class="minus">−180</td>
+<td class="minus">−0,33%</td>
+<td>54&thinsp;329</td>
+<td class="minus">−82</td>
+<td class="minus">−0,15%</td>
+<td>54&thinsp;247</td>
+<td class="plus">1&thinsp;332</td>
+<td class="more">2,46%</td>
+<td>55&thinsp;579</td>
+<td class="plus">50</td>
+<td class="plus">0,09%</td>
+<td>55&thinsp;629</td>
+<td class="minus">−915</td>
+<td class="less">−1,64%</td>
+<td>54&thinsp;714</td>
+</tr>
+
+<tr>
+<th>район Новокосино</th>
+<td>60&thinsp;899</td>
+<td class="plus">549</td>
+<td class="plus">0,90%</td>
+<td>61&thinsp;448</td>
+<td class="plus">742</td>
+<td class="more">1,21%</td>
+<td>62&thinsp;190</td>
+<td class="plus">343</td>
+<td class="plus">0,55%</td>
+<td>62&thinsp;533</td>
+<td class="plus">389</td>
+<td class="plus">0,62%</td>
+<td>62&thinsp;922</td>
+<td class="plus">101</td>
+<td class="plus">0,16%</td>
+<td>63&thinsp;023</td>
+<td class="plus">130</td>
+<td class="plus">0,21%</td>
+<td>63&thinsp;153</td>
+<td class="plus">117</td>
+<td class="plus">0,19%</td>
+<td>63&thinsp;270</td>
+<td class="plus">61</td>
+<td class="plus">0,10%</td>
+<td>63&thinsp;331</td>
+<td class="minus">−32</td>
+<td class="minus">−0,05%</td>
+<td>63&thinsp;299</td>
+<td class="plus">935</td>
+<td class="more">1,48%</td>
+<td>64&thinsp;234</td>
+<td class="plus">55</td>
+<td class="plus">0,09%</td>
+<td>64&thinsp;289</td>
+<td class="minus">−1&thinsp;285</td>
+<td class="less">−2,00%</td>
+<td>63&thinsp;004</td>
+</tr>
+
+<tr>
+<th>район Перово</th>
+<td>83&thinsp;831</td>
+<td class="minus">−2&thinsp;070</td>
+<td class="less">−2,47%</td>
+<td>81&thinsp;761</td>
+<td class="minus">−1&thinsp;236</td>
+<td class="less">−1,51%</td>
+<td>80&thinsp;525</td>
+<td class="plus">192</td>
+<td class="plus">0,24%</td>
+<td>80&thinsp;717</td>
+<td class="minus">−191</td>
+<td class="minus">−0,24%</td>
+<td>80&thinsp;526</td>
+<td class="minus">−58</td>
+<td class="minus">−0,07%</td>
+<td>80&thinsp;468</td>
+<td class="minus">−319</td>
+<td class="minus">−0,40%</td>
+<td>80&thinsp;149</td>
+<td class="minus">−127</td>
+<td class="minus">−0,16%</td>
+<td>80&thinsp;022</td>
+<td class="minus">−116</td>
+<td class="minus">−0,14%</td>
+<td>79&thinsp;906</td>
+<td class="minus">−156</td>
+<td class="minus">−0,20%</td>
+<td>79&thinsp;750</td>
+<td class="plus">454</td>
+<td class="plus">0,57%</td>
+<td>80&thinsp;204</td>
+<td class="plus">98</td>
+<td class="plus">0,12%</td>
+<td>80&thinsp;302</td>
+<td class="minus">−1&thinsp;606</td>
+<td class="less">−2,00%</td>
+<td>78&thinsp;696</td>
+</tr>
+
+<tr>
+<th>район Преображенское</th>
+<td>51&thinsp;068</td>
+<td class="minus">−97</td>
+<td class="minus">−0,19%</td>
+<td>50&thinsp;971</td>
+<td class="minus">−136</td>
+<td class="minus">−0,27%</td>
+<td>50&thinsp;835</td>
+<td class="minus">−47</td>
+<td class="minus">−0,09%</td>
+<td>50&thinsp;788</td>
+<td class="minus">−268</td>
+<td class="minus">−0,53%</td>
+<td>50&thinsp;520</td>
+<td class="minus">−274</td>
+<td class="minus">−0,54%</td>
+<td>50&thinsp;246</td>
+<td class="minus">−186</td>
+<td class="minus">−0,37%</td>
+<td>50&thinsp;060</td>
+<td class="minus">−43</td>
+<td class="minus">−0,09%</td>
+<td>50&thinsp;017</td>
+<td class="minus">−209</td>
+<td class="minus">−0,42%</td>
+<td>49&thinsp;808</td>
+<td class="minus">−300</td>
+<td class="minus">−0,60%</td>
+<td>49&thinsp;508</td>
+<td class="minus">−54</td>
+<td class="minus">−0,11%</td>
+<td>49&thinsp;454</td>
+<td class="minus">−220</td>
+<td class="minus">−0,44%</td>
+<td>49&thinsp;234</td>
+<td class="minus">−985</td>
+<td class="less">−2,00%</td>
+<td>48&thinsp;249</td>
+</tr>
+
+<tr>
+<th>район Северное Измайлово</th>
+<td>56&thinsp;519</td>
+<td class="plus">902</td>
+<td class="more">1,60%</td>
+<td>57&thinsp;421</td>
+<td class="minus">−881</td>
+<td class="less">−1,53%</td>
+<td>56&thinsp;540</td>
+<td class="plus">712</td>
+<td class="more">1,26%</td>
+<td>57&thinsp;252</td>
+<td class="minus">−564</td>
+<td class="minus">−0,99%</td>
+<td>56&thinsp;688</td>
+<td class="plus">57</td>
+<td class="plus">0,10%</td>
+<td>56&thinsp;745</td>
+<td class="minus">−144</td>
+<td class="minus">−0,25%</td>
+<td>56&thinsp;601</td>
+<td class="minus">−244</td>
+<td class="minus">−0,43%</td>
+<td>56&thinsp;357</td>
+<td class="minus">−93</td>
+<td class="minus">−0,17%</td>
+<td>56&thinsp;264</td>
+<td class="minus">−227</td>
+<td class="minus">−0,40%</td>
+<td>56&thinsp;037</td>
+<td class="minus">−283</td>
+<td class="minus">−0,51%</td>
+<td>55&thinsp;754</td>
+<td class="plus">199</td>
+<td class="plus">0,36%</td>
+<td>55&thinsp;953</td>
+<td class="minus">−1&thinsp;120</td>
+<td class="less">−2,00%</td>
+<td>54&thinsp;833</td>
+</tr>
+
+<tr>
+<th>район Соколиная гора</th>
+<td>54&thinsp;687</td>
+<td class="minus">−2&thinsp;152</td>
+<td class="less">−3,94%</td>
+<td>52&thinsp;535</td>
+<td class="plus">853</td>
+<td class="more">1,62%</td>
+<td>53&thinsp;388</td>
+<td class="minus">−603</td>
+<td class="less">−1,13%</td>
+<td>52&thinsp;785</td>
+<td class="minus">−70</td>
+<td class="minus">−0,13%</td>
+<td>52&thinsp;715</td>
+<td class="minus">−187</td>
+<td class="minus">−0,35%</td>
+<td>52&thinsp;528</td>
+<td class="minus">−285</td>
+<td class="minus">−0,54%</td>
+<td>52&thinsp;243</td>
+<td class="minus">−180</td>
+<td class="minus">−0,34%</td>
+<td>52&thinsp;063</td>
+<td class="minus">−309</td>
+<td class="minus">−0,59%</td>
+<td>51&thinsp;754</td>
+<td class="plus">5</td>
+<td class="plus">0,01%</td>
+<td>51&thinsp;759</td>
+<td class="plus">682</td>
+<td class="more">1,32%</td>
+<td>52&thinsp;441</td>
+<td class="minus">−56</td>
+<td class="minus">−0,11%</td>
+<td>52&thinsp;385</td>
+<td class="minus">−1&thinsp;048</td>
+<td class="less">−2,00%</td>
+<td>51&thinsp;337</td>
+</tr>
+
+<tr>
+<th>район Сокольники</th>
+<td>35&thinsp;257</td>
+<td class="minus">−146</td>
+<td class="minus">−0,41%</td>
+<td>35&thinsp;111</td>
+<td class="plus">105</td>
+<td class="plus">0,30%</td>
+<td>35&thinsp;216</td>
+<td class="minus">−15</td>
+<td class="minus">−0,04%</td>
+<td>35&thinsp;201</td>
+<td class="minus">−138</td>
+<td class="minus">−0,39%</td>
+<td>35&thinsp;063</td>
+<td class="minus">−910</td>
+<td class="less">−2,60%</td>
+<td>34&thinsp;153</td>
+<td class="minus">−62</td>
+<td class="minus">−0,18%</td>
+<td>34&thinsp;091</td>
+<td class="minus">−86</td>
+<td class="minus">−0,25%</td>
+<td>34&thinsp;005</td>
+<td class="plus">6</td>
+<td class="plus">0,02%</td>
+<td>34&thinsp;011</td>
+<td class="plus">233</td>
+<td class="plus">0,69%</td>
+<td>34&thinsp;244</td>
+<td class="minus">−54</td>
+<td class="minus">−0,16%</td>
+<td>34&thinsp;190</td>
+<td class="minus">−100</td>
+<td class="minus">−0,29%</td>
+<td>34&thinsp;090</td>
+<td class="minus">−682</td>
+<td class="less">−2,00%</td>
+<td>33&thinsp;408</td>
+</tr>
+
+<tr class="sum">
+<th>Итого по Восточному административному округу</th>
+<td>885&thinsp;922</td>
+<td class="minus">−3&thinsp;734</td>
+<td class="minus">−0,42%</td>
+<td>882&thinsp;188</td>
+<td class="minus">−3&thinsp;076</td>
+<td class="minus">−0,35%</td>
+<td>879&thinsp;112</td>
+<td class="plus">7&thinsp;180</td>
+<td class="plus">0,82%</td>
+<td>886&thinsp;292</td>
+<td class="minus">−7&thinsp;218</td>
+<td class="minus">−0,81%</td>
+<td>879&thinsp;074</td>
+<td class="plus">825</td>
+<td class="plus">0,09%</td>
+<td>879&thinsp;899</td>
+<td class="minus">−1&thinsp;280</td>
+<td class="minus">−0,15%</td>
+<td>878&thinsp;619</td>
+<td class="minus">−423</td>
+<td class="minus">−0,05%</td>
+<td>878&thinsp;196</td>
+<td class="minus">−803</td>
+<td class="minus">−0,09%</td>
+<td>877&thinsp;393</td>
+<td class="plus">620</td>
+<td class="plus">0,07%</td>
+<td>878&thinsp;013</td>
+<td class="plus">8&thinsp;857</td>
+<td class="more">1,01%</td>
+<td>886&thinsp;870</td>
+<td class="minus">−253</td>
+<td class="minus">−0,03%</td>
+<td>886&thinsp;617</td>
+<td class="minus">−17&thinsp;625</td>
+<td class="less">−1,99%</td>
+<td>868&thinsp;992</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="empty">
+<th>Юго-Восточный административный округ</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>район Выхино-Жулебино</th>
+<td>129&thinsp;774</td>
+<td class="plus">371</td>
+<td class="plus">0,29%</td>
+<td>130&thinsp;145</td>
+<td class="plus">542</td>
+<td class="plus">0,42%</td>
+<td>130&thinsp;687</td>
+<td class="plus">384</td>
+<td class="plus">0,29%</td>
+<td>131&thinsp;071</td>
+<td class="minus">−1&thinsp;639</td>
+<td class="less">−1,25%</td>
+<td>129&thinsp;432</td>
+<td class="plus">2&thinsp;052</td>
+<td class="more">1,59%</td>
+<td>131&thinsp;484</td>
+<td class="plus">42</td>
+<td class="plus">0,03%</td>
+<td>131&thinsp;526</td>
+<td class="minus">−137</td>
+<td class="minus">−0,10%</td>
+<td>131&thinsp;389</td>
+<td class="plus">219</td>
+<td class="plus">0,17%</td>
+<td>131&thinsp;608</td>
+<td class="minus">−25</td>
+<td class="minus">−0,02%</td>
+<td>131&thinsp;583</td>
+<td class="plus">300</td>
+<td class="plus">0,23%</td>
+<td>131&thinsp;883</td>
+<td class="plus">47</td>
+<td class="plus">0,04%</td>
+<td>131&thinsp;930</td>
+<td class="minus">−2&thinsp;428</td>
+<td class="less">−1,84%</td>
+<td>129&thinsp;502</td>
+</tr>
+
+<tr>
+<th>район Капотня</th>
+<td>17&thinsp;765</td>
+<td class="minus">−81</td>
+<td class="minus">−0,46%</td>
+<td>17&thinsp;684</td>
+<td class="plus">33</td>
+<td class="plus">0,19%</td>
+<td>17&thinsp;717</td>
+<td class="minus">−177</td>
+<td class="less">−1,00%</td>
+<td>17&thinsp;540</td>
+<td class="minus">−1&thinsp;179</td>
+<td class="less">−6,72%</td>
+<td>16&thinsp;361</td>
+<td class="plus">625</td>
+<td class="more">3,82%</td>
+<td>16&thinsp;986</td>
+<td class="minus">−7</td>
+<td class="minus">−0,04%</td>
+<td>16&thinsp;979</td>
+<td class="minus">−46</td>
+<td class="minus">−0,27%</td>
+<td>16&thinsp;933</td>
+<td class="minus">−101</td>
+<td class="minus">−0,60%</td>
+<td>16&thinsp;832</td>
+<td class="minus">−49</td>
+<td class="minus">−0,29%</td>
+<td>16&thinsp;783</td>
+<td class="minus">−23</td>
+<td class="minus">−0,14%</td>
+<td>16&thinsp;760</td>
+<td class="plus">47</td>
+<td class="plus">0,28%</td>
+<td>16&thinsp;807</td>
+<td class="minus">−304</td>
+<td class="less">−1,81%</td>
+<td>16&thinsp;503</td>
+</tr>
+
+<tr>
+<th>район Кузьминки</th>
+<td>79&thinsp;825</td>
+<td class="plus">815</td>
+<td class="more">1,02%</td>
+<td>80&thinsp;640</td>
+<td class="plus">1&thinsp;651</td>
+<td class="more">2,05%</td>
+<td>82&thinsp;291</td>
+<td class="plus">156</td>
+<td class="plus">0,19%</td>
+<td>82&thinsp;447</td>
+<td class="minus">−1&thinsp;586</td>
+<td class="less">−1,92%</td>
+<td>80&thinsp;861</td>
+<td class="plus">1&thinsp;561</td>
+<td class="more">1,93%</td>
+<td>82&thinsp;422</td>
+<td class="plus">1&thinsp;352</td>
+<td class="more">1,64%</td>
+<td>83&thinsp;774</td>
+<td class="minus">−217</td>
+<td class="minus">−0,26%</td>
+<td>83&thinsp;557</td>
+<td class="plus">151</td>
+<td class="plus">0,18%</td>
+<td>83&thinsp;708</td>
+<td class="minus">−217</td>
+<td class="minus">−0,26%</td>
+<td>83&thinsp;491</td>
+<td class="plus">220</td>
+<td class="plus">0,26%</td>
+<td>83&thinsp;711</td>
+<td class="minus">−88</td>
+<td class="minus">−0,11%</td>
+<td>83&thinsp;623</td>
+<td class="minus">−1&thinsp;506</td>
+<td class="less">−1,80%</td>
+<td>82&thinsp;117</td>
+</tr>
+
+<tr>
+<th>район Лефортово</th>
+<td>50&thinsp;238</td>
+<td class="plus">1&thinsp;447</td>
+<td class="more">2,88%</td>
+<td>51&thinsp;685</td>
+<td class="plus">499</td>
+<td class="plus">0,97%</td>
+<td>52&thinsp;184</td>
+<td class="minus">−45</td>
+<td class="minus">−0,09%</td>
+<td>52&thinsp;139</td>
+<td class="minus">−1&thinsp;579</td>
+<td class="less">−3,03%</td>
+<td>50&thinsp;560</td>
+<td class="minus">−38</td>
+<td class="minus">−0,08%</td>
+<td>50&thinsp;522</td>
+<td class="minus">−115</td>
+<td class="minus">−0,23%</td>
+<td>50&thinsp;407</td>
+<td class="plus">430</td>
+<td class="plus">0,85%</td>
+<td>50&thinsp;837</td>
+<td class="minus">−298</td>
+<td class="minus">−0,59%</td>
+<td>50&thinsp;539</td>
+<td class="minus">−71</td>
+<td class="minus">−0,14%</td>
+<td>50&thinsp;468</td>
+<td class="minus">−240</td>
+<td class="minus">−0,48%</td>
+<td>50&thinsp;228</td>
+<td class="plus">1&thinsp;193</td>
+<td class="more">2,38%</td>
+<td>51&thinsp;421</td>
+<td class="minus">−1&thinsp;028</td>
+<td class="less">−2,00%</td>
+<td>50&thinsp;393</td>
+</tr>
+
+<tr>
+<th>район Люблино</th>
+<td>104&thinsp;873</td>
+<td class="plus">538</td>
+<td class="plus">0,51%</td>
+<td>105&thinsp;411</td>
+<td class="plus">2&thinsp;106</td>
+<td class="more">2,00%</td>
+<td>107&thinsp;517</td>
+<td class="plus">408</td>
+<td class="plus">0,38%</td>
+<td>107&thinsp;925</td>
+<td class="minus">−1&thinsp;731</td>
+<td class="less">−1,60%</td>
+<td>106&thinsp;194</td>
+<td class="plus">1&thinsp;904</td>
+<td class="more">1,79%</td>
+<td>108&thinsp;098</td>
+<td class="plus">352</td>
+<td class="plus">0,33%</td>
+<td>108&thinsp;450</td>
+<td class="plus">327</td>
+<td class="plus">0,30%</td>
+<td>108&thinsp;777</td>
+<td class="plus">562</td>
+<td class="plus">0,52%</td>
+<td>109&thinsp;339</td>
+<td class="minus">−205</td>
+<td class="minus">−0,19%</td>
+<td>109&thinsp;134</td>
+<td class="plus">3&thinsp;660</td>
+<td class="more">3,35%</td>
+<td>112&thinsp;794</td>
+<td class="plus">514</td>
+<td class="plus">0,46%</td>
+<td>113&thinsp;308</td>
+<td class="minus">−2&thinsp;108</td>
+<td class="less">−1,86%</td>
+<td>111&thinsp;200</td>
+</tr>
+
+<tr>
+<th>район Марьино</th>
+<td>156&thinsp;699</td>
+<td class="plus">1&thinsp;119</td>
+<td class="plus">0,71%</td>
+<td>157&thinsp;818</td>
+<td class="plus">3&thinsp;879</td>
+<td class="more">2,46%</td>
+<td>161&thinsp;697</td>
+<td class="plus">286</td>
+<td class="plus">0,18%</td>
+<td>161&thinsp;983</td>
+<td class="minus">−1&thinsp;005</td>
+<td class="minus">−0,62%</td>
+<td>160&thinsp;978</td>
+<td class="plus">2&thinsp;454</td>
+<td class="more">1,52%</td>
+<td>163&thinsp;432</td>
+<td class="plus">2&thinsp;842</td>
+<td class="more">1,74%</td>
+<td>166&thinsp;274</td>
+<td class="plus">257</td>
+<td class="plus">0,15%</td>
+<td>166&thinsp;531</td>
+<td class="minus">−41</td>
+<td class="minus">−0,02%</td>
+<td>166&thinsp;490</td>
+<td class="plus">22</td>
+<td class="plus">0,01%</td>
+<td>166&thinsp;512</td>
+<td class="plus">1&thinsp;162</td>
+<td class="plus">0,70%</td>
+<td>167&thinsp;674</td>
+<td class="plus">426</td>
+<td class="plus">0,25%</td>
+<td>168&thinsp;100</td>
+<td class="minus">−3&thinsp;177</td>
+<td class="less">−1,89%</td>
+<td>164&thinsp;923</td>
+</tr>
+
+<tr>
+<th>район Некрасовка</th>
+<td>6&thinsp;271</td>
+<td class="plus">271</td>
+<td class="more">4,3%</td>
+<td>6&thinsp;542</td>
+<td class="plus">84</td>
+<td class="more">1,3%</td>
+<td>6&thinsp;626</td>
+<td class="plus">298</td>
+<td class="more">4,5%</td>
+<td>6&thinsp;924</td>
+<td class="plus">297</td>
+<td class="more">4,3%</td>
+<td>7&thinsp;221</td>
+<td class="plus">202</td>
+<td class="more">2,8%</td>
+<td>7&thinsp;423</td>
+<td class="plus">210</td>
+<td class="more">2,8%</td>
+<td>7&thinsp;633</td>
+<td class="plus">1&thinsp;151</td>
+<td class="more">15,1%</td>
+<td>8&thinsp;784</td>
+<td class="plus">570</td>
+<td class="more">6,5%</td>
+<td>9&thinsp;354</td>
+<td class="plus">461</td>
+<td class="more">4,9%</td>
+<td>9&thinsp;815</td>
+<td class="plus">659</td>
+<td class="more">6,7%</td>
+<td>10&thinsp;474</td>
+<td class="plus">1&thinsp;629</td>
+<td class="more">15,55%</td>
+<td>12&thinsp;103</td>
+<td class="plus">1&thinsp;333</td>
+<td class="more">11,01%</td>
+<td>13&thinsp;436</td>
+</tr>
+
+<tr>
+<th>Нижегородский район</th>
+<td>24&thinsp;777</td>
+<td class="plus">251</td>
+<td class="more">1,01%</td>
+<td>25&thinsp;028</td>
+<td class="plus">217</td>
+<td class="plus">0,87%</td>
+<td>25&thinsp;245</td>
+<td class="plus">1</td>
+<td class="plus">0,00%</td>
+<td>25&thinsp;246</td>
+<td class="minus">−1&thinsp;639</td>
+<td class="less">−6,49%</td>
+<td>23&thinsp;607</td>
+<td class="plus">1&thinsp;624</td>
+<td class="more">6,88%</td>
+<td>25&thinsp;231</td>
+<td class="plus">25</td>
+<td class="plus">0,10%</td>
+<td>25&thinsp;256</td>
+<td class="minus">−279</td>
+<td class="less">−1,10%</td>
+<td>24&thinsp;977</td>
+<td class="minus">−73</td>
+<td class="minus">−0,29%</td>
+<td>24&thinsp;904</td>
+<td class="minus">−14</td>
+<td class="minus">−0,06%</td>
+<td>24&thinsp;890</td>
+<td class="plus">78</td>
+<td class="plus">0,31%</td>
+<td>24&thinsp;968</td>
+<td class="plus">149</td>
+<td class="plus">0,60%</td>
+<td>25&thinsp;117</td>
+<td class="minus">−502</td>
+<td class="less">−2,00%</td>
+<td>24&thinsp;615</td>
+</tr>
+
+<tr>
+<th>район Печатники</th>
+<td>52&thinsp;641</td>
+<td class="plus">959</td>
+<td class="more">1,82%</td>
+<td>53&thinsp;600</td>
+<td class="plus">306</td>
+<td class="plus">0,57%</td>
+<td>53&thinsp;906</td>
+<td class="plus">169</td>
+<td class="plus">0,31%</td>
+<td>54&thinsp;075</td>
+<td class="minus">−305</td>
+<td class="minus">−0,56%</td>
+<td>53&thinsp;770</td>
+<td class="plus">1&thinsp;523</td>
+<td class="more">2,83%</td>
+<td>55&thinsp;293</td>
+<td class="plus">131</td>
+<td class="plus">0,24%</td>
+<td>55&thinsp;424</td>
+<td class="minus">−21</td>
+<td class="minus">−0,04%</td>
+<td>55&thinsp;403</td>
+<td class="plus">142</td>
+<td class="plus">0,26%</td>
+<td>55&thinsp;545</td>
+<td class="minus">−90</td>
+<td class="minus">−0,16%</td>
+<td>55&thinsp;455</td>
+<td class="plus">79</td>
+<td class="plus">0,14%</td>
+<td>55&thinsp;534</td>
+<td class="plus">23</td>
+<td class="plus">0,04%</td>
+<td>55&thinsp;557</td>
+<td class="minus">−1&thinsp;028</td>
+<td class="less">−1,85%</td>
+<td>54&thinsp;529</td>
+</tr>
+
+<tr>
+<th>Рязанский район</th>
+<td>56&thinsp;124</td>
+<td class="minus">−102</td>
+<td class="minus">−0,18%</td>
+<td>56&thinsp;022</td>
+<td class="plus">286</td>
+<td class="plus">0,51%</td>
+<td>56&thinsp;308</td>
+<td class="plus">943</td>
+<td class="more">1,67%</td>
+<td>57&thinsp;251</td>
+<td class="minus">−1&thinsp;520</td>
+<td class="less">−2,65%</td>
+<td>55&thinsp;731</td>
+<td class="plus">1&thinsp;591</td>
+<td class="more">2,85%</td>
+<td>57&thinsp;322</td>
+<td class="plus">819</td>
+<td class="more">1,43%</td>
+<td>58&thinsp;141</td>
+<td class="plus">1&thinsp;019</td>
+<td class="more">1,75%</td>
+<td>59&thinsp;160</td>
+<td class="plus">574</td>
+<td class="plus">0,97%</td>
+<td>59&thinsp;734</td>
+<td class="plus">433</td>
+<td class="plus">0,72%</td>
+<td>60&thinsp;167</td>
+<td class="plus">1&thinsp;293</td>
+<td class="more">2,15%</td>
+<td>61&thinsp;460</td>
+<td class="plus">479</td>
+<td class="plus">0,78%</td>
+<td>61&thinsp;939</td>
+<td class="minus">−1&thinsp;114</td>
+<td class="less">−1,80%</td>
+<td>60&thinsp;825</td>
+</tr>
+
+<tr>
+<th>район Текстильщики</th>
+<td>60&thinsp;470</td>
+<td class="minus">−135</td>
+<td class="minus">−0,22%</td>
+<td>60&thinsp;335</td>
+<td class="plus">87</td>
+<td class="plus">0,14%</td>
+<td>60&thinsp;422</td>
+<td class="minus">−92</td>
+<td class="minus">−0,15%</td>
+<td>60&thinsp;330</td>
+<td class="minus">−1&thinsp;479</td>
+<td class="less">−2,45%</td>
+<td>58&thinsp;851</td>
+<td class="plus">790</td>
+<td class="more">1,34%</td>
+<td>59&thinsp;641</td>
+<td class="minus">−179</td>
+<td class="minus">−0,30%</td>
+<td>59&thinsp;462</td>
+<td class="minus">−119</td>
+<td class="minus">−0,20%</td>
+<td>59&thinsp;343</td>
+<td class="minus">−163</td>
+<td class="minus">−0,27%</td>
+<td>59&thinsp;180</td>
+<td class="plus">127</td>
+<td class="plus">0,21%</td>
+<td>59&thinsp;307</td>
+<td class="plus">329</td>
+<td class="plus">0,55%</td>
+<td>59&thinsp;636</td>
+<td class="minus">−144</td>
+<td class="minus">−0,24%</td>
+<td>59&thinsp;492</td>
+<td class="minus">−1&thinsp;083</td>
+<td class="less">−1,82%</td>
+<td>58&thinsp;409</td>
+</tr>
+
+<tr>
+<th>Южнопортовый район</th>
+<td>41&thinsp;734</td>
+<td class="plus">54</td>
+<td class="plus">0,13%</td>
+<td>41&thinsp;788</td>
+<td class="plus">1&thinsp;007</td>
+<td class="more">2,41%</td>
+<td>42&thinsp;795</td>
+<td class="plus">34</td>
+<td class="plus">0,08%</td>
+<td>42&thinsp;829</td>
+<td class="minus">−1&thinsp;361</td>
+<td class="less">−3,18%</td>
+<td>41&thinsp;468</td>
+<td class="plus">1&thinsp;300</td>
+<td class="more">3,13%</td>
+<td>42&thinsp;768</td>
+<td class="minus">−511</td>
+<td class="less">−1,19%</td>
+<td>42&thinsp;257</td>
+<td class="minus">−108</td>
+<td class="minus">−0,26%</td>
+<td>42&thinsp;149</td>
+<td class="minus">−35</td>
+<td class="minus">−0,08%</td>
+<td>42&thinsp;114</td>
+<td class="plus">272</td>
+<td class="plus">0,65%</td>
+<td>42&thinsp;386</td>
+<td class="plus">114</td>
+<td class="plus">0,27%</td>
+<td>42&thinsp;500</td>
+<td class="minus">−68</td>
+<td class="minus">−0,16%</td>
+<td>42&thinsp;432</td>
+<td class="minus">−849</td>
+<td class="less">−2,00%</td>
+<td>41&thinsp;583</td>
+</tr>
+
+<tr class="sum">
+<th>Итого по Юго-Восточному административному округу</th>
+<td>781&thinsp;191</td>
+<td class="plus">5&thinsp;507</td>
+<td class="plus">0,70%</td>
+<td>786&thinsp;698</td>
+<td class="plus">10&thinsp;697</td>
+<td class="more">1,36%</td>
+<td>797&thinsp;395</td>
+<td class="plus">2&thinsp;365</td>
+<td class="plus">0,30%</td>
+<td>799&thinsp;760</td>
+<td class="minus">−14&thinsp;726</td>
+<td class="less">−1,84%</td>
+<td>785&thinsp;034</td>
+<td class="plus">15&thinsp;588</td>
+<td class="more">1,99%</td>
+<td>800&thinsp;622</td>
+<td class="plus">4&thinsp;961</td>
+<td class="plus">0,62%</td>
+<td>805&thinsp;583</td>
+<td class="plus">2&thinsp;257</td>
+<td class="plus">0,28%</td>
+<td>807&thinsp;840</td>
+<td class="plus">1&thinsp;507</td>
+<td class="plus">0,19%</td>
+<td>809&thinsp;347</td>
+<td class="plus">644</td>
+<td class="plus">0,08%</td>
+<td>809&thinsp;991</td>
+<td class="plus">7&thinsp;631</td>
+<td class="plus">0,94%</td>
+<td>817&thinsp;622</td>
+<td class="plus">4&thinsp;207</td>
+<td class="plus">0,51%</td>
+<td>821&thinsp;829</td>
+<td class="minus">−13&thinsp;794</td>
+<td class="less">−1,68%</td>
+<td>808&thinsp;035</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="empty">
+<th>Южный административный округ</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>район Бирюлево Восточное</th>
+<td>87&thinsp;481</td>
+<td class="plus">103</td>
+<td class="plus">0,12%</td>
+<td>87&thinsp;584</td>
+<td class="plus">405</td>
+<td class="plus">0,46%</td>
+<td>87&thinsp;989</td>
+<td class="minus">−185</td>
+<td class="minus">−0,21%</td>
+<td>87&thinsp;804</td>
+<td class="plus">315</td>
+<td class="plus">0,36%</td>
+<td>88&thinsp;119</td>
+<td class="minus">−879</td>
+<td class="less">−1,00%</td>
+<td>87&thinsp;240</td>
+<td class="minus">−450</td>
+<td class="minus">−0,52%</td>
+<td>86&thinsp;790</td>
+<td class="minus">−100</td>
+<td class="minus">−0,12%</td>
+<td>86&thinsp;690</td>
+<td class="minus">−275</td>
+<td class="minus">−0,32%</td>
+<td>86&thinsp;415</td>
+<td class="minus">−337</td>
+<td class="minus">−0,39%</td>
+<td>86&thinsp;078</td>
+<td class="plus">236</td>
+<td class="plus">0,27%</td>
+<td>86&thinsp;314</td>
+<td class="plus">282</td>
+<td class="plus">0,33%</td>
+<td>86&thinsp;596</td>
+<td class="minus">−1&thinsp;732</td>
+<td class="less">−2,00%</td>
+<td>84&thinsp;864</td>
+</tr>
+
+<tr>
+<th>район Бирюлево Западное</th>
+<td>52&thinsp;800</td>
+<td class="minus">−647</td>
+<td class="less">−1,23%</td>
+<td>52&thinsp;153</td>
+<td class="plus">239</td>
+<td class="plus">0,46%</td>
+<td>52&thinsp;392</td>
+<td class="minus">−1</td>
+<td class="minus">0,00%</td>
+<td>52&thinsp;391</td>
+<td class="plus">63</td>
+<td class="plus">0,12%</td>
+<td>52&thinsp;454</td>
+<td class="minus">−117</td>
+<td class="minus">−0,22%</td>
+<td>52&thinsp;337</td>
+<td class="minus">−56</td>
+<td class="minus">−0,11%</td>
+<td>52&thinsp;281</td>
+<td class="minus">−104</td>
+<td class="minus">−0,20%</td>
+<td>52&thinsp;177</td>
+<td class="minus">−151</td>
+<td class="minus">−0,29%</td>
+<td>52&thinsp;026</td>
+<td class="minus">−2</td>
+<td class="minus">0,00%</td>
+<td>52&thinsp;024</td>
+<td class="plus">95</td>
+<td class="plus">0,18%</td>
+<td>52&thinsp;119</td>
+<td class="plus">211</td>
+<td class="plus">0,40%</td>
+<td>52&thinsp;330</td>
+<td class="minus">−1&thinsp;047</td>
+<td class="less">−2,00%</td>
+<td>51&thinsp;283</td>
+</tr>
+
+<tr>
+<th>район Братеево</th>
+<td>63&thinsp;195</td>
+<td class="plus">30</td>
+<td class="plus">0,05%</td>
+<td>63&thinsp;225</td>
+<td class="plus">420</td>
+<td class="plus">0,66%</td>
+<td>63&thinsp;645</td>
+<td class="plus">287</td>
+<td class="plus">0,45%</td>
+<td>63&thinsp;932</td>
+<td class="minus">−117</td>
+<td class="minus">−0,18%</td>
+<td>63&thinsp;815</td>
+<td class="minus">−443</td>
+<td class="minus">−0,69%</td>
+<td>63&thinsp;372</td>
+<td class="minus">−200</td>
+<td class="minus">−0,32%</td>
+<td>63&thinsp;172</td>
+<td class="minus">−95</td>
+<td class="minus">−0,15%</td>
+<td>63&thinsp;077</td>
+<td class="minus">−122</td>
+<td class="minus">−0,19%</td>
+<td>62&thinsp;955</td>
+<td class="minus">−111</td>
+<td class="minus">−0,18%</td>
+<td>62&thinsp;844</td>
+<td class="plus">5</td>
+<td class="plus">0,01%</td>
+<td>62&thinsp;849</td>
+<td class="minus">−26</td>
+<td class="minus">−0,04%</td>
+<td>62&thinsp;823</td>
+<td class="minus">−1&thinsp;256</td>
+<td class="less">−2,00%</td>
+<td>61&thinsp;567</td>
+</tr>
+
+<tr>
+<th>Даниловский район</th>
+<td>55&thinsp;888</td>
+<td class="minus">−289</td>
+<td class="minus">−0,52%</td>
+<td>55&thinsp;599</td>
+<td class="plus">3&thinsp;108</td>
+<td class="more">5,59%</td>
+<td>58&thinsp;707</td>
+<td class="plus">327</td>
+<td class="plus">0,56%</td>
+<td>59&thinsp;034</td>
+<td class="minus">−773</td>
+<td class="less">−1,31%</td>
+<td>58&thinsp;261</td>
+<td class="minus">−3&thinsp;042</td>
+<td class="less">−5,22%</td>
+<td>55&thinsp;219</td>
+<td class="minus">−639</td>
+<td class="less">−1,16%</td>
+<td>54&thinsp;580</td>
+<td class="minus">−398</td>
+<td class="minus">−0,73%</td>
+<td>54&thinsp;182</td>
+<td class="minus">−74</td>
+<td class="minus">−0,14%</td>
+<td>54&thinsp;108</td>
+<td class="minus">−174</td>
+<td class="minus">−0,32%</td>
+<td>53&thinsp;934</td>
+<td class="minus">−54</td>
+<td class="minus">−0,10%</td>
+<td>53&thinsp;880</td>
+<td class="minus">−62</td>
+<td class="minus">−0,12%</td>
+<td>53&thinsp;818</td>
+<td class="minus">−1&thinsp;076</td>
+<td class="less">−2,00%</td>
+<td>52&thinsp;742</td>
+</tr>
+
+<tr>
+<th>Донской район</th>
+<td>28&thinsp;682</td>
+<td class="minus">−297</td>
+<td class="less">−1,04%</td>
+<td>28&thinsp;385</td>
+<td class="plus">209</td>
+<td class="plus">0,74%</td>
+<td>28&thinsp;594</td>
+<td class="minus">−22</td>
+<td class="minus">−0,08%</td>
+<td>28&thinsp;572</td>
+<td class="minus">−36</td>
+<td class="minus">−0,13%</td>
+<td>28&thinsp;536</td>
+<td class="minus">−9</td>
+<td class="minus">−0,03%</td>
+<td>28&thinsp;527</td>
+<td class="minus">−128</td>
+<td class="minus">−0,45%</td>
+<td>28&thinsp;399</td>
+<td class="minus">−203</td>
+<td class="minus">−0,71%</td>
+<td>28&thinsp;196</td>
+<td class="minus">−114</td>
+<td class="minus">−0,40%</td>
+<td>28&thinsp;082</td>
+<td class="minus">−77</td>
+<td class="minus">−0,27%</td>
+<td>28&thinsp;005</td>
+<td class="plus">70</td>
+<td class="plus">0,25%</td>
+<td>28&thinsp;075</td>
+<td class="plus">22</td>
+<td class="plus">0,08%</td>
+<td>28&thinsp;097</td>
+<td class="minus">−562</td>
+<td class="less">−2,00%</td>
+<td>27&thinsp;535</td>
+</tr>
+
+<tr>
+<th>район Зябликово</th>
+<td>78&thinsp;513</td>
+<td class="minus">−242</td>
+<td class="minus">−0,31%</td>
+<td>78&thinsp;271</td>
+<td class="plus">244</td>
+<td class="plus">0,31%</td>
+<td>78&thinsp;515</td>
+<td class="minus">−331</td>
+<td class="minus">−0,42%</td>
+<td>78&thinsp;184</td>
+<td class="plus">61</td>
+<td class="plus">0,08%</td>
+<td>78&thinsp;245</td>
+<td class="minus">−404</td>
+<td class="minus">−0,52%</td>
+<td>77&thinsp;841</td>
+<td class="minus">−218</td>
+<td class="minus">−0,28%</td>
+<td>77&thinsp;623</td>
+<td class="minus">−456</td>
+<td class="minus">−0,59%</td>
+<td>77&thinsp;167</td>
+<td class="plus">39</td>
+<td class="plus">0,05%</td>
+<td>77&thinsp;206</td>
+<td class="minus">−223</td>
+<td class="minus">−0,29%</td>
+<td>76&thinsp;983</td>
+<td class="minus">−13</td>
+<td class="minus">−0,02%</td>
+<td>76&thinsp;970</td>
+<td class="plus">33</td>
+<td class="plus">0,04%</td>
+<td>77&thinsp;003</td>
+<td class="minus">−1&thinsp;540</td>
+<td class="less">−2,00%</td>
+<td>75&thinsp;463</td>
+</tr>
+
+<tr>
+<th>район Москворечье-Сабурово</th>
+<td>45&thinsp;528</td>
+<td class="minus">−690</td>
+<td class="less">−1,52%</td>
+<td>44&thinsp;838</td>
+<td class="plus">394</td>
+<td class="plus">0,88%</td>
+<td>45&thinsp;232</td>
+<td class="plus">393</td>
+<td class="plus">0,87%</td>
+<td>45&thinsp;625</td>
+<td class="plus">97</td>
+<td class="plus">0,21%</td>
+<td>45&thinsp;722</td>
+<td class="plus">62</td>
+<td class="plus">0,14%</td>
+<td>45&thinsp;784</td>
+<td class="minus">−27</td>
+<td class="minus">−0,06%</td>
+<td>45&thinsp;757</td>
+<td class="plus">120</td>
+<td class="plus">0,26%</td>
+<td>45&thinsp;877</td>
+<td class="plus">113</td>
+<td class="plus">0,25%</td>
+<td>45&thinsp;990</td>
+<td class="minus">−358</td>
+<td class="minus">−0,78%</td>
+<td>45&thinsp;632</td>
+<td class="minus">−224</td>
+<td class="minus">−0,49%</td>
+<td>45&thinsp;408</td>
+<td class="minus">−29</td>
+<td class="minus">−0,06%</td>
+<td>45&thinsp;379</td>
+<td class="minus">−908</td>
+<td class="less">−2,00%</td>
+<td>44&thinsp;471</td>
+</tr>
+
+<tr>
+<th>район Нагатино-Садовники</th>
+<td>45&thinsp;453</td>
+<td class="minus">−470</td>
+<td class="less">−1,03%</td>
+<td>44&thinsp;983</td>
+<td class="plus">250</td>
+<td class="plus">0,56%</td>
+<td>45&thinsp;233</td>
+<td class="minus">−80</td>
+<td class="minus">−0,18%</td>
+<td>45&thinsp;153</td>
+<td class="minus">−28</td>
+<td class="minus">−0,06%</td>
+<td>45&thinsp;125</td>
+<td class="minus">−96</td>
+<td class="minus">−0,21%</td>
+<td>45&thinsp;029</td>
+<td class="minus">−107</td>
+<td class="minus">−0,24%</td>
+<td>44&thinsp;922</td>
+<td class="minus">−138</td>
+<td class="minus">−0,31%</td>
+<td>44&thinsp;784</td>
+<td class="plus">49</td>
+<td class="plus">0,11%</td>
+<td>44&thinsp;833</td>
+<td class="minus">−123</td>
+<td class="minus">−0,27%</td>
+<td>44&thinsp;710</td>
+<td class="plus">145</td>
+<td class="plus">0,32%</td>
+<td>44&thinsp;855</td>
+<td class="minus">−1</td>
+<td class="minus">0,00%</td>
+<td>44&thinsp;854</td>
+<td class="minus">−897</td>
+<td class="less">−2,00%</td>
+<td>43&thinsp;957</td>
+</tr>
+
+<tr>
+<th>район Нагатинский затон</th>
+<td>68&thinsp;829</td>
+<td class="minus">−302</td>
+<td class="minus">−0,44%</td>
+<td>68&thinsp;527</td>
+<td class="plus">383</td>
+<td class="plus">0,56%</td>
+<td>68&thinsp;910</td>
+<td class="minus">−226</td>
+<td class="minus">−0,33%</td>
+<td>68&thinsp;684</td>
+<td class="minus">−155</td>
+<td class="minus">−0,23%</td>
+<td>68&thinsp;529</td>
+<td class="minus">−254</td>
+<td class="minus">−0,37%</td>
+<td>68&thinsp;275</td>
+<td class="minus">−235</td>
+<td class="minus">−0,34%</td>
+<td>68&thinsp;040</td>
+<td class="minus">−293</td>
+<td class="minus">−0,43%</td>
+<td>67&thinsp;747</td>
+<td class="minus">−54</td>
+<td class="minus">−0,08%</td>
+<td>67&thinsp;693</td>
+<td class="minus">−100</td>
+<td class="minus">−0,15%</td>
+<td>67&thinsp;593</td>
+<td class="plus">274</td>
+<td class="plus">0,41%</td>
+<td>67&thinsp;867</td>
+<td class="minus">−185</td>
+<td class="minus">−0,27%</td>
+<td>67&thinsp;682</td>
+<td class="minus">−1&thinsp;354</td>
+<td class="less">−2,00%</td>
+<td>66&thinsp;328</td>
+</tr>
+
+<tr>
+<th>Нагорный район</th>
+<td>45&thinsp;724</td>
+<td class="plus">55</td>
+<td class="plus">0,12%</td>
+<td>45&thinsp;779</td>
+<td class="plus">275</td>
+<td class="plus">0,60%</td>
+<td>46&thinsp;054</td>
+<td class="plus">39</td>
+<td class="plus">0,08%</td>
+<td>46&thinsp;093</td>
+<td class="minus">−12</td>
+<td class="minus">−0,03%</td>
+<td>46&thinsp;081</td>
+<td class="minus">−124</td>
+<td class="minus">−0,27%</td>
+<td>45&thinsp;957</td>
+<td class="minus">−22</td>
+<td class="minus">−0,05%</td>
+<td>45&thinsp;935</td>
+<td class="minus">−153</td>
+<td class="minus">−0,33%</td>
+<td>45&thinsp;782</td>
+<td class="plus">72</td>
+<td class="plus">0,16%</td>
+<td>45&thinsp;854</td>
+<td class="minus">−65</td>
+<td class="minus">−0,14%</td>
+<td>45&thinsp;789</td>
+<td class="plus">219</td>
+<td class="plus">0,48%</td>
+<td>46&thinsp;008</td>
+<td class="minus">−70</td>
+<td class="minus">−0,15%</td>
+<td>45&thinsp;938</td>
+<td class="minus">−919</td>
+<td class="less">−2,00%</td>
+<td>45&thinsp;019</td>
+</tr>
+
+<tr>
+<th>район Орехово-Борисово Северное</th>
+<td>76&thinsp;952</td>
+<td class="minus">−217</td>
+<td class="minus">−0,28%</td>
+<td>76&thinsp;735</td>
+<td class="plus">343</td>
+<td class="plus">0,45%</td>
+<td>77&thinsp;078</td>
+<td class="minus">−264</td>
+<td class="minus">−0,34%</td>
+<td>76&thinsp;814</td>
+<td class="minus">−276</td>
+<td class="minus">−0,36%</td>
+<td>76&thinsp;538</td>
+<td class="minus">−453</td>
+<td class="minus">−0,59%</td>
+<td>76&thinsp;085</td>
+<td class="minus">−321</td>
+<td class="minus">−0,42%</td>
+<td>75&thinsp;764</td>
+<td class="minus">−371</td>
+<td class="minus">−0,49%</td>
+<td>75&thinsp;393</td>
+<td class="plus">8</td>
+<td class="plus">0,01%</td>
+<td>75&thinsp;401</td>
+<td class="plus">21</td>
+<td class="plus">0,03%</td>
+<td>75&thinsp;422</td>
+<td class="plus">85</td>
+<td class="plus">0,11%</td>
+<td>75&thinsp;507</td>
+<td class="plus">113</td>
+<td class="plus">0,15%</td>
+<td>75&thinsp;620</td>
+<td class="minus">−1&thinsp;512</td>
+<td class="less">−2,00%</td>
+<td>74&thinsp;108</td>
+</tr>
+
+<tr>
+<th>район Орехово-Борисово Южное</th>
+<td>91&thinsp;152</td>
+<td class="minus">−455</td>
+<td class="minus">−0,50%</td>
+<td>90&thinsp;697</td>
+<td class="plus">138</td>
+<td class="plus">0,15%</td>
+<td>90&thinsp;835</td>
+<td class="plus">107</td>
+<td class="plus">0,12%</td>
+<td>90&thinsp;942</td>
+<td class="plus">71</td>
+<td class="plus">0,08%</td>
+<td>91&thinsp;013</td>
+<td class="minus">−168</td>
+<td class="minus">−0,18%</td>
+<td>90&thinsp;845</td>
+<td class="minus">−225</td>
+<td class="minus">−0,25%</td>
+<td>90&thinsp;620</td>
+<td class="minus">−310</td>
+<td class="minus">−0,34%</td>
+<td>90&thinsp;310</td>
+<td class="plus">114</td>
+<td class="plus">0,13%</td>
+<td>90&thinsp;424</td>
+<td class="minus">−174</td>
+<td class="minus">−0,19%</td>
+<td>90&thinsp;250</td>
+<td class="minus">−316</td>
+<td class="minus">−0,35%</td>
+<td>89&thinsp;934</td>
+<td class="minus">−250</td>
+<td class="minus">−0,28%</td>
+<td>89&thinsp;684</td>
+<td class="minus">−1&thinsp;794</td>
+<td class="less">−2,00%</td>
+<td>87&thinsp;890</td>
+</tr>
+
+<tr>
+<th>район Царицыно</th>
+<td>76&thinsp;080</td>
+<td class="minus">−735</td>
+<td class="minus">−0,97%</td>
+<td>75&thinsp;345</td>
+<td class="plus">307</td>
+<td class="plus">0,41%</td>
+<td>75&thinsp;652</td>
+<td class="minus">−427</td>
+<td class="minus">−0,56%</td>
+<td>75&thinsp;225</td>
+<td class="minus">−457</td>
+<td class="minus">−0,61%</td>
+<td>74&thinsp;768</td>
+<td class="plus">255</td>
+<td class="plus">0,34%</td>
+<td>75&thinsp;023</td>
+<td class="minus">−124</td>
+<td class="minus">−0,17%</td>
+<td>74&thinsp;899</td>
+<td class="minus">−422</td>
+<td class="minus">−0,56%</td>
+<td>74&thinsp;477</td>
+<td class="plus">26</td>
+<td class="plus">0,03%</td>
+<td>74&thinsp;503</td>
+<td class="minus">−220</td>
+<td class="minus">−0,30%</td>
+<td>74&thinsp;283</td>
+<td class="plus">339</td>
+<td class="plus">0,46%</td>
+<td>74&thinsp;622</td>
+<td class="minus">−279</td>
+<td class="minus">−0,37%</td>
+<td>74&thinsp;343</td>
+<td class="minus">−1&thinsp;487</td>
+<td class="less">−2,00%</td>
+<td>72&thinsp;856</td>
+</tr>
+
+<tr>
+<th>район Чертаново Северное</th>
+<td>66&thinsp;659</td>
+<td class="minus">−45</td>
+<td class="minus">−0,07%</td>
+<td>66&thinsp;614</td>
+<td class="minus">−79</td>
+<td class="minus">−0,12%</td>
+<td>66&thinsp;535</td>
+<td class="minus">−258</td>
+<td class="minus">−0,39%</td>
+<td>66&thinsp;277</td>
+<td class="minus">−117</td>
+<td class="minus">−0,18%</td>
+<td>66&thinsp;160</td>
+<td class="minus">−122</td>
+<td class="minus">−0,18%</td>
+<td>66&thinsp;038</td>
+<td class="minus">−428</td>
+<td class="minus">−0,65%</td>
+<td>65&thinsp;610</td>
+<td class="minus">−223</td>
+<td class="minus">−0,34%</td>
+<td>65&thinsp;387</td>
+<td class="minus">−295</td>
+<td class="minus">−0,45%</td>
+<td>65&thinsp;092</td>
+<td class="minus">−196</td>
+<td class="minus">−0,30%</td>
+<td>64&thinsp;896</td>
+<td class="plus">311</td>
+<td class="plus">0,48%</td>
+<td>65&thinsp;207</td>
+<td class="minus">−66</td>
+<td class="minus">−0,10%</td>
+<td>65&thinsp;141</td>
+<td class="minus">−1&thinsp;303</td>
+<td class="less">−2,00%</td>
+<td>63&thinsp;838</td>
+</tr>
+
+<tr>
+<th>район Чертаново Центральное</th>
+<td>69&thinsp;679</td>
+<td class="minus">−728</td>
+<td class="less">−1,04%</td>
+<td>68&thinsp;951</td>
+<td class="plus">78</td>
+<td class="plus">0,11%</td>
+<td>69&thinsp;029</td>
+<td class="minus">−2</td>
+<td class="minus">0,00%</td>
+<td>69&thinsp;027</td>
+<td class="minus">−27</td>
+<td class="minus">−0,04%</td>
+<td>69&thinsp;000</td>
+<td class="minus">−389</td>
+<td class="minus">−0,56%</td>
+<td>68&thinsp;611</td>
+<td class="plus">129</td>
+<td class="plus">0,19%</td>
+<td>68&thinsp;740</td>
+<td class="minus">−239</td>
+<td class="minus">−0,35%</td>
+<td>68&thinsp;501</td>
+<td class="minus">−277</td>
+<td class="minus">−0,40%</td>
+<td>68&thinsp;224</td>
+<td class="plus">20</td>
+<td class="plus">0,03%</td>
+<td>68&thinsp;244</td>
+<td class="plus">545</td>
+<td class="plus">0,80%</td>
+<td>68&thinsp;789</td>
+<td class="minus">−72</td>
+<td class="minus">−0,10%</td>
+<td>68&thinsp;717</td>
+<td class="minus">−1&thinsp;374</td>
+<td class="less">−2,00%</td>
+<td>67&thinsp;343</td>
+</tr>
+
+<tr>
+<th>район Чертаново Южное</th>
+<td>90&thinsp;769</td>
+<td class="plus">1&thinsp;047</td>
+<td class="more">1,15%</td>
+<td>91&thinsp;816</td>
+<td class="minus">−137</td>
+<td class="minus">−0,15%</td>
+<td>91&thinsp;679</td>
+<td class="minus">−1&thinsp;753</td>
+<td class="less">−1,91%</td>
+<td>89&thinsp;926</td>
+<td class="plus">382</td>
+<td class="plus">0,42%</td>
+<td>90&thinsp;308</td>
+<td class="minus">−876</td>
+<td class="minus">−0,97%</td>
+<td>89&thinsp;432</td>
+<td class="minus">−351</td>
+<td class="minus">−0,39%</td>
+<td>89&thinsp;081</td>
+<td class="plus">361</td>
+<td class="plus">0,41%</td>
+<td>89&thinsp;442</td>
+<td class="minus">−156</td>
+<td class="minus">−0,17%</td>
+<td>89&thinsp;286</td>
+<td class="plus">1&thinsp;884</td>
+<td class="more">2,11%</td>
+<td>91&thinsp;170</td>
+<td class="plus">880</td>
+<td class="plus">0,97%</td>
+<td>92&thinsp;050</td>
+<td class="minus">−1&thinsp;073</td>
+<td class="less">−1,17%</td>
+<td>90&thinsp;977</td>
+<td class="minus">−1&thinsp;820</td>
+<td class="less">−2,00%</td>
+<td>89&thinsp;157</td>
+</tr>
+
+<tr class="sum">
+<th>Итого по Южному административному округу</th>
+<td>1&thinsp;043&thinsp;384</td>
+<td class="minus">−3&thinsp;882</td>
+<td class="minus">−0,37%</td>
+<td>1&thinsp;039&thinsp;502</td>
+<td class="plus">6&thinsp;577</td>
+<td class="plus">0,63%</td>
+<td>1&thinsp;046&thinsp;079</td>
+<td class="minus">−2&thinsp;396</td>
+<td class="minus">−0,23%</td>
+<td>1&thinsp;043&thinsp;683</td>
+<td class="minus">−1&thinsp;009</td>
+<td class="minus">−0,10%</td>
+<td>1&thinsp;042&thinsp;674</td>
+<td class="minus">−7&thinsp;059</td>
+<td class="minus">−0,68%</td>
+<td>1&thinsp;035&thinsp;615</td>
+<td class="minus">−3&thinsp;402</td>
+<td class="minus">−0,33%</td>
+<td>1&thinsp;032&thinsp;213</td>
+<td class="minus">−3&thinsp;024</td>
+<td class="minus">−0,29%</td>
+<td>1&thinsp;029&thinsp;189</td>
+<td class="minus">−1&thinsp;097</td>
+<td class="minus">−0,11%</td>
+<td>1&thinsp;028&thinsp;092</td>
+<td class="minus">−235</td>
+<td class="minus">−0,02%</td>
+<td>1&thinsp;027&thinsp;857</td>
+<td class="plus">2&thinsp;597</td>
+<td class="plus">0,25%</td>
+<td>1&thinsp;030&thinsp;454</td>
+<td class="minus">−1&thinsp;452</td>
+<td class="minus">−0,14%</td>
+<td>1&thinsp;029&thinsp;002</td>
+<td class="minus">−20&thinsp;581</td>
+<td class="less">−2,00%</td>
+<td>1&thinsp;008&thinsp;421</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="empty">
+<th>Юго-Западный административный округ</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>Академический район</th>
+<td>62&thinsp;506</td>
+<td class="minus">−780</td>
+<td class="less">−1,25%</td>
+<td>61&thinsp;726</td>
+<td class="plus">359</td>
+<td class="plus">0,58%</td>
+<td>62&thinsp;085</td>
+<td class="minus">−346</td>
+<td class="minus">−0,56%</td>
+<td>61&thinsp;739</td>
+<td class="minus">−625</td>
+<td class="less">−1,01%</td>
+<td>61&thinsp;114</td>
+<td class="minus">−206</td>
+<td class="minus">−0,34%</td>
+<td>60&thinsp;908</td>
+<td class="minus">−444</td>
+<td class="minus">−0,73%</td>
+<td>60&thinsp;464</td>
+<td class="minus">−107</td>
+<td class="minus">−0,18%</td>
+<td>60&thinsp;357</td>
+<td class="plus">80</td>
+<td class="plus">0,13%</td>
+<td>60&thinsp;437</td>
+<td class="minus">−327</td>
+<td class="minus">−0,54%</td>
+<td>60&thinsp;110</td>
+<td class="plus">336</td>
+<td class="plus">0,56%</td>
+<td>60&thinsp;446</td>
+<td class="minus">−251</td>
+<td class="minus">−0,42%</td>
+<td>60&thinsp;195</td>
+<td class="minus">−1&thinsp;437</td>
+<td class="less">−2,39%</td>
+<td>58&thinsp;758</td>
+</tr>
+
+<tr>
+<th>Гагаринский район</th>
+<td>48&thinsp;331</td>
+<td class="plus">1&thinsp;016</td>
+<td class="more">2,10%</td>
+<td>49&thinsp;347</td>
+<td class="minus">−134</td>
+<td class="minus">−0,27%</td>
+<td>49&thinsp;213</td>
+<td class="minus">−205</td>
+<td class="minus">−0,42%</td>
+<td>49&thinsp;008</td>
+<td class="minus">−214</td>
+<td class="minus">−0,44%</td>
+<td>48&thinsp;794</td>
+<td class="minus">−663</td>
+<td class="less">−1,36%</td>
+<td>48&thinsp;131</td>
+<td class="minus">−324</td>
+<td class="minus">−0,67%</td>
+<td>47&thinsp;807</td>
+<td class="minus">−331</td>
+<td class="minus">−0,69%</td>
+<td>47&thinsp;476</td>
+<td class="minus">−259</td>
+<td class="minus">−0,55%</td>
+<td>47&thinsp;217</td>
+<td class="minus">−152</td>
+<td class="minus">−0,32%</td>
+<td>47&thinsp;065</td>
+<td class="minus">−24</td>
+<td class="minus">−0,05%</td>
+<td>47&thinsp;041</td>
+<td class="minus">−29</td>
+<td class="minus">−0,06%</td>
+<td>47&thinsp;012</td>
+<td class="minus">−910</td>
+<td class="less">−1,94%</td>
+<td>46&thinsp;102</td>
+</tr>
+
+<tr>
+<th>район Зюзино</th>
+<td>71&thinsp;052</td>
+<td class="plus">117</td>
+<td class="plus">0,16%</td>
+<td>71&thinsp;169</td>
+<td class="minus">−168</td>
+<td class="minus">−0,24%</td>
+<td>71&thinsp;001</td>
+<td class="plus">230</td>
+<td class="plus">0,32%</td>
+<td>71&thinsp;231</td>
+<td class="plus">108</td>
+<td class="plus">0,15%</td>
+<td>71&thinsp;339</td>
+<td class="plus">45</td>
+<td class="plus">0,06%</td>
+<td>71&thinsp;384</td>
+<td class="plus">110</td>
+<td class="plus">0,15%</td>
+<td>71&thinsp;494</td>
+<td class="minus">−46</td>
+<td class="minus">−0,06%</td>
+<td>71&thinsp;448</td>
+<td class="plus">55</td>
+<td class="plus">0,08%</td>
+<td>71&thinsp;503</td>
+<td class="minus">−74</td>
+<td class="minus">−0,10%</td>
+<td>71&thinsp;429</td>
+<td class="plus">231</td>
+<td class="plus">0,32%</td>
+<td>71&thinsp;660</td>
+<td class="plus">257</td>
+<td class="plus">0,36%</td>
+<td>71&thinsp;917</td>
+<td class="minus">−1&thinsp;276</td>
+<td class="less">−1,77%</td>
+<td>70&thinsp;641</td>
+</tr>
+
+<tr>
+<th>район Коньково</th>
+<td>97&thinsp;864</td>
+<td class="plus">452</td>
+<td class="plus">0,46%</td>
+<td>98&thinsp;316</td>
+<td class="plus">793</td>
+<td class="plus">0,81%</td>
+<td>99&thinsp;109</td>
+<td class="minus">−349</td>
+<td class="minus">−0,35%</td>
+<td>98&thinsp;760</td>
+<td class="minus">−310</td>
+<td class="minus">−0,31%</td>
+<td>98&thinsp;450</td>
+<td class="minus">−342</td>
+<td class="minus">−0,35%</td>
+<td>98&thinsp;108</td>
+<td class="minus">−104</td>
+<td class="minus">−0,11%</td>
+<td>98&thinsp;004</td>
+<td class="minus">−235</td>
+<td class="minus">−0,24%</td>
+<td>97&thinsp;769</td>
+<td class="minus">−239</td>
+<td class="minus">−0,24%</td>
+<td>97&thinsp;530</td>
+<td class="minus">−216</td>
+<td class="minus">−0,22%</td>
+<td>97&thinsp;314</td>
+<td class="plus">254</td>
+<td class="plus">0,26%</td>
+<td>97&thinsp;568</td>
+<td class="minus">−254</td>
+<td class="minus">−0,26%</td>
+<td>97&thinsp;314</td>
+<td class="minus">−1&thinsp;752</td>
+<td class="less">−1,80%</td>
+<td>95&thinsp;562</td>
+</tr>
+
+<tr>
+<th>район Котловка</th>
+<td>39&thinsp;925</td>
+<td class="plus">90</td>
+<td class="plus">0,23%</td>
+<td>40&thinsp;015</td>
+<td class="plus">146</td>
+<td class="plus">0,36%</td>
+<td>40&thinsp;161</td>
+<td class="plus">88</td>
+<td class="plus">0,22%</td>
+<td>40&thinsp;249</td>
+<td class="minus">−214</td>
+<td class="minus">−0,53%</td>
+<td>40&thinsp;035</td>
+<td class="minus">−97</td>
+<td class="minus">−0,24%</td>
+<td>39&thinsp;938</td>
+<td class="minus">−131</td>
+<td class="minus">−0,33%</td>
+<td>39&thinsp;807</td>
+<td class="minus">−88</td>
+<td class="minus">−0,22%</td>
+<td>39&thinsp;719</td>
+<td class="minus">−88</td>
+<td class="minus">−0,22%</td>
+<td>39&thinsp;631</td>
+<td class="minus">−102</td>
+<td class="minus">−0,26%</td>
+<td>39&thinsp;529</td>
+<td class="plus">7</td>
+<td class="plus">0,02%</td>
+<td>39&thinsp;536</td>
+<td class="plus">76</td>
+<td class="plus">0,19%</td>
+<td>39&thinsp;612</td>
+<td class="minus">−929</td>
+<td class="less">−2,35%</td>
+<td>38&thinsp;683</td>
+</tr>
+
+<tr>
+<th>Ломоносовский район</th>
+<td>52&thinsp;506</td>
+<td class="plus">462</td>
+<td class="plus">0,88%</td>
+<td>52&thinsp;968</td>
+<td class="minus">−75</td>
+<td class="minus">−0,14%</td>
+<td>52&thinsp;893</td>
+<td class="minus">−212</td>
+<td class="minus">−0,40%</td>
+<td>52&thinsp;681</td>
+<td class="minus">−631</td>
+<td class="less">−1,20%</td>
+<td>52&thinsp;050</td>
+<td class="plus">219</td>
+<td class="plus">0,42%</td>
+<td>52&thinsp;269</td>
+<td class="minus">−113</td>
+<td class="minus">−0,22%</td>
+<td>52&thinsp;156</td>
+<td class="minus">−262</td>
+<td class="minus">−0,50%</td>
+<td>51&thinsp;894</td>
+<td class="minus">−65</td>
+<td class="minus">−0,13%</td>
+<td>51&thinsp;829</td>
+<td class="minus">−114</td>
+<td class="minus">−0,22%</td>
+<td>51&thinsp;715</td>
+<td class="plus">46</td>
+<td class="plus">0,09%</td>
+<td>51&thinsp;761</td>
+<td class="minus">−184</td>
+<td class="minus">−0,36%</td>
+<td>51&thinsp;577</td>
+<td class="minus">−1&thinsp;642</td>
+<td class="less">−3,18%</td>
+<td>49&thinsp;935</td>
+</tr>
+
+<tr>
+<th>Обручевский район</th>
+<td>39&thinsp;359</td>
+<td class="plus">723</td>
+<td class="more">1,84%</td>
+<td>40&thinsp;082</td>
+<td class="plus">707</td>
+<td class="more">1,76%</td>
+<td>40&thinsp;789</td>
+<td class="plus">539</td>
+<td class="more">1,32%</td>
+<td>41&thinsp;328</td>
+<td class="plus">259</td>
+<td class="plus">0,63%</td>
+<td>41&thinsp;587</td>
+<td class="plus">217</td>
+<td class="plus">0,52%</td>
+<td>41&thinsp;804</td>
+<td class="plus">118</td>
+<td class="plus">0,28%</td>
+<td>41&thinsp;922</td>
+<td class="plus">41</td>
+<td class="plus">0,10%</td>
+<td>41&thinsp;963</td>
+<td class="plus">112</td>
+<td class="plus">0,27%</td>
+<td>42&thinsp;075</td>
+<td class="plus">225</td>
+<td class="plus">0,53%</td>
+<td>42&thinsp;300</td>
+<td class="plus">739</td>
+<td class="more">1,75%</td>
+<td>43&thinsp;039</td>
+<td class="plus">531</td>
+<td class="more">1,23%</td>
+<td>43&thinsp;570</td>
+<td class="minus">−845</td>
+<td class="less">−1,94%</td>
+<td>42&thinsp;725</td>
+</tr>
+
+<tr>
+<th>район Северное Бутово</th>
+<td>55&thinsp;191</td>
+<td class="plus">529</td>
+<td class="plus">0,96%</td>
+<td>55&thinsp;720</td>
+<td class="plus">1&thinsp;032</td>
+<td class="more">1,85%</td>
+<td>56&thinsp;752</td>
+<td class="plus">540</td>
+<td class="plus">0,95%</td>
+<td>57&thinsp;292</td>
+<td class="plus">80</td>
+<td class="plus">0,14%</td>
+<td>57&thinsp;372</td>
+<td class="minus">−55</td>
+<td class="minus">−0,10%</td>
+<td>57&thinsp;317</td>
+<td class="plus">184</td>
+<td class="plus">0,32%</td>
+<td>57&thinsp;501</td>
+<td class="plus">157</td>
+<td class="plus">0,27%</td>
+<td>57&thinsp;658</td>
+<td class="plus">49</td>
+<td class="plus">0,08%</td>
+<td>57&thinsp;707</td>
+<td class="plus">473</td>
+<td class="plus">0,82%</td>
+<td>58&thinsp;180</td>
+<td class="plus">488</td>
+<td class="plus">0,84%</td>
+<td>58&thinsp;668</td>
+<td class="plus">220</td>
+<td class="plus">0,37%</td>
+<td>58&thinsp;888</td>
+<td class="minus">−883</td>
+<td class="less">−1,50%</td>
+<td>58&thinsp;005</td>
+</tr>
+
+<tr>
+<th>район Теплый Стан</th>
+<td>82&thinsp;372</td>
+<td class="plus">827</td>
+<td class="more">1,00%</td>
+<td>83&thinsp;199</td>
+<td class="plus">311</td>
+<td class="plus">0,37%</td>
+<td>83&thinsp;510</td>
+<td class="plus">167</td>
+<td class="plus">0,20%</td>
+<td>83&thinsp;677</td>
+<td class="minus">−10</td>
+<td class="minus">−0,01%</td>
+<td>83&thinsp;667</td>
+<td class="minus">−217</td>
+<td class="minus">−0,26%</td>
+<td>83&thinsp;450</td>
+<td class="minus">−74</td>
+<td class="minus">−0,09%</td>
+<td>83&thinsp;376</td>
+<td class="minus">−5</td>
+<td class="minus">−0,01%</td>
+<td>83&thinsp;371</td>
+<td class="minus">−93</td>
+<td class="minus">−0,11%</td>
+<td>83&thinsp;278</td>
+<td class="minus">−38</td>
+<td class="minus">−0,05%</td>
+<td>83&thinsp;240</td>
+<td class="plus">87</td>
+<td class="plus">0,10%</td>
+<td>83&thinsp;327</td>
+<td class="plus">312</td>
+<td class="plus">0,37%</td>
+<td>83&thinsp;639</td>
+<td class="minus">−2&thinsp;164</td>
+<td class="less">−2,59%</td>
+<td>81&thinsp;475</td>
+</tr>
+
+<tr>
+<th>район Черемушки</th>
+<td>63&thinsp;812</td>
+<td class="minus">−1&thinsp;462</td>
+<td class="less">−2,29%</td>
+<td>62&thinsp;350</td>
+<td class="plus">386</td>
+<td class="plus">0,62%</td>
+<td>62&thinsp;736</td>
+<td class="minus">−42</td>
+<td class="minus">−0,07%</td>
+<td>62&thinsp;694</td>
+<td class="minus">−142</td>
+<td class="minus">−0,23%</td>
+<td>62&thinsp;552</td>
+<td class="plus">286</td>
+<td class="plus">0,46%</td>
+<td>62&thinsp;838</td>
+<td class="plus">56</td>
+<td class="plus">0,09%</td>
+<td>62&thinsp;894</td>
+<td class="minus">−85</td>
+<td class="minus">−0,14%</td>
+<td>62&thinsp;809</td>
+<td class="plus">48</td>
+<td class="plus">0,08%</td>
+<td>62&thinsp;857</td>
+<td class="plus">78</td>
+<td class="plus">0,12%</td>
+<td>62&thinsp;935</td>
+<td class="plus">1&thinsp;027</td>
+<td class="more">1,63%</td>
+<td>63&thinsp;962</td>
+<td class="minus">−58</td>
+<td class="minus">−0,09%</td>
+<td>63&thinsp;904</td>
+<td class="minus">−1&thinsp;213</td>
+<td class="less">−1,90%</td>
+<td>62&thinsp;691</td>
+</tr>
+
+<tr>
+<th>район Южное Бутово</th>
+<td>97&thinsp;712</td>
+<td class="plus">3&thinsp;089</td>
+<td class="more">3,16%</td>
+<td>100&thinsp;801</td>
+<td class="plus">3&thinsp;137</td>
+<td class="more">3,11%</td>
+<td>103&thinsp;938</td>
+<td class="plus">3&thinsp;216</td>
+<td class="more">3,09%</td>
+<td>107&thinsp;154</td>
+<td class="plus">3&thinsp;400</td>
+<td class="more">3,17%</td>
+<td>110&thinsp;554</td>
+<td class="plus">4&thinsp;009</td>
+<td class="more">3,63%</td>
+<td>114&thinsp;563</td>
+<td class="plus">2&thinsp;914</td>
+<td class="more">2,54%</td>
+<td>117&thinsp;477</td>
+<td class="plus">3&thinsp;573</td>
+<td class="more">3,04%</td>
+<td>121&thinsp;050</td>
+<td class="plus">1&thinsp;429</td>
+<td class="more">1,18%</td>
+<td>122&thinsp;479</td>
+<td class="plus">1&thinsp;153</td>
+<td class="plus">0,94%</td>
+<td>123&thinsp;632</td>
+<td class="plus">4&thinsp;746</td>
+<td class="more">3,84%</td>
+<td>128&thinsp;378</td>
+<td class="plus">1&thinsp;573</td>
+<td class="more">1,23%</td>
+<td>129&thinsp;951</td>
+<td class="minus">−650</td>
+<td class="minus">−0,50%</td>
+<td>129&thinsp;301</td>
+</tr>
+
+<tr>
+<th>район Ясенево</th>
+<td>121&thinsp;096</td>
+<td class="minus">−457</td>
+<td class="minus">−0,38%</td>
+<td>120&thinsp;639</td>
+<td class="plus">447</td>
+<td class="plus">0,37%</td>
+<td>121&thinsp;086</td>
+<td class="minus">−256</td>
+<td class="minus">−0,21%</td>
+<td>120&thinsp;830</td>
+<td class="minus">−282</td>
+<td class="minus">−0,23%</td>
+<td>120&thinsp;548</td>
+<td class="minus">−300</td>
+<td class="minus">−0,25%</td>
+<td>120&thinsp;248</td>
+<td class="minus">−778</td>
+<td class="minus">−0,65%</td>
+<td>119&thinsp;470</td>
+<td class="minus">−301</td>
+<td class="minus">−0,25%</td>
+<td>119&thinsp;169</td>
+<td class="minus">−443</td>
+<td class="minus">−0,37%</td>
+<td>118&thinsp;726</td>
+<td class="minus">−223</td>
+<td class="minus">−0,19%</td>
+<td>118&thinsp;503</td>
+<td class="plus">129</td>
+<td class="plus">0,11%</td>
+<td>118&thinsp;632</td>
+<td class="plus">1&thinsp;765</td>
+<td class="more">1,49%</td>
+<td>120&thinsp;397</td>
+<td class="minus">−2&thinsp;652</td>
+<td class="less">−2,20%</td>
+<td>117&thinsp;745</td>
+</tr>
+
+<tr class="sum">
+<th>Итого по Юго-Западному административному округу</th>
+<td>831&thinsp;726</td>
+<td class="plus">4&thinsp;606</td>
+<td class="plus">0,55%</td>
+<td>836&thinsp;332</td>
+<td class="plus">6&thinsp;941</td>
+<td class="plus">0,83%</td>
+<td>843&thinsp;273</td>
+<td class="plus">3&thinsp;370</td>
+<td class="plus">0,40%</td>
+<td>846&thinsp;643</td>
+<td class="plus">1&thinsp;419</td>
+<td class="plus">0,17%</td>
+<td>848&thinsp;062</td>
+<td class="plus">2&thinsp;896</td>
+<td class="plus">0,34%</td>
+<td>850&thinsp;958</td>
+<td class="plus">1&thinsp;414</td>
+<td class="plus">0,17%</td>
+<td>852&thinsp;372</td>
+<td class="plus">2&thinsp;311</td>
+<td class="plus">0,27%</td>
+<td>854&thinsp;683</td>
+<td class="plus">586</td>
+<td class="plus">0,07%</td>
+<td>855&thinsp;269</td>
+<td class="plus">683</td>
+<td class="plus">0,08%</td>
+<td>855&thinsp;952</td>
+<td class="plus">8&thinsp;066</td>
+<td class="plus">0,94%</td>
+<td>864&thinsp;018</td>
+<td class="plus">3&thinsp;958</td>
+<td class="plus">0,46%</td>
+<td>867&thinsp;976</td>
+<td class="minus">−16&thinsp;353</td>
+<td class="less">−1,88%</td>
+<td>851&thinsp;623</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="empty">
+<th>Западный административный округ</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>район Внуково</th>
+<td>13&thinsp;762</td>
+<td class="plus">99</td>
+<td class="plus">0,72%</td>
+<td>13&thinsp;861</td>
+<td class="plus">84</td>
+<td class="plus">0,61%</td>
+<td>13&thinsp;945</td>
+<td class="plus">24</td>
+<td class="plus">0,17%</td>
+<td>13&thinsp;969</td>
+<td class="plus">25</td>
+<td class="plus">0,18%</td>
+<td>13&thinsp;994</td>
+<td class="plus">16</td>
+<td class="plus">0,11%</td>
+<td>14&thinsp;010</td>
+<td class="plus">277</td>
+<td class="more">1,98%</td>
+<td>14&thinsp;287</td>
+<td class="plus">148</td>
+<td class="more">1,04%</td>
+<td>14&thinsp;435</td>
+<td class="plus">79</td>
+<td class="plus">0,55%</td>
+<td>14&thinsp;514</td>
+<td class="plus">82</td>
+<td class="plus">0,56%</td>
+<td>14&thinsp;596</td>
+<td class="plus">83</td>
+<td class="plus">0,57%</td>
+<td>14&thinsp;679</td>
+<td class="plus">62</td>
+<td class="plus">0,42%</td>
+<td>14&thinsp;741</td>
+<td class="minus">−91</td>
+<td class="minus">−0,62%</td>
+<td>14&thinsp;650</td>
+</tr>
+
+<tr>
+<th>район Дорогомилово</th>
+<td>38&thinsp;615</td>
+<td class="minus">−234</td>
+<td class="minus">−0,61%</td>
+<td>38&thinsp;381</td>
+<td class="minus">−434</td>
+<td class="less">−1,13%</td>
+<td>37&thinsp;947</td>
+<td class="minus">−80</td>
+<td class="minus">−0,21%</td>
+<td>37&thinsp;867</td>
+<td class="minus">−70</td>
+<td class="minus">−0,18%</td>
+<td>37&thinsp;797</td>
+<td class="minus">−102</td>
+<td class="minus">−0,27%</td>
+<td>37&thinsp;695</td>
+<td class="minus">−382</td>
+<td class="less">−1,01%</td>
+<td>37&thinsp;313</td>
+<td class="minus">−114</td>
+<td class="minus">−0,31%</td>
+<td>37&thinsp;199</td>
+<td class="minus">−116</td>
+<td class="minus">−0,31%</td>
+<td>37&thinsp;083</td>
+<td class="plus">14</td>
+<td class="plus">0,04%</td>
+<td>37&thinsp;097</td>
+<td class="minus">−37</td>
+<td class="minus">−0,10%</td>
+<td>37&thinsp;060</td>
+<td class="minus">−79</td>
+<td class="minus">−0,21%</td>
+<td>36&thinsp;981</td>
+<td class="minus">−647</td>
+<td class="less">−1,75%</td>
+<td>36&thinsp;334</td>
+</tr>
+
+<tr>
+<th>район Крылатское</th>
+<td>55&thinsp;419</td>
+<td class="plus">254</td>
+<td class="plus">0,46%</td>
+<td>55&thinsp;673</td>
+<td class="plus">128</td>
+<td class="plus">0,23%</td>
+<td>55&thinsp;801</td>
+<td class="minus">−46</td>
+<td class="minus">−0,08%</td>
+<td>55&thinsp;755</td>
+<td class="minus">−39</td>
+<td class="minus">−0,07%</td>
+<td>55&thinsp;716</td>
+<td class="plus">248</td>
+<td class="plus">0,45%</td>
+<td>55&thinsp;964</td>
+<td class="minus">−314</td>
+<td class="minus">−0,56%</td>
+<td>55&thinsp;650</td>
+<td class="plus">167</td>
+<td class="plus">0,30%</td>
+<td>55&thinsp;817</td>
+<td class="minus">−697</td>
+<td class="less">−1,25%</td>
+<td>55&thinsp;120</td>
+<td class="minus">−199</td>
+<td class="minus">−0,36%</td>
+<td>54&thinsp;921</td>
+<td class="minus">−648</td>
+<td class="less">−1,18%</td>
+<td>54&thinsp;273</td>
+<td class="plus">470</td>
+<td class="plus">0,87%</td>
+<td>54&thinsp;743</td>
+<td class="minus">−1&thinsp;504</td>
+<td class="less">−2,75%</td>
+<td>53&thinsp;239</td>
+</tr>
+
+<tr>
+<th>район Кунцево</th>
+<td>89&thinsp;704</td>
+<td class="plus">452</td>
+<td class="plus">0,50%</td>
+<td>90&thinsp;156</td>
+<td class="plus">462</td>
+<td class="plus">0,51%</td>
+<td>90&thinsp;618</td>
+<td class="plus">68</td>
+<td class="plus">0,08%</td>
+<td>90&thinsp;686</td>
+<td class="plus">363</td>
+<td class="plus">0,40%</td>
+<td>91&thinsp;049</td>
+<td class="minus">−876</td>
+<td class="minus">−0,96%</td>
+<td>90&thinsp;173</td>
+<td class="minus">−242</td>
+<td class="minus">−0,27%</td>
+<td>89&thinsp;931</td>
+<td class="plus">161</td>
+<td class="plus">0,18%</td>
+<td>90&thinsp;092</td>
+<td class="minus">−43</td>
+<td class="minus">−0,05%</td>
+<td>90&thinsp;049</td>
+<td class="minus">−222</td>
+<td class="minus">−0,25%</td>
+<td>89&thinsp;827</td>
+<td class="plus">421</td>
+<td class="plus">0,47%</td>
+<td>90&thinsp;248</td>
+<td class="plus">80</td>
+<td class="plus">0,09%</td>
+<td>90&thinsp;328</td>
+<td class="minus">−450</td>
+<td class="minus">−0,50%</td>
+<td>89&thinsp;878</td>
+</tr>
+
+<tr>
+<th>Можайский район</th>
+<td>85&thinsp;279</td>
+<td class="minus">−76</td>
+<td class="minus">−0,09%</td>
+<td>85&thinsp;203</td>
+<td class="plus">1&thinsp;110</td>
+<td class="more">1,30%</td>
+<td>86&thinsp;313</td>
+<td class="minus">−275</td>
+<td class="minus">−0,32%</td>
+<td>86&thinsp;038</td>
+<td class="minus">−344</td>
+<td class="minus">−0,40%</td>
+<td>85&thinsp;694</td>
+<td class="minus">−111</td>
+<td class="minus">−0,13%</td>
+<td>85&thinsp;583</td>
+<td class="minus">−453</td>
+<td class="minus">−0,53%</td>
+<td>85&thinsp;130</td>
+<td class="plus">206</td>
+<td class="plus">0,24%</td>
+<td>85&thinsp;336</td>
+<td class="plus">123</td>
+<td class="plus">0,14%</td>
+<td>85&thinsp;459</td>
+<td class="plus">15</td>
+<td class="plus">0,02%</td>
+<td>85&thinsp;474</td>
+<td class="plus">1&thinsp;016</td>
+<td class="more">1,19%</td>
+<td>86&thinsp;490</td>
+<td class="plus">314</td>
+<td class="plus">0,36%</td>
+<td>86&thinsp;804</td>
+<td class="minus">−374</td>
+<td class="minus">−0,43%</td>
+<td>86&thinsp;430</td>
+</tr>
+
+<tr>
+<th>район Ново-Переделкино</th>
+<td>68&thinsp;806</td>
+<td class="plus">867</td>
+<td class="more">1,26%</td>
+<td>69&thinsp;673</td>
+<td class="plus">276</td>
+<td class="plus">0,40%</td>
+<td>69&thinsp;949</td>
+<td class="plus">390</td>
+<td class="plus">0,56%</td>
+<td>70&thinsp;339</td>
+<td class="plus">265</td>
+<td class="plus">0,38%</td>
+<td>70&thinsp;604</td>
+<td class="plus">9</td>
+<td class="plus">0,01%</td>
+<td>70&thinsp;613</td>
+<td class="plus">27</td>
+<td class="plus">0,04%</td>
+<td>70&thinsp;640</td>
+<td class="plus">14</td>
+<td class="plus">0,02%</td>
+<td>70&thinsp;654</td>
+<td class="plus">1&thinsp;146</td>
+<td class="more">1,62%</td>
+<td>71&thinsp;800</td>
+<td class="plus">326</td>
+<td class="plus">0,45%</td>
+<td>72&thinsp;126</td>
+<td class="plus">810</td>
+<td class="more">1,12%</td>
+<td>72&thinsp;936</td>
+<td class="plus">345</td>
+<td class="plus">0,47%</td>
+<td>73&thinsp;281</td>
+<td class="minus">−1&thinsp;037</td>
+<td class="less">−1,42%</td>
+<td>72&thinsp;244</td>
+</tr>
+
+<tr>
+<th>район Очаково-Матвеевское</th>
+<td>63&thinsp;774</td>
+<td class="minus">−884</td>
+<td class="less">−1,39%</td>
+<td>62&thinsp;890</td>
+<td class="plus">1&thinsp;681</td>
+<td class="more">2,67%</td>
+<td>64&thinsp;571</td>
+<td class="plus">431</td>
+<td class="plus">0,67%</td>
+<td>65&thinsp;002</td>
+<td class="plus">225</td>
+<td class="plus">0,35%</td>
+<td>65&thinsp;227</td>
+<td class="minus">−122</td>
+<td class="minus">−0,19%</td>
+<td>65&thinsp;105</td>
+<td class="plus">146</td>
+<td class="plus">0,22%</td>
+<td>65&thinsp;251</td>
+<td class="plus">296</td>
+<td class="plus">0,45%</td>
+<td>65&thinsp;547</td>
+<td class="plus">77</td>
+<td class="plus">0,12%</td>
+<td>65&thinsp;624</td>
+<td class="plus">404</td>
+<td class="plus">0,62%</td>
+<td>66&thinsp;028</td>
+<td class="plus">149</td>
+<td class="plus">0,23%</td>
+<td>66&thinsp;177</td>
+<td class="plus">312</td>
+<td class="plus">0,47%</td>
+<td>66&thinsp;489</td>
+<td class="minus">−2&thinsp;484</td>
+<td class="less">−3,74%</td>
+<td>64&thinsp;005</td>
+</tr>
+
+<tr>
+<th>район Проспект Вернадского</th>
+<td>36&thinsp;424</td>
+<td class="plus">72</td>
+<td class="plus">0,20%</td>
+<td>36&thinsp;496</td>
+<td class="minus">−135</td>
+<td class="minus">−0,37%</td>
+<td>36&thinsp;361</td>
+<td class="plus">61</td>
+<td class="plus">0,17%</td>
+<td>36&thinsp;422</td>
+<td class="minus">−1</td>
+<td class="minus">0,00%</td>
+<td>36&thinsp;421</td>
+<td class="minus">−131</td>
+<td class="minus">−0,36%</td>
+<td>36&thinsp;290</td>
+<td class="plus">20</td>
+<td class="plus">0,06%</td>
+<td>36&thinsp;310</td>
+<td class="plus">64</td>
+<td class="plus">0,18%</td>
+<td>36&thinsp;374</td>
+<td class="plus">69</td>
+<td class="plus">0,19%</td>
+<td>36&thinsp;443</td>
+<td class="plus">92</td>
+<td class="plus">0,25%</td>
+<td>36&thinsp;535</td>
+<td class="plus">332</td>
+<td class="plus">0,91%</td>
+<td>36&thinsp;867</td>
+<td class="minus">−5</td>
+<td class="minus">−0,01%</td>
+<td>36&thinsp;862</td>
+<td class="minus">−326</td>
+<td class="minus">−0,88%</td>
+<td>36&thinsp;536</td>
+</tr>
+
+<tr>
+<th>район Раменки</th>
+<td>72&thinsp;251</td>
+<td class="minus">−267</td>
+<td class="minus">−0,37%</td>
+<td>71&thinsp;984</td>
+<td class="plus">323</td>
+<td class="plus">0,45%</td>
+<td>72&thinsp;307</td>
+<td class="plus">227</td>
+<td class="plus">0,31%</td>
+<td>72&thinsp;534</td>
+<td class="plus">206</td>
+<td class="plus">0,28%</td>
+<td>72&thinsp;740</td>
+<td class="plus">224</td>
+<td class="plus">0,31%</td>
+<td>72&thinsp;964</td>
+<td class="plus">227</td>
+<td class="plus">0,31%</td>
+<td>73&thinsp;191</td>
+<td class="plus">127</td>
+<td class="plus">0,17%</td>
+<td>73&thinsp;318</td>
+<td class="plus">441</td>
+<td class="plus">0,60%</td>
+<td>73&thinsp;759</td>
+<td class="plus">566</td>
+<td class="plus">0,77%</td>
+<td>74&thinsp;325</td>
+<td class="plus">528</td>
+<td class="plus">0,71%</td>
+<td>74&thinsp;853</td>
+<td class="plus">259</td>
+<td class="plus">0,35%</td>
+<td>75&thinsp;112</td>
+<td class="minus">−123</td>
+<td class="minus">−0,16%</td>
+<td>74&thinsp;989</td>
+</tr>
+
+<tr>
+<th>район Солнцево</th>
+<td>62&thinsp;065</td>
+<td class="plus">685</td>
+<td class="more">1,10%</td>
+<td>62&thinsp;750</td>
+<td class="plus">708</td>
+<td class="more">1,13%</td>
+<td>63&thinsp;458</td>
+<td class="plus">735</td>
+<td class="more">1,16%</td>
+<td>64&thinsp;193</td>
+<td class="plus">555</td>
+<td class="plus">0,86%</td>
+<td>64&thinsp;748</td>
+<td class="plus">329</td>
+<td class="plus">0,51%</td>
+<td>65&thinsp;077</td>
+<td class="plus">570</td>
+<td class="plus">0,88%</td>
+<td>65&thinsp;647</td>
+<td class="plus">351</td>
+<td class="plus">0,53%</td>
+<td>65&thinsp;998</td>
+<td class="plus">514</td>
+<td class="plus">0,78%</td>
+<td>66&thinsp;512</td>
+<td class="plus">558</td>
+<td class="plus">0,84%</td>
+<td>67&thinsp;070</td>
+<td class="plus">391</td>
+<td class="plus">0,58%</td>
+<td>67&thinsp;461</td>
+<td class="plus">433</td>
+<td class="plus">0,64%</td>
+<td>67&thinsp;894</td>
+<td class="minus">−719</td>
+<td class="less">−1,06%</td>
+<td>67&thinsp;175</td>
+</tr>
+
+<tr>
+<th>район Тропарево-Никулино</th>
+<td>64&thinsp;918</td>
+<td class="plus">932</td>
+<td class="more">1,44%</td>
+<td>65&thinsp;850</td>
+<td class="plus">939</td>
+<td class="more">1,43%</td>
+<td>66&thinsp;789</td>
+<td class="plus">246</td>
+<td class="plus">0,37%</td>
+<td>67&thinsp;035</td>
+<td class="plus">291</td>
+<td class="plus">0,43%</td>
+<td>67&thinsp;326</td>
+<td class="plus">29</td>
+<td class="plus">0,04%</td>
+<td>67&thinsp;355</td>
+<td class="plus">112</td>
+<td class="plus">0,17%</td>
+<td>67&thinsp;467</td>
+<td class="plus">91</td>
+<td class="plus">0,13%</td>
+<td>67&thinsp;558</td>
+<td class="plus">322</td>
+<td class="plus">0,48%</td>
+<td>67&thinsp;880</td>
+<td class="plus">326</td>
+<td class="plus">0,48%</td>
+<td>68&thinsp;206</td>
+<td class="plus">445</td>
+<td class="plus">0,65%</td>
+<td>68&thinsp;651</td>
+<td class="plus">259</td>
+<td class="plus">0,38%</td>
+<td>68&thinsp;910</td>
+<td class="plus">80</td>
+<td class="plus">0,12%</td>
+<td>68&thinsp;990</td>
+</tr>
+
+<tr>
+<th>район Филевский парк</th>
+<td>47&thinsp;759</td>
+<td class="minus">−51</td>
+<td class="minus">−0,11%</td>
+<td>47&thinsp;708</td>
+<td class="plus">24</td>
+<td class="plus">0,05%</td>
+<td>47&thinsp;732</td>
+<td class="minus">−91</td>
+<td class="minus">−0,19%</td>
+<td>47&thinsp;641</td>
+<td class="plus">173</td>
+<td class="plus">0,36%</td>
+<td>47&thinsp;814</td>
+<td class="minus">−62</td>
+<td class="minus">−0,13%</td>
+<td>47&thinsp;752</td>
+<td class="plus">89</td>
+<td class="plus">0,19%</td>
+<td>47&thinsp;841</td>
+<td class="minus">−172</td>
+<td class="minus">−0,36%</td>
+<td>47&thinsp;669</td>
+<td class="minus">−130</td>
+<td class="minus">−0,27%</td>
+<td>47&thinsp;539</td>
+<td class="minus">−394</td>
+<td class="minus">−0,83%</td>
+<td>47&thinsp;145</td>
+<td class="plus">313</td>
+<td class="plus">0,66%</td>
+<td>47&thinsp;458</td>
+<td class="plus">216</td>
+<td class="plus">0,46%</td>
+<td>47&thinsp;674</td>
+<td class="minus">−960</td>
+<td class="less">−2,01%</td>
+<td>46&thinsp;714</td>
+</tr>
+
+<tr>
+<th>район Фили-Давыдково</th>
+<td>65&thinsp;010</td>
+<td class="plus">122</td>
+<td class="plus">0,19%</td>
+<td>65&thinsp;132</td>
+<td class="plus">285</td>
+<td class="plus">0,44%</td>
+<td>65&thinsp;417</td>
+<td class="plus">167</td>
+<td class="plus">0,26%</td>
+<td>65&thinsp;584</td>
+<td class="plus">104</td>
+<td class="plus">0,16%</td>
+<td>65&thinsp;688</td>
+<td class="plus">106</td>
+<td class="plus">0,16%</td>
+<td>65&thinsp;794</td>
+<td class="minus">−220</td>
+<td class="minus">−0,33%</td>
+<td>65&thinsp;574</td>
+<td class="minus">−297</td>
+<td class="minus">−0,45%</td>
+<td>65&thinsp;277</td>
+<td class="plus">25</td>
+<td class="plus">0,04%</td>
+<td>65&thinsp;302</td>
+<td class="minus">−253</td>
+<td class="minus">−0,39%</td>
+<td>65&thinsp;049</td>
+<td class="plus">315</td>
+<td class="plus">0,48%</td>
+<td>65&thinsp;364</td>
+<td class="plus">107</td>
+<td class="plus">0,16%</td>
+<td>65&thinsp;471</td>
+<td class="minus">−308</td>
+<td class="minus">−0,47%</td>
+<td>65&thinsp;163</td>
+</tr>
+
+<tr class="sum">
+<th>Итого по Западному административному округу</th>
+<td>763&thinsp;786</td>
+<td class="plus">1&thinsp;971</td>
+<td class="plus">0,26%</td>
+<td>765&thinsp;757</td>
+<td class="plus">5&thinsp;451</td>
+<td class="plus">0,71%</td>
+<td>771&thinsp;208</td>
+<td class="plus">1&thinsp;857</td>
+<td class="plus">0,24%</td>
+<td>773&thinsp;065</td>
+<td class="plus">1&thinsp;753</td>
+<td class="plus">0,23%</td>
+<td>774&thinsp;818</td>
+<td class="minus">−443</td>
+<td class="minus">−0,06%</td>
+<td>774&thinsp;375</td>
+<td class="minus">−143</td>
+<td class="minus">−0,02%</td>
+<td>774&thinsp;232</td>
+<td class="plus">1&thinsp;042</td>
+<td class="plus">0,13%</td>
+<td>775&thinsp;274</td>
+<td class="plus">1&thinsp;810</td>
+<td class="plus">0,23%</td>
+<td>777&thinsp;084</td>
+<td class="plus">1&thinsp;315</td>
+<td class="plus">0,17%</td>
+<td>778&thinsp;399</td>
+<td class="plus">4&thinsp;118</td>
+<td class="plus">0,53%</td>
+<td>782&thinsp;517</td>
+<td class="plus">2&thinsp;773</td>
+<td class="plus">0,35%</td>
+<td>785&thinsp;290</td>
+<td class="minus">−8&thinsp;943</td>
+<td class="less">−1,14%</td>
+<td>776&thinsp;347</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="empty">
+<th>Северо-Западный административный округ</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>район Куркино</th>
+<td>8&thinsp;025</td>
+<td class="plus">427</td>
+<td class="more">5,3%</td>
+<td>8&thinsp;452</td>
+<td class="plus">1&thinsp;578</td>
+<td class="more">18,7%</td>
+<td>10&thinsp;030</td>
+<td class="plus">662</td>
+<td class="more">6,60%</td>
+<td>10&thinsp;692</td>
+<td class="plus">359</td>
+<td class="more">3,36%</td>
+<td>11&thinsp;051</td>
+<td class="plus">543</td>
+<td class="more">4,91%</td>
+<td>11&thinsp;594</td>
+<td class="plus">497</td>
+<td class="more">4,29%</td>
+<td>12&thinsp;091</td>
+<td class="plus">739</td>
+<td class="more">6,11%</td>
+<td>12&thinsp;830</td>
+<td class="plus">764</td>
+<td class="more">5,95%</td>
+<td>13&thinsp;594</td>
+<td class="plus">568</td>
+<td class="more">4,18%</td>
+<td>14&thinsp;162</td>
+<td class="plus">853</td>
+<td class="more">6,02%</td>
+<td>15&thinsp;015</td>
+<td class="plus">418</td>
+<td class="more">2,78%</td>
+<td>15&thinsp;433</td>
+<td class="minus">−182</td>
+<td class="less">−1,18%</td>
+<td>15&thinsp;251</td>
+</tr>
+
+<tr>
+<th>район Митино</th>
+<td>104&thinsp;532</td>
+<td class="plus">1&thinsp;668</td>
+<td class="more">1,60%</td>
+<td>106&thinsp;200</td>
+<td class="plus">1&thinsp;812</td>
+<td class="more">1,71%</td>
+<td>108&thinsp;012</td>
+<td class="plus">1&thinsp;058</td>
+<td class="plus">0,98%</td>
+<td>109&thinsp;070</td>
+<td class="minus">−826</td>
+<td class="minus">−0,76%</td>
+<td>108&thinsp;244</td>
+<td class="plus">128</td>
+<td class="plus">0,12%</td>
+<td>108&thinsp;372</td>
+<td class="plus">332</td>
+<td class="plus">0,31%</td>
+<td>108&thinsp;704</td>
+<td class="plus">560</td>
+<td class="plus">0,52%</td>
+<td>109&thinsp;264</td>
+<td class="plus">475</td>
+<td class="plus">0,43%</td>
+<td>109&thinsp;739</td>
+<td class="minus">−38</td>
+<td class="minus">−0,03%</td>
+<td>109&thinsp;701</td>
+<td class="plus">1&thinsp;202</td>
+<td class="more">1,10%</td>
+<td>110&thinsp;903</td>
+<td class="plus">606</td>
+<td class="plus">0,55%</td>
+<td>111&thinsp;509</td>
+<td class="minus">−1&thinsp;115</td>
+<td class="less">−1,00%</td>
+<td>110&thinsp;394</td>
+</tr>
+
+<tr>
+<th>район Покровское-Стрешнево</th>
+<td>33&thinsp;717</td>
+<td class="plus">83</td>
+<td class="plus">0,25%</td>
+<td>33&thinsp;800</td>
+<td class="minus">−122</td>
+<td class="minus">−0,36%</td>
+<td>33&thinsp;678</td>
+<td class="plus">45</td>
+<td class="plus">0,13%</td>
+<td>33&thinsp;723</td>
+<td class="minus">−396</td>
+<td class="less">−1,17%</td>
+<td>33&thinsp;327</td>
+<td class="minus">−239</td>
+<td class="minus">−0,72%</td>
+<td>33&thinsp;088</td>
+<td class="plus">21</td>
+<td class="plus">0,06%</td>
+<td>33&thinsp;109</td>
+<td class="minus">−555</td>
+<td class="less">−1,68%</td>
+<td>32&thinsp;554</td>
+<td class="plus">344</td>
+<td class="more">1,06%</td>
+<td>32&thinsp;898</td>
+<td class="plus">348</td>
+<td class="more">1,06%</td>
+<td>33&thinsp;246</td>
+<td class="plus">111</td>
+<td class="plus">0,33%</td>
+<td>33&thinsp;357</td>
+<td class="plus">150</td>
+<td class="plus">0,45%</td>
+<td>33&thinsp;507</td>
+<td class="minus">−386</td>
+<td class="less">−1,15%</td>
+<td>33&thinsp;121</td>
+</tr>
+
+<tr>
+<th>район Северное Тушино</th>
+<td>94&thinsp;493</td>
+<td class="minus">−543</td>
+<td class="minus">−0,57%</td>
+<td>93&thinsp;950</td>
+<td class="plus">732</td>
+<td class="plus">0,78%</td>
+<td>94&thinsp;682</td>
+<td class="minus">−139</td>
+<td class="minus">−0,15%</td>
+<td>94&thinsp;543</td>
+<td class="minus">−2&thinsp;389</td>
+<td class="less">−2,53%</td>
+<td>92&thinsp;154</td>
+<td class="minus">−467</td>
+<td class="minus">−0,51%</td>
+<td>91&thinsp;687</td>
+<td class="minus">−225</td>
+<td class="minus">−0,25%</td>
+<td>91&thinsp;462</td>
+<td class="minus">−184</td>
+<td class="minus">−0,20%</td>
+<td>91&thinsp;278</td>
+<td class="minus">−194</td>
+<td class="minus">−0,21%</td>
+<td>91&thinsp;084</td>
+<td class="plus">185</td>
+<td class="plus">0,20%</td>
+<td>91&thinsp;269</td>
+<td class="plus">500</td>
+<td class="plus">0,55%</td>
+<td>91&thinsp;769</td>
+<td class="minus">−109</td>
+<td class="minus">−0,12%</td>
+<td>91&thinsp;660</td>
+<td class="minus">−698</td>
+<td class="minus">−0,76%</td>
+<td>90&thinsp;962</td>
+</tr>
+
+<tr>
+<th>район Строгино</th>
+<td>91&thinsp;471</td>
+<td class="plus">337</td>
+<td class="plus">0,37%</td>
+<td>91&thinsp;808</td>
+<td class="plus">46</td>
+<td class="plus">0,05%</td>
+<td>91&thinsp;854</td>
+<td class="minus">−551</td>
+<td class="minus">−0,60%</td>
+<td>91&thinsp;303</td>
+<td class="minus">−3&thinsp;260</td>
+<td class="less">−3,57%</td>
+<td>88&thinsp;043</td>
+<td class="plus">2&thinsp;533</td>
+<td class="more">2,88%</td>
+<td>90&thinsp;576</td>
+<td class="minus">−227</td>
+<td class="minus">−0,25%</td>
+<td>90&thinsp;349</td>
+<td class="minus">−145</td>
+<td class="minus">−0,16%</td>
+<td>90&thinsp;204</td>
+<td class="minus">−128</td>
+<td class="minus">−0,14%</td>
+<td>90&thinsp;076</td>
+<td class="minus">−660</td>
+<td class="minus">−0,73%</td>
+<td>89&thinsp;416</td>
+<td class="plus">874</td>
+<td class="plus">0,98%</td>
+<td>90&thinsp;290</td>
+<td class="minus">−33</td>
+<td class="minus">−0,04%</td>
+<td>90&thinsp;257</td>
+<td class="minus">−675</td>
+<td class="minus">−0,75%</td>
+<td>89&thinsp;582</td>
+</tr>
+
+<tr>
+<th>район Хорошево - Мневники</th>
+<td>98&thinsp;942</td>
+<td class="minus">−549</td>
+<td class="minus">−0,55%</td>
+<td>98&thinsp;393</td>
+<td class="minus">−36</td>
+<td class="minus">−0,04%</td>
+<td>98&thinsp;357</td>
+<td class="minus">−160</td>
+<td class="minus">−0,16%</td>
+<td>98&thinsp;197</td>
+<td class="minus">−921</td>
+<td class="minus">−0,94%</td>
+<td>97&thinsp;276</td>
+<td class="plus">136</td>
+<td class="plus">0,14%</td>
+<td>97&thinsp;412</td>
+<td class="plus">63</td>
+<td class="plus">0,06%</td>
+<td>97&thinsp;475</td>
+<td class="minus">−165</td>
+<td class="minus">−0,17%</td>
+<td>97&thinsp;310</td>
+<td class="minus">−215</td>
+<td class="minus">−0,22%</td>
+<td>97&thinsp;095</td>
+<td class="plus">95</td>
+<td class="plus">0,10%</td>
+<td>97&thinsp;190</td>
+<td class="plus">46</td>
+<td class="plus">0,05%</td>
+<td>97&thinsp;236</td>
+<td class="plus">44</td>
+<td class="plus">0,05%</td>
+<td>97&thinsp;280</td>
+<td class="minus">−1&thinsp;070</td>
+<td class="less">−1,10%</td>
+<td>96&thinsp;210</td>
+</tr>
+
+<tr>
+<th>район Щукино</th>
+<td>65&thinsp;831</td>
+<td class="minus">−336</td>
+<td class="minus">−0,51%</td>
+<td>65&thinsp;495</td>
+<td class="minus">−230</td>
+<td class="minus">−0,35%</td>
+<td>65&thinsp;265</td>
+<td class="minus">−61</td>
+<td class="minus">−0,09%</td>
+<td>65&thinsp;204</td>
+<td class="minus">−1&thinsp;814</td>
+<td class="less">−2,78%</td>
+<td>63&thinsp;390</td>
+<td class="plus">514</td>
+<td class="plus">0,81%</td>
+<td>63&thinsp;904</td>
+<td class="minus">−324</td>
+<td class="minus">−0,51%</td>
+<td>63&thinsp;580</td>
+<td class="minus">−294</td>
+<td class="minus">−0,46%</td>
+<td>63&thinsp;286</td>
+<td class="minus">−92</td>
+<td class="minus">−0,15%</td>
+<td>63&thinsp;194</td>
+<td class="plus">49</td>
+<td class="plus">0,08%</td>
+<td>63&thinsp;243</td>
+<td class="plus">151</td>
+<td class="plus">0,24%</td>
+<td>63&thinsp;394</td>
+<td class="minus">−89</td>
+<td class="minus">−0,14%</td>
+<td>63&thinsp;305</td>
+<td class="minus">−548</td>
+<td class="minus">−0,87%</td>
+<td>62&thinsp;757</td>
+</tr>
+
+<tr>
+<th>район Южное Тушино</th>
+<td>64&thinsp;721</td>
+<td class="minus">−38</td>
+<td class="minus">−0,06%</td>
+<td>64&thinsp;683</td>
+<td class="plus">744</td>
+<td class="more">1,15%</td>
+<td>65&thinsp;427</td>
+<td class="plus">136</td>
+<td class="plus">0,21%</td>
+<td>65&thinsp;563</td>
+<td class="minus">−676</td>
+<td class="less">−1,03%</td>
+<td>64&thinsp;887</td>
+<td class="minus">−344</td>
+<td class="minus">−0,53%</td>
+<td>64&thinsp;543</td>
+<td class="minus">−329</td>
+<td class="minus">−0,51%</td>
+<td>64&thinsp;214</td>
+<td class="minus">−470</td>
+<td class="minus">−0,73%</td>
+<td>63&thinsp;744</td>
+<td class="minus">−47</td>
+<td class="minus">−0,07%</td>
+<td>63&thinsp;697</td>
+<td class="plus">402</td>
+<td class="plus">0,63%</td>
+<td>64&thinsp;099</td>
+<td class="plus">610</td>
+<td class="plus">0,95%</td>
+<td>64&thinsp;709</td>
+<td class="minus">−61</td>
+<td class="minus">−0,09%</td>
+<td>64&thinsp;648</td>
+<td class="minus">−559</td>
+<td class="minus">−0,86%</td>
+<td>64&thinsp;089</td>
+</tr>
+
+<tr class="sum">
+<th>Итого по Северо-Западному административному округу</th>
+<td>561&thinsp;732</td>
+<td class="plus">1&thinsp;049</td>
+<td class="plus">0,19%</td>
+<td>562&thinsp;781</td>
+<td class="plus">4&thinsp;524</td>
+<td class="plus">0,80%</td>
+<td>567&thinsp;305</td>
+<td class="plus">990</td>
+<td class="plus">0,17%</td>
+<td>568&thinsp;295</td>
+<td class="minus">−9&thinsp;923</td>
+<td class="less">−1,75%</td>
+<td>558&thinsp;372</td>
+<td class="plus">2&thinsp;804</td>
+<td class="plus">0,50%</td>
+<td>561&thinsp;176</td>
+<td class="minus">−192</td>
+<td class="minus">−0,03%</td>
+<td>560&thinsp;984</td>
+<td class="minus">−514</td>
+<td class="minus">−0,09%</td>
+<td>560&thinsp;470</td>
+<td class="plus">907</td>
+<td class="plus">0,16%</td>
+<td>561&thinsp;377</td>
+<td class="plus">949</td>
+<td class="plus">0,17%</td>
+<td>562&thinsp;326</td>
+<td class="plus">4&thinsp;347</td>
+<td class="plus">0,77%</td>
+<td>566&thinsp;673</td>
+<td class="plus">926</td>
+<td class="plus">0,16%</td>
+<td>567&thinsp;599</td>
+<td class="minus">−5&thinsp;233</td>
+<td class="minus">−0,92%</td>
+<td>562&thinsp;366</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="empty">
+<th>Зеленоградский административный округ</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>район Крюково</th>
+<td>58&thinsp;289</td>
+<td class="plus">1&thinsp;118</td>
+<td class="more">1,92%</td>
+<td>59&thinsp;407</td>
+<td class="plus">1&thinsp;230</td>
+<td class="more">2,07%</td>
+<td>60&thinsp;637</td>
+<td class="plus">751</td>
+<td class="more">1,24%</td>
+<td>61&thinsp;388</td>
+<td class="plus">2&thinsp;791</td>
+<td class="more">4,55%</td>
+<td>64&thinsp;179</td>
+<td class="plus">923</td>
+<td class="more">1,44%</td>
+<td>65&thinsp;102</td>
+<td class="plus">416</td>
+<td class="plus">0,64%</td>
+<td>65&thinsp;518</td>
+<td class="plus">226</td>
+<td class="plus">0,34%</td>
+<td>65&thinsp;744</td>
+<td class="plus">161</td>
+<td class="plus">0,24%</td>
+<td>65&thinsp;905</td>
+<td class="plus">188</td>
+<td class="plus">0,29%</td>
+<td>66&thinsp;093</td>
+<td class="plus">355</td>
+<td class="plus">0,54%</td>
+<td>66&thinsp;448</td>
+<td class="plus">499</td>
+<td class="plus">0,75%</td>
+<td>66&thinsp;947</td>
+<td class="minus">−1&thinsp;339</td>
+<td class="less">−2,00%</td>
+<td>65&thinsp;608</td>
+</tr>
+
+<tr>
+<th>район Матушкино</th>
+<td rowspan="2">57&thinsp;682</td>
+<td rowspan="2" class="minus">−1&thinsp;407</td>
+<td rowspan="2" class="less">−2,44%</td>
+<td rowspan="2">56&thinsp;275</td>
+<td rowspan="2" class="minus">−2&thinsp;202</td>
+<td rowspan="2" class="less">−3,91%</td>
+<td rowspan="2">54&thinsp;073</td>
+<td rowspan="2" class="plus">99</td>
+<td rowspan="2" class="plus">0,18%</td>
+<td rowspan="2">54&thinsp;172</td>
+<td rowspan="2" class="minus">−1&thinsp;168</td>
+<td rowspan="2" class="less">−2,16%</td>
+<td rowspan="2">53&thinsp;004</td>
+<td rowspan="2" class="minus">−258</td>
+<td rowspan="2" class="minus">−0,49%</td>
+<td rowspan="2">52&thinsp;746</td>
+<td rowspan="2" class="minus">−216</td>
+<td rowspan="2" class="minus">−0,41%</td>
+<td>29&thinsp;463</td>
+<td class="plus">79</td>
+<td class="plus">0,27%</td>
+<td>29&thinsp;542</td>
+<td class="minus">−316</td>
+<td class="less">−1,07%</td>
+<td>29&thinsp;226</td>
+<td class="plus">302</td>
+<td class="more">1,03%</td>
+<td>29&thinsp;528</td>
+<td class="plus">84</td>
+<td class="plus">0,28%</td>
+<td>29&thinsp;612</td>
+<td class="plus">159</td>
+<td class="plus">0,54%</td>
+<td>29&thinsp;771</td>
+<td class="minus">−595</td>
+<td class="less">−2,00%</td>
+<td>29&thinsp;176</td>
+</tr>
+
+<tr>
+<th>район Савелки</th>
+<td>23&thinsp;067</td>
+<td class="plus">53</td>
+<td class="plus">0,23%</td>
+<td>23&thinsp;120</td>
+<td class="plus">65</td>
+<td class="plus">0,28%</td>
+<td>23&thinsp;185</td>
+<td class="plus">30</td>
+<td class="plus">0,13%</td>
+<td>23&thinsp;215</td>
+<td class="plus">72</td>
+<td class="plus">0,31%</td>
+<td>23&thinsp;287</td>
+<td class="plus">65</td>
+<td class="plus">0,28%</td>
+<td>23&thinsp;352</td>
+<td class="minus">−467</td>
+<td class="less">−2,00%</td>
+<td>22&thinsp;885</td>
+</tr>
+
+<tr>
+<th>район Силино</th>
+<td rowspan="2">53&thinsp;752</td>
+<td rowspan="2" class="plus">201</td>
+<td rowspan="2" class="plus">0,37%</td>
+<td rowspan="2">53&thinsp;953</td>
+<td rowspan="2" class="plus">220</td>
+<td rowspan="2" class="plus">0,41%</td>
+<td rowspan="2">54&thinsp;173</td>
+<td rowspan="2" class="minus">−61</td>
+<td rowspan="2" class="minus">−0,11%</td>
+<td rowspan="2">54&thinsp;112</td>
+<td rowspan="2" class="minus">−1&thinsp;654</td>
+<td rowspan="2" class="less">−3,06%</td>
+<td rowspan="2">52&thinsp;458</td>
+<td rowspan="2" class="minus">−46</td>
+<td rowspan="2" class="minus">−0,09%</td>
+<td rowspan="2">52&thinsp;412</td>
+<td rowspan="2" class="minus">−39</td>
+<td rowspan="2" class="minus">−0,07%</td>
+<td>30&thinsp;368</td>
+<td class="minus">−61</td>
+<td class="minus">−0,20%</td>
+<td>30&thinsp;307</td>
+<td class="minus">−122</td>
+<td class="minus">−0,40%</td>
+<td>30&thinsp;185</td>
+<td class="minus">−23</td>
+<td class="minus">−0,08%</td>
+<td>30&thinsp;162</td>
+<td class="minus">−24</td>
+<td class="minus">−0,08%</td>
+<td>30&thinsp;138</td>
+<td class="minus">−148</td>
+<td class="minus">−0,49%</td>
+<td>29&thinsp;990</td>
+<td class="minus">−600</td>
+<td class="less">−2,00%</td>
+<td>29&thinsp;390</td>
+</tr>
+
+<tr>
+<th>район Старое Крюково</th>
+<td>22&thinsp;005</td>
+<td class="minus">−48</td>
+<td class="minus">−0,22%</td>
+<td>21&thinsp;957</td>
+<td class="minus">−6</td>
+<td class="minus">−0,03%</td>
+<td>21&thinsp;951</td>
+<td class="plus">27</td>
+<td class="plus">0,12%</td>
+<td>21&thinsp;978</td>
+<td class="minus">−19</td>
+<td class="minus">−0,09%</td>
+<td>21&thinsp;959</td>
+<td class="plus">61</td>
+<td class="plus">0,28%</td>
+<td>22&thinsp;020</td>
+<td class="minus">−440</td>
+<td class="less">−2,00%</td>
+<td>21&thinsp;580</td>
+</tr>
+
+<tr class="sum">
+<th>Итого по Зеленоградскому административному округу</th>
+<td>169&thinsp;723</td>
+<td class="minus">−88</td>
+<td class="minus">−0,05%</td>
+<td>169&thinsp;635</td>
+<td class="minus">−752</td>
+<td class="minus">−0,44%</td>
+<td>168&thinsp;883</td>
+<td class="plus">789</td>
+<td class="plus">0,47%</td>
+<td>169&thinsp;672</td>
+<td class="minus">−31</td>
+<td class="minus">−0,02%</td>
+<td>169&thinsp;641</td>
+<td class="plus">619</td>
+<td class="plus">0,36%</td>
+<td>170&thinsp;260</td>
+<td class="plus">161</td>
+<td class="plus">0,09%</td>
+<td>170&thinsp;421</td>
+<td class="plus">249</td>
+<td class="plus">0,15%</td>
+<td>170&thinsp;670</td>
+<td class="minus">−218</td>
+<td class="minus">−0,13%</td>
+<td>170&thinsp;452</td>
+<td class="plus">524</td>
+<td class="plus">0,31%</td>
+<td>170&thinsp;976</td>
+<td class="plus">468</td>
+<td class="plus">0,27%</td>
+<td>171&thinsp;444</td>
+<td class="plus">636</td>
+<td class="plus">0,37%</td>
+<td>172&thinsp;080</td>
+<td class="minus">−3&thinsp;441</td>
+<td class="less">−2,00%</td>
+<td>168&thinsp;639</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="sum">
+<th>Всего избирателей в «старой» Москве</th>
+<td>7&thinsp;033&thinsp;144</td>
+<td class="plus">10&thinsp;389</td>
+<td class="plus">0,15%</td>
+<td>7&thinsp;043&thinsp;533</td>
+<td class="plus">34&thinsp;309</td>
+<td class="plus">0,49%</td>
+<td>7&thinsp;077&thinsp;842</td>
+<td class="plus">16&thinsp;366</td>
+<td class="plus">0,23%</td>
+<td>7&thinsp;094&thinsp;208</td>
+<td class="minus">−53&thinsp;410</td>
+<td class="minus">−0,75%</td>
+<td>7&thinsp;040&thinsp;798</td>
+<td class="plus">22&thinsp;022</td>
+<td class="plus">0,31%</td>
+<td>7&thinsp;062&thinsp;820</td>
+<td class="plus">820</td>
+<td class="plus">0,01%</td>
+<td>7&thinsp;063&thinsp;640</td>
+<td class="minus">−3&thinsp;459</td>
+<td class="minus">−0,05%</td>
+<td>7&thinsp;060&thinsp;181</td>
+<td class="minus">−4&thinsp;088</td>
+<td class="minus">−0,06%</td>
+<td>7&thinsp;056&thinsp;093</td>
+<td class="plus">4&thinsp;786</td>
+<td class="plus">0,07%</td>
+<td>7&thinsp;060&thinsp;879</td>
+<td class="plus">45&thinsp;492</td>
+<td class="plus">0,64%</td>
+<td>7&thinsp;106&thinsp;371</td>
+<td class="plus">11&thinsp;221</td>
+<td class="plus">0,16%</td>
+<td>7&thinsp;117&thinsp;592</td>
+<td class="minus">−123&thinsp;289</td>
+<td class="less">−1,73%</td>
+<td>6&thinsp;994&thinsp;303</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="sum">
+<th>Новомосковский административный округ</th>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td>108&thinsp;993</td>
+<td class="plus">491</td>
+<td class="plus">0,45%</td>
+<td>109&thinsp;484</td>
+<td class="minus">−2&thinsp;986</td>
+<td class="less">−2,73%</td>
+<td>106&thinsp;498</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="sum">
+<th>Троицкий административный округ</th>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td class="empty"></td>
+<td>73&thinsp;765</td>
+<td class="plus">1&thinsp;234</td>
+<td class="more">1,67%</td>
+<td>74&thinsp;999</td>
+<td class="plus">768</td>
+<td class="more">1,02%</td>
+<td>75&thinsp;767</td>
+</tr>
+
+<tr class="empty all">
+<th>&thinsp;</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="sum">
+<th>Всего избирателей по городу Москве</th>
+<td>7&thinsp;033&thinsp;144</td>
+<td class="plus">10&thinsp;389</td>
+<td class="plus">0,15%</td>
+<td>7&thinsp;043&thinsp;533</td>
+<td class="plus">34&thinsp;309</td>
+<td class="plus">0,49%</td>
+<td>7&thinsp;077&thinsp;842</td>
+<td class="plus">16&thinsp;366</td>
+<td class="plus">0,23%</td>
+<td>7&thinsp;094&thinsp;208</td>
+<td class="minus">−53&thinsp;410</td>
+<td class="minus">−0,75%</td>
+<td>7&thinsp;040&thinsp;798</td>
+<td class="plus">22&thinsp;022</td>
+<td class="plus">0,31%</td>
+<td>7&thinsp;062&thinsp;820</td>
+<td class="plus">820</td>
+<td class="plus">0,01%</td>
+<td>7&thinsp;063&thinsp;640</td>
+<td class="minus">−3&thinsp;459</td>
+<td class="minus">−0,05%</td>
+<td>7&thinsp;060&thinsp;181</td>
+<td class="minus">−4&thinsp;088</td>
+<td class="minus">−0,06%</td>
+<td>7&thinsp;056&thinsp;093</td>
+<td class="plus">4&thinsp;786</td>
+<td class="plus">0,07%</td>
+<td>7&thinsp;060&thinsp;879</td>
+<td class="plus">228&thinsp;250</td>
+<td class="more">3,23%</td>
+<td>7&thinsp;289&thinsp;129</td>
+<td class="plus">12&thinsp;946</td>
+<td class="plus">0,18%</td>
+<td>7&thinsp;302&thinsp;075</td>
+<td class="minus">−125&thinsp;507</td>
+<td class="less">−1,72%</td>
+<td>7&thinsp;176&thinsp;568</td>
+</tr>
+</tbody></table>
+</div></div>
+</body></html>
