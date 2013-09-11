@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>районы</title>
+<meta charset=UTF-8>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<style>
+
+table {
+	table-layout: fixed; 
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+
+td {text-align: right}
+
+.minus {
+	color: #dc322f;
+	}
+.plus {
+	color: #859900;
+	}
+.less {
+	color: white;
+	background-color: #dc322f;
+	font-weight: bold;
+	}
+.more {
+	color: white;
+	background-color: #859900;
+	font-weight: bold;
+	}
+
+.empty td.datasource {
+	background-color: #268bd2;
+	padding: 0 3px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	}
+
+td, th {height: 1.4em;} 
+
+.empty td,
+.empty th,
+.sum td.empty {
+	border: 1px white;
+	background-color: white;
+	}
+
+.sum th, .sum td {background-color: #eee8d5;}
+.sum .minus, .sum .plus {font-weight: bold;}
+.sum td.more {
+	background-color: #859900;
+	}
+.sum td.less {
+	background-color: #dc322f;	
+	}
+
+
+th, td {	font-weight: normal;
+	padding:0 3px;
+	white-space:normal;
+	letter-spacing:0;
+	word-spacing:0;
+	border:1px #93a1a1 solid;
+	}
+body {
+	font-family: 'PT Sans', sans-serif;
+	margin:0
+	}
+table {
+	font-size:0.8em;
+	}
+
+p.header {
+	font-weight: bold;
+	}
+
+а,a:visited {color: rgb(204,51,51);}
+
+a:hover {color: rgb(21,21,21);}
+
+a, a:hover {text-decoration: none;}
+
+</style>
+</head>
+<body>
+
+<table>
+<thead>
+<tr><th>УИК</th><th>Район</th><th>08:00</th><th>20:00</th><th>Явка</th><th>Откреп.</th><th>±</th><th>% от явки</th></tr>
+</thead>
+<tbody>
+<tr><td>3321</td><th>Новомосковский АО</th> <td>2156</td><td>22040</td><td>714</td><td>0</td><td class="more">19884</td><td class="more">2784,87%</td></tr>
+<tr><td>1092</td><th>район Метрогородок</th><td>7</td><td>27</td><td>20</td><td>0</td><td class="plus">20</td><td class="more">100,00%</td></tr>
+<tr><td>3739</td><th>Гагаринский район</th> <td>5</td><td>43</td><td>43</td><td>0</td><td class="plus">38</td><td class="more">88,37%</td></tr>
+<tr><td>740</td><th>район Отрадное</th> <td>139</td><td>283</td><td>178</td><td>0</td><td class="more">144</td><td class="more">80,90%</td></tr>
+<tr><td>739</td><th>район Отрадное</th> <td>117</td><td>233</td><td>141</td><td>2</td><td class="more">114</td><td class="more">80,85%</td></tr>
+<tr><td>3608</td><th>Басманный район</th> <td>3</td><td>14</td><td>14</td><td>0</td><td class="plus">11</td><td class="more">78,57%</td></tr>
+<tr><td>3781</td><th>район Щукино</th> <td>86</td><td>275</td><td>256</td><td>0</td><td class="more">189</td><td class="more">73,83%</td></tr>
+<tr><td>880</td><th>район Богородское</th> <td>284</td><td>462</td><td>252</td><td>0</td><td class="more">178</td><td class="more">70,63%</td></tr>
+<tr><td>3764</td><th>район Раменки</th> <td>8</td><td>25</td><td>25</td><td>0</td><td class="plus">17</td><td class="more">68,00%</td></tr>
+<tr><td>3329</td><th>Новомосковский АО</th> <td>1231</td><td>1856</td><td>921</td><td>1</td><td class="more">624</td><td class="more">67,75%</td></tr>
+<tr><td>3763</td><th>район Раменки</th> <td>11</td><td>30</td><td>30</td><td>0</td><td class="plus">19</td><td class="more">63,33%</td></tr>
+<tr><td>3349</td><th>Новомосковский АО</th> <td>775</td><td>1138</td><td>584</td><td>0</td><td class="more">363</td><td class="more">62,16%</td></tr>
+<tr><td>3766</td><th>район Филевский парк</td><td>100</td><td>159</td><td>95</td><td>0</td><td class="more">59</td><td class="more">62,11%</td></tr>
+<tr><td>3749</td><th>район Ясенево</th> <td>48</td><td>123</td><td>123</td><td>0</td><td class="more">75</td><td class="more">60,98%</td></tr>
+<tr><td>9</td><th>район Арбат</td><td>931</td><td>1647</td><td>1216</td><td>0</td><td class="more">716</td><td class="more">58,88%</td></tr>
+<tr><td>3782</td><th>район Щукино</th> <td>60</td><td>123</td><td>114</td><td>0</td><td class="more">63</td><td class="more">55,26%</td></tr>
+<tr><td>3606</td><th>Басманный район</th> <td>25</td><td>50</td><td>50</td><td>0</td><td class="plus">25</td><td class="more">50,00%</td></tr>
+<tr><td>3612</td><th>район Замоскворечье</th> <td>19</td><td>38</td><td>38</td><td>0</td><td class="plus">19</td><td class="more">50,00%</td></tr>
+<tr><td>3679</td><th>район Новогиреево</th> <td>134</td><td>263</td><td>261</td><td>1</td><td class="more">128</td><td class="more">49,04%</td></tr>
+<tr><td>3607</td><th>Басманный район</th> <td>12</td><td>22</td><td>22</td><td>0</td><td class="plus">10</td><td class="more">45,45%</td></tr>
+<tr><td>3320</td><th>Новомосковский АО</th> <td>859</td><td>979</td><td>280</td><td>0</td><td class="more">120</td><td class="more">42,86%</td></tr>
+<tr><td>2722</td><th>район Очаково-Матвеевское</th> <td>266</td><td>341</td><td>175</td><td>0</td><td class="more">75</td><td class="more">42,86%</td></tr>
+<tr><td>202</td><th>район Аэропорт</td><td>534</td><td>676</td><td>342</td><td>0</td><td class="more">142</td><td class="more">41,52%</td></tr>
+<tr><td>2766</td><th>район Раменки</th> <td>399</td><td>456</td><td>137</td><td>1</td><td class="more">56</td><td class="more">40,88%</td></tr>
+<tr><td>3605</td><th>Басманный район</th> <td>32</td><td>54</td><td>54</td><td>0</td><td class="plus">22</td><td class="more">40,74%</td></tr>
+<tr><td>3640</td><th>Бескудниковский район</th> <td>23</td><td>37</td><td>35</td><td>0</td><td class="plus">14</td><td class="more">40,00%</td></tr>
+<tr><td>1686</td><th>район Бирюлево Восточное</th> <td>1222</td><td>1402</td><td>456</td><td>0</td><td class="more">180</td><td class="more">39,47%</td></tr>
+<tr><td>3704</td><th>район Люблино</th> <td>103</td><td>166</td><td>166</td><td>0</td><td class="more">63</td><td class="more">37,95%</td></tr>
+<tr><td>3302</td><th>Новомосковский АО</th> <td>202</td><td>246</td><td>116</td><td>0</td><td class="plus">44</td><td class="more">37,93%</td></tr>
+<tr><td>3617</td><th>Пресненский район</th> <td>34</td><td>54</td><td>53</td><td>0</td><td class="plus">20</td><td class="more">37,74%</td></tr>
+<tr><td>939</td><th>район Восточное Измайлово</th> <td>1759</td><td>1997</td><td>641</td><td>0</td><td class="more">238</td><td class="more">37,13%</td></tr>
+<tr><td>3737</td><th>Академический район</th> <td>230</td><td>362</td><td>362</td><td>0</td><td class="more">132</td><td class="more">36,46%</td></tr>
+<tr><td>1655</td><th>район Бирюлево Восточное</th> <td>745</td><td>833</td><td>228</td><td>5</td><td class="more">83</td><td class="more">36,40%</td></tr>
+<tr><td>3328</td><th>Новомосковский АО</th> <td>1620</td><td>1867</td><td>685</td><td>1</td><td class="more">246</td><td class="more">35,91%</td></tr>
+<tr><td>3609</td><th>Басманный район</th> <td>33</td><td>51</td><td>51</td><td>0</td><td class="plus">18</td><td class="more">35,29%</td></tr>
+<tr><td>2187</td><th>район Зюзино</th> <td>1039</td><td>1186</td><td>426</td><td>0</td><td class="more">147</td><td class="more">34,51%</td></tr>
+<tr><td>3716</td><th>Даниловский район</th> <td>165</td><td>249</td><td>245</td><td>0</td><td class="more">84</td><td class="more">34,29%</td></tr>
+<tr><td>3783</td><th>район Щукино</th> <td>40</td><td>60</td><td>60</td><td>0</td><td class="plus">20</td><td class="more">33,33%</td></tr>
+<tr><td>3645</td><th>район Коптево</th> <td>40</td><td>52</td><td>36</td><td>0</td><td class="plus">12</td><td class="more">33,33%</td></tr>
+<tr><td>3614</td><th>Мещанский район</th> <td>291</td><td>426</td><td>425</td><td>0</td><td class="more">135</td><td class="more">31,76%</td></tr>
+<tr><td>3601</td><th>Басманный район</th> <td>96</td><td>140</td><td>140</td><td>0</td><td class="plus">44</td><td class="more">31,43%</td></tr>
+<tr><td>3661</td><th>район Марьина Роща</th> <td>94</td><td>132</td><td>126</td><td>0</td><td class="plus">38</td><td class="more">30,16%</td></tr>
+<tr><td>469</td><th>Хорошевский район</th> <td>2998</td><td>3576</td><td>1919</td><td>2</td><td class="more">576</td><td class="more">30,02%</td></tr>
+<tr><td>27</td><th>Басманный район</th> <td>1340</td><td>1534</td><td>660</td><td>0</td><td class="more">194</td><td class="more">29,39%</td></tr>
+<tr><td>3713</td><th>Южнопортовый район</th> <td>63</td><td>83</td><td>70</td><td>0</td><td class="plus">20</td><td class="more">28,57%</td></tr>
+<tr><td>3754</td><th>район Кунцево</th> <td>69</td><td>96</td><td>95</td><td>0</td><td class="plus">27</td><td class="more">28,42%</td></tr>
+<tr><td>3719</td><th>Донской район</th> <td>35</td><td>50</td><td>50</td><td>1</td><td class="plus">14</td><td class="more">28,00%</td></tr>
+<tr><td>2204</td><th>район Коньково</th> <td>555</td><td>616</td><td>230</td><td>0</td><td class="more">61</td><td class="more">26,52%</td></tr>
+<tr><td>3344</td><th>Новомосковский АО</th> <td>1672</td><td>1853</td><td>677</td><td>2</td><td class="more">179</td><td class="more">26,44%</td></tr>
+<tr><td>3353</td><th>Новомосковский АО</th> <td>936</td><td>1021</td><td>336</td><td>0</td><td class="more">85</td><td class="more">25,30%</td></tr>
+<tr><td>2956</td><th>район Митино</th> <td>1574</td><td>1734</td><td>627</td><td>2</td><td class="more">158</td><td class="more">25,20%</td></tr>
+<tr><td>3347</td><th>Новомосковский АО</th> <td>1520</td><td>1679</td><td>628</td><td>1</td><td class="more">158</td><td class="more">25,16%</td></tr>
+<tr><td>168</td><th>район Хамовники</th> <td>1524</td><td>1757</td><td>948</td><td>2</td><td class="more">231</td><td class="more">24,37%</td></tr>
+<tr><td>3771</td><th>район Покровское-Стрешнево</th> <td>45</td><td>52</td><td>30</td><td>0</td><td class="plus">7</td><td class="more">23,33%</td></tr>
+<tr><td>3698</td><th>район Выхино-Жулебино</th> <td>623</td><td>795</td><td>741</td><td>0</td><td class="more">172</td><td class="more">23,21%</td></tr>
+<tr><td>3613</td><th>Мещанский район</th> <td>42</td><td>47</td><td>22</td><td>0</td><td class="plus">5</td><td class="more">22,73%</td></tr>
+<tr><td>3389</td><th>Троицкий АО</th> <td>1311</td><td>1423</td><td>496</td><td>0</td><td class="more">112</td><td class="more">22,58%</td></tr>
+<tr><td>1664</td><th>район Бирюлево Восточное</th> <td>2001</td><td>2131</td><td>578</td><td>0</td><td class="more">130</td><td class="more">22,49%</td></tr>
+<tr><td>3110</td><th>район Хорошево-Мневники</th> <td>333</td><td>357</td><td>109</td><td>0</td><td class="plus">24</td><td class="more">22,02%</td></tr>
+<tr><td>3717</td><th>Даниловский район</th> <td>62</td><td>79</td><td>79</td><td>0</td><td class="plus">17</td><td class="more">21,52%</td></tr>
+<tr><td>3687</td><th>район Соколиная гора</th> <td>29</td><td>38</td><td>38</td><td>1</td><td class="plus">8</td><td class="more">21,05%</td></tr>
+<tr><td>1013</td><th>район Ивановское</th> <td>589</td><td>662</td><td>334</td><td>3</td><td class="more">70</td><td class="more">20,96%</td></tr>
+<tr><td>189</td><th>район Аэропорт</td><td>1341</td><td>1455</td><td>547</td><td>0</td><td class="more">114</td><td class="more">20,84%</td></tr>
+<tr><td>1532</td><th>район Некрасовка</th> <td>2933</td><td>3089</td><td>778</td><td>0</td><td class="more">156</td><td class="more">20,05%</td></tr>
+<tr><td>3724</td><th>район Москворечье-Сабурово</th> <td>40</td><td>50</td><td>50</td><td>0</td><td class="plus">10</td><td class="more">20,00%</td></tr>
+</tbody>
+</table>
+
+</body></html>
